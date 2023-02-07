@@ -1,0 +1,64 @@
+JU
+how can I improve this html page that is a table of shortcuts and bookmarks:
+
+https://juren53.github.io/JAUs-Startup-Page/
+
+ChatGPT
+!
+Here are some suggestions to improve the HTML page:
+
+Make the table responsive: The table should be able to adjust its size based on the screen size so that it looks good on both large and small screens.
+
+Add search functionality: A search bar could be added to make it easier for users to find specific shortcuts or bookmarks.
+
+Sort table columns: Allowing the table to be sorted by columns would be a useful feature for users.
+
+Highlight rows on hover: Highlighting the row when the mouse hovers over it would make it easier for users to see which row they are selecting.
+
+Use a CSS framework: Using a CSS framework like Bootstrap would make it easier to quickly style the table and make it look better.
+
+Use semantic HTML: The HTML code should be semantic and make use of elements such as <thead>, <tbody>, <th>, and <td> to properly structure the table data.
+
+Make it accessible: The page should be accessible to people with disabilities, such as using proper alt attributes for images and adding proper aria-labels for accessibility.
+
+
+JU
+Make the edits to this page to make the table responsive
+
+Here is an example of how you can make the table responsive using CSS:
+
+php
+Copy code
+<style>
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+  }
+  th {
+    background-color: #dddddd;
+  }
+  @media (max-width: 600px) {
+    td, th {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+    thead tr {
+      display: none;
+    }
+    td:before {
+      font-weight: bold;
+      content: attr(data-label);
+      display: inline-block;
+      width: 30%;
+    }
+  }
+</style>
+You can add this CSS code within the <head> tag of the HTML page.
+
+This CSS code uses media queries to apply different styles based on the screen size. When the screen width is less than or equal to 600px, the td and th elements are set to display: block so that they stack vertically. The thead element is set to display: none to hide the table header on small screens. The td:before selector is used to display the data-label value as a label for each cell, allowing users to see what each column represents on smaller screens.
