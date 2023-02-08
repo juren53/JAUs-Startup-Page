@@ -1,6 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <!-- saved from url=(0044)https://juren53.github.io/JAUs-Startup-Page/ -->
-<html data-lt-installed="true">
+<html data-lt-installed="true" lang="English">
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <title>JAU's Startup Page</title>
@@ -16,12 +16,18 @@
 		h3.ctl { font-size: 12pt }
 		a:link { color: #000080; so-language: zxx; text-decoration: underline }
 	</style>
+    <meta name="author" content="Jim U'Ren">
+    <meta name="description" content="Organized collection of Webpage links">
+    <meta name="keywords" content="bookmarks">
+    <base href="https://juren53.github.io/JAUs-Startup-Page/">
   </head>
-  <body dir="ltr" data-new-gr-c-s-check-loaded="14.1091.0" data-gr-ext-installed=""
-    bgcolor="#ffffff" alink="#EE0000" vlink="#000099" text="#000000" link="#000080"
-    lang="en">
+  <body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1094.0" dir="ltr"
+    style=" background-color: white; color: black;" alink="#EE0000" vlink="#000099"
+    link="#000080" lang="en"><!-- base href="https://juren53.github.io/JAUs-Startup-Page/" -->
     <p> <b><font style="font-size: 17pt" size="5" face="Helvetica, Arial,
         sans-serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
 
 
 
@@ -33,8 +39,7 @@
           &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
           &nbsp;</font></b><b><font style="font-size: 17pt" size="5" face="Helvetica, Arial,
         sans-serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font></b><font face="Helvetica, Arial, sans-serif">Updated<font
-          size="3"> 2023-01-08 1000</font><br>
-      </font></p>
+          size="3"> 2023-02-07&nbsp; 1805</font> </font></p>
     <center> <font face="Helvetica, Arial, sans-serif"> </font><font face="Helvetica, Arial, sans-serif">
       </font>
       <table style="page-break-before: auto; page-break-after: auto" cellspacing="0"
@@ -47,6 +52,8 @@
               <p style="margin-bottom: 0in; border: none; padding: 0in;
                 page-break-inside: auto; orphans: 0; widows: 0;                background: transparent; page-break-after: auto"
                 align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
 
 
 
@@ -105,8 +112,7 @@
                                 12pt" size="3"><u><b>YouTube </b></u></font></font></a></font><font
                           face="Helvetica, Arial, sans-serif"><a href="http://www.youtube.com/user/jimuren?feature=guide"><font
                               color="#1155cc"><font style="font-size:
-                                8pt" size="1"><u><b><br>
-                                  </b></u></font></font></a></font></p>
+                                8pt" size="1"><u><b> </b></u></font></font></a></font></p>
                     </td>
                   </tr>
                   <tr valign="top">
@@ -189,8 +195,7 @@
                         align="center">&nbsp;&nbsp;&nbsp; <font face="Helvetica, Arial, sans-serif"><a
                             href="https://odysee.com/"><font color="#1155cc"><font
                                 style="font-size:
-                                11pt" size="2"><u><b>Odysee<br>
-                                  </b></u></font></font></a></font></p>
+                                11pt" size="2"><u><b>Odysee </b></u></font></font></a></font></p>
                     </td>
                   </tr>
                 </tbody>
@@ -198,6 +203,8 @@
               <p style="margin-bottom: 0in; border: none; padding: 0in;
                 line-height: 115%; page-break-inside: auto; orphans: 0;                widows: 0; background: transparent; page-break-after:                auto"
                 align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
 
 
 
@@ -240,7 +247,6 @@
                                 color="#1155cc"><font style="font-size:
                                   12pt" size="3"><u><b>&nbsp; </b></u></font></font></a></font><font
                             size="-2"><b><a moz-do-not-send="true" href="https://www.themarketisopen.com/home?ticker=TSLA&amp;exchange=NASDAQ">&amp;</a></b></font><b>
-                            <br>
                           </b></p>
                       </td>
                       <td style="background: transparent" width="116">
@@ -272,10 +278,6 @@
                   </tbody>
                 </table>
               </center>
-              <p style="margin-bottom: 0in; border: none; padding: 0in;
-                line-height: 115%; page-break-inside: auto; orphans: 0;                widows: 0; background: transparent; page-break-after:                auto"
-                align="center"><br>
-              </p>
               <table border="1" width="100%">
                 <tbody>
                   <tr>
@@ -291,13 +293,11 @@
                         style="font-size: 12pt" size="3" face="Helvetica,
                   Arial, sans-serif"><b><font style="font-size: 12pt" size="3" face="Helvetica, Arial, sans-serif"><b><a
                                 href="https://teslamotorsclub.com/tmc/forums/-/list">Tesla
-                                Motor Club Forums <br>
-                              </a></b></font></b></font></td>
+                                Motor Club Forums </a></b></font></b></font></td>
                     <td style="text-align: center; background-color: white;"><font
                         color="#1155cc" face="Helvetica, Arial, sans-serif"><font
                           style="font-size: 12pt" size="3"><b><a href="https://www.tesla.com/trips#/?v=MY_2020_LongRange&amp;o=Platte%20City,%20MO%2064079,%20USA_Platte%20City%20Carroll%20Township%20Platte%20County@39.3702773,-94.78246089999999&amp;s=&amp;d=La%20Plata,%20MO%2063549,%20USA_La%20Plata%20La%20Plata%20Township%20Macon%20County@40.0233687,-92.4915779">Tesla
-                              Trip Planning <br>
-                            </a></b></font></font></td>
+                              Trip Planning </a></b></font></font></td>
                   </tr>
                   <tr>
                     <td style="text-align: center; background-color: white;"><font
@@ -309,14 +309,17 @@
                         style="font-size: 12pt" size="3" face="Helvetica,
                   Arial, sans-serif"><b><font style="font-size: 12pt" size="3" face="Helvetica, Arial, sans-serif"><b><a
                                 moz-do-not-send="true" href="https://www.tesla.com/findus?v=2&amp;search=Kansas%20City%2C%20MO%2C%20USA&amp;bounds=39.18360369457401%2C-94.3588401375%2C39.01574939833559%2C-94.7982932625&amp;zoom=12&amp;filters=store%2Cservice%2Csupercharger%2Cdestination%20charger%2Cbodyshop">Tesla
-                                Charging Network</a> <br>
-                            </b></font></b></font></td>
+                                Charging Network</a> </b></font></b></font></td>
                   </tr>
                   <tr>
                     <td style="text-align: center;"><a href="https://tesletter.us12.list-manage.com/track/click?u=7825825c2b67109e6d358abb4&amp;id=0591a07df4&amp;e=a5af6b22ce"><b
                           style="font-family: Helvetica,Arial,sans-serif;">Tesletter</b></a></td>
                     <td style="text-align: center;"><a href="https://www.tesmanian.com/"><b><span
-                            style="font-family: Helvetica,Arial,sans-serif;">Tesmanian</span></b></a></td>
+                            style="font-family: Helvetica,Arial,sans-serif;">Tesmanian</span></b></a><b><span
+                          style="font-family: Helvetica,Arial,sans-serif;">
+                          &nbsp;&nbsp; </span></b><a href="https://tsportline.com/"><b><span
+                            style="font-family: Helvetica,Arial,sans-serif;">Tsportsline<br>
+                          </span></b></a></td>
                   </tr>
                   <tr>
                     <td style="text-align: center;"><a href="https://www.tesla.com/suggest-superchargers"><b><strong
@@ -329,8 +332,7 @@
                   <tr>
                     <td style="text-align: center;"><a href="https://evadept.com/calc/tesla-supercharger-charging-cost-calculator"><b><span
                             style="font-family: Arial;">Tesla Charging
-                            Calculator [cost]<br>
-                          </span></b></a></td>
+                            Calculator [cost] </span></b></a></td>
                     <td style="text-align: center;"><b><a href="https://www.plugshare.com/"
                           style="font-family: Helvetica,Arial,sans-serif;">PlugShare</a></b></td>
                   </tr>
@@ -382,6 +384,8 @@
                       href="https://www.reddit.com/r/Superchargers">
                       r/Superchargers</a><br>
                     <a href="https://www.reddit.com/r/SpaceX">r/SpaceX</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
                     <a href="https://www.reddit.com/r/ElectricVehicles">r/ElectricVehicles</a><br>
                     <a href="https://www.reddit.com/r/SelfDrivingCars">r/SelfDrivingCars&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <a href="https://www.reddit.com/r/ElonMusk">r/ElonMusk</a><br>
@@ -406,7 +410,7 @@
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         &nbsp;&nbsp;&nbsp;
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <br> </b></font></b></font></p>
+                        </b></font></b></font></p>
               <hr width="100%" size="2">
               <p style="margin-bottom: 0in; border: none; padding: 0in;
                 line-height: 115%; page-break-inside: auto; orphans: 0;                widows: 0; background: transparent; page-break-after:                auto"
@@ -423,12 +427,13 @@
                   style="font-size: 12pt" size="3" face="Helvetica,
                   Arial, sans-serif"><b><font style="font-size: 12pt" size="3" face="Helvetica, Arial, sans-serif"><b><span
                           style="color: #3366ff;"><a moz-do-not-send="true" href="https://docs.google.com/spreadsheets/d/1IAzRBYsVE__LjGuweiwRNygg6FPrL__RwUfcNR2CrwQ/edit#gid=1386834576">'s&nbsp;
-                            ToDo List</a></span><br>
-                      </b></font></b></font></p>
+                            ToDo List</a></span> </b></font></b></font></p>
               <hr width="100%" size="2">
               <p style="margin-bottom: 0in; border: none; padding: 0in;
                 line-height: 115%; page-break-inside: auto; orphans: 0;                widows: 0; background: transparent; page-break-after:                auto"
                 align="center"><font style="font-size: 12pt" size="3" face="Helvetica, Arial, sans-serif"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
 
 
 
@@ -520,13 +525,11 @@
                           align="center">&nbsp;&nbsp; <font face="Helvetica, Arial, sans-serif"><a
                               href="https://www.mayoclinic.org/"><font color="#1155cc"><font
                                   style="font-size:
-                                  12pt" size="3"><u><b>Mayo Clinic<br>
-                                    </b></u></font></font></a>&nbsp;<br>
+                                  12pt" size="3"><u><b>Mayo Clinic </b></u></font></font></a>&nbsp;<br>
                             &nbsp;<a href="https://protect-public.hhs.gov/">HHS
                               Data Hub</a><a href="https://www.mayoclinic.org/"><font
                                 color="#1155cc"><font style="font-size:
-                                  12pt" size="3"><u><b><br>
-                                    </b></u></font></font></a></font></p>
+                                  12pt" size="3"><u><b> </b></u></font></font></a></font></p>
                       </td>
                       <td style="background: transparent" width="116">
                         <p style="border: none; padding: 0in;
@@ -542,14 +545,11 @@
                           align="center">&nbsp;&nbsp; <font face="Helvetica, Arial, sans-serif"><a
                               href="https://www.medfusion.net/apexorthopedics-16280/portal/#/user/login"><font
                                 color="#1155cc"><font style="font-size:
-                                  12pt" size="3"><u><b>Apex Ortho<br>
-                                    </b></u></font></font></a></font>&nbsp;<font
+                                  12pt" size="3"><u><b>Apex Ortho </b></u></font></font></a></font>&nbsp;<font
                             size="-1">KC Ortho Aliance</font><font face="Helvetica, Arial, sans-serif"><a
                               href="https://www.medfusion.net/apexorthopedics-16280/portal/#/user/login"><font
                                 color="#1155cc"><font style="font-size:
-                                  12pt" size="3"><u><b><br>
-                                    </b></u></font></font></a><font style="font-size: 8pt"
-                              size="1"><b></b></font></font></p>
+                                  12pt" size="3"><u><b> </b></u></font></font></a></font></p>
                       </td>
                     </tr>
                   </tbody>
@@ -591,8 +591,12 @@
 
 
 
+
+
                     <br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
 
 
 
@@ -684,6 +688,8 @@
 
 
 
+
+
                 <font style="font-size: 12pt" size="3" face="Helvetica,
                   Arial, sans-serif"><b>Python</b></font></p>
               <center> <font face="Helvetica, Arial, sans-serif"> </font><font
@@ -713,8 +719,8 @@
                         <p style="border: none; padding: 0in;
                           page-break-inside: auto; orphans: 0; widows:                          0; background: transparent; page-break-after:                          auto"
                           align="center"> <font face="Helvetica,
-                            Arial, sans-serif"><br>
-                          </font> </p>
+                            Arial, sans-serif"> </font> </p>
+                        <br>
                       </td>
                     </tr>
                     <tr valign="top">
@@ -724,8 +730,7 @@
                           align="center">&nbsp;&nbsp;&nbsp; <font face="Helvetica,
                             Arial, sans-serif"><a href="https://www.youtube.com/channel/UCsvqVGtbbyHaMoevxPAq9Fg">Simplilearn</a><br>
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            tutorials<br>
-                          </font> </p>
+                            tutorials </font> </p>
                       </td>
                       <td style="background: transparent" width="116">
                         <p style="border: none; padding: 0in;
@@ -745,8 +750,8 @@
                         <p style="border: none; padding: 0in;
                           page-break-inside: auto; orphans: 0; widows:                          0; background: transparent; page-break-after:                          auto"
                           align="center"> <font face="Helvetica,
-                            Arial, sans-serif"><br>
-                          </font> </p>
+                            Arial, sans-serif"> </font> </p>
+                        <br>
                       </td>
                     </tr>
                   </tbody>
@@ -755,6 +760,8 @@
               <p style="margin-bottom: 0in; border: none; padding: 0in;
                 line-height: 115%; page-break-inside: auto; orphans: 0;                widows: 0; background: transparent; page-break-after:                auto"
                 align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
 
 
 
@@ -860,6 +867,8 @@
 
 
 
+
+
                 <font style="font-size: 12pt" size="3" face="Helvetica,
                   Arial, sans-serif"><b>Libraries</b></font></p>
               <font face="Helvetica, Arial, sans-serif"> </font><font face="Helvetica, Arial, sans-serif">
@@ -877,8 +886,7 @@
                         align="center">&nbsp;&nbsp;&nbsp;&nbsp; <font face="Helvetica, Arial, sans-serif"><a
                             href="https://archive.org/"><font color="#1155cc"><font
                                 style="font-size:
-                                12pt" size="3"><u><b>Internet<br>
-                                  </b></u></font></font></a></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                12pt" size="3"><u><b>Internet </b></u></font></font></a></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 
 
@@ -918,8 +926,7 @@
                         align="center">&nbsp;&nbsp;&nbsp; <font face="Helvetica, Arial, sans-serif"><a
                             href="https://kclibrary.org/"><font color="#1155cc"><font
                                 style="font-size:
-                                12pt" size="3"><u><b>KC Public<br>
-                                  </b></u></font></font></a></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                12pt" size="3"><u><b>KC Public </b></u></font></font></a></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 
 
@@ -938,8 +945,8 @@
                       <p style="border: none; padding: 0in;
                         page-break-inside: auto; orphans: 0; widows: 0;                        background: transparent; page-break-after: auto"
                         align="center"> <font face="Helvetica, Arial,
-                          sans-serif"><br>
-                        </font> </p>
+                          sans-serif"> </font> </p>
+                      <br>
                     </td>
                   </tr>
                   <tr valign="top">
@@ -953,8 +960,8 @@
                       <p style="border: none; padding: 0in;
                         page-break-inside: auto; orphans: 0; widows: 0;                        background: transparent; page-break-after: auto"
                         align="center"> <font face="Helvetica, Arial,
-                          sans-serif"><br>
-                        </font> </p>
+                          sans-serif"> </font> </p>
+                      <br>
                     </td>
                     <td style="background: transparent" width="78">
                       <p align="center"> <font face="Helvetica, Arial,
@@ -968,6 +975,8 @@
               <p style="margin-bottom: 0in; border: none; padding: 0in;
                 line-height: 115%; page-break-inside: auto; orphans: 0;                widows: 0; background: transparent; page-break-after:                auto"
                 align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
 
 
 
@@ -1009,7 +1018,7 @@
                         align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <font face="Helvetica, Arial, sans-serif"><a
                             href="http://sports.espn.go.com/mlb/standings"><font
                               color="#0000ee"><font style="font-size:
-                                12pt" size="3"><u><b>Standings</b></u></font></font></a><br>
+                                12pt" size="3"><u><b>Standings</b></u></font></font></a>
                         </font></p>
                       <p style="margin-bottom: 0in; border: none;
                         padding: 0in; page-break-inside: auto; orphans:                        0; widows: 0; background: transparent;                        page-break-after: auto"
@@ -1018,15 +1027,14 @@
 
 
 
-                              Reference</a></b></font><font face="Helvetica, Arial, sans-serif"><br>
+                              Reference</a></b></font><font face="Helvetica, Arial, sans-serif">
                         </font></p>
                       <p style="margin-bottom: 0in; border: none;
                         padding: 0in; page-break-inside: auto; orphans:                        0; widows: 0; background: transparent;                        page-break-after: auto"
                         align="center">&nbsp;&nbsp; <font face="Helvetica, Arial, sans-serif"><a
                             href="http://dodgers.mlb.com/NASApp/mlb/la/homepage/la_homepage.jsp"><font
                               color="#0000ee"><font style="font-size:
-                                11pt" size="2"><u><b>Dodger MLB Site<br>
-                                  </b></u></font></font></a></font>&nbsp;&nbsp;
+                                11pt" size="2"><u><b>Dodger MLB Site </b></u></font></font></a></font>&nbsp;&nbsp;
                         <font face="Helvetica, Arial, sans-serif"><a href="http://espn.go.com/blog/los-angeles/dodger-report"><font
                               color="#1155cc"><font style="font-size:
                                 11pt" size="2"><u><b>Dodger ESPN Site</b></u></font></font></a></font></p>
@@ -1039,22 +1047,17 @@
                             style="font-size: 11pt" size="2"><b> </b></font><a
                             href="https://www.truebluela.com/"><font color="#1155cc"><font
                                 style="font-size:
-                                11pt" size="2"><u><b>News</b></u></font></font></a><br>
+                                11pt" size="2"><u><b>News</b></u></font></font></a>
                         </font></p>
                       <hr width="100%" size="2">
-                      <p style="margin-bottom: 0in; border: none;
-                        padding: 0in; page-break-inside: auto; orphans:                        0; widows: 0; background: transparent;                        page-break-after: auto"
-                        align="center"> </p>
                       <p style="margin-bottom: 0in; border: none;
                         padding: 0in; page-break-inside: auto; orphans:                        0; widows: 0; background: transparent;                        page-break-after: auto"
                         align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <font
                           face="Helvetica, Arial, sans-serif"><a href="http://www.espn.com/"><font
                               color="#1155cc"><font style="font-size:
-                                18pt" size="5"><u><b>ESPN<br>
-                                  </b></u></font></font></a><font color="#0000ee"><font
-                              style="font-size:
-                              18pt" size="5"><u><b><br>
-                                </b></u></font></font></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                18pt" size="5"><u><b>ESPN </b></u></font></font></a><font
+                            color="#0000ee"><font style="font-size:
+                              18pt" size="5"><u><b> </b></u></font></font></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 
 
@@ -1064,9 +1067,6 @@
                         <font face="Helvetica, Arial, sans-serif"><a href="http://sportsillustrated.cnn.com/"><font
                               color="#1155cc"><font style="font-size:
                                 18pt" size="5"><u><b>SI.com</b></u></font></font></a></font></p>
-                      <p style="margin-bottom: 0in; border: none;
-                        padding: 0in; page-break-inside: auto; orphans:                        0; widows: 0; background: transparent;                        page-break-after: auto"
-                        align="center"> </p>
                       <p style="margin-bottom: 0in; border: none;
                         padding: 0in; page-break-inside: auto; orphans:                        0; widows: 0; background: transparent;                        page-break-after: auto"
                         align="center">&nbsp;&nbsp;&nbsp; <font face="Helvetica, Arial, sans-serif"><a
@@ -1095,8 +1095,7 @@
                       <p style="border: none; padding: 0in;
                         page-break-inside: auto; orphans: 0; widows: 0;                        background: transparent; page-break-after: auto"
                         align="center"> <font face="Helvetica, Arial,
-                          sans-serif"><br>
-                        </font> </p>
+                          sans-serif"> </font> </p>
                     </td>
                     <td style="background: #ffffff" bgcolor="#ffffff" width="202">
                       <p style="margin-bottom: 0in; border: none;
@@ -1325,10 +1324,9 @@
               </table>
               <p style="margin-bottom: 0in; border: none; padding: 0in;
                 line-height: 100%; page-break-inside: auto; orphans: 0;                widows: 0; background: transparent; page-break-after:                auto"
-                align="center"> </p>
-              <p style="margin-bottom: 0in; border: none; padding: 0in;
-                line-height: 100%; page-break-inside: auto; orphans: 0;                widows: 0; background: transparent; page-break-after:                auto"
                 align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
 
 
 
@@ -1356,6 +1354,8 @@
               <p style="margin-bottom: 0in; border: none; padding: 0in;
                 line-height: 100%; page-break-inside: auto; orphans: 0;                widows: 0; background: transparent; page-break-after:                auto"
                 align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
 
 
 
@@ -1473,6 +1473,8 @@
 
 
 
+
+
                 <font style="font-size: 12pt" size="3" face="Helvetica,
                   Arial, sans-serif"><b>Forums</b></font></p>
               <font face="Helvetica, Arial, sans-serif"> </font><font face="Helvetica, Arial, sans-serif">
@@ -1525,6 +1527,8 @@
 
 
 
+
+
                 <font face="Helvetica, Arial, sans-serif"><b>Media Center Info</b></font></p>
               <font face="Helvetica, Arial, sans-serif"> </font><font face="Helvetica, Arial, sans-serif">
               </font>
@@ -1536,29 +1540,23 @@
                 <tbody>
                   <tr valign="top">
                     <td style="background: transparent" width="115">
-                      <p style="border: none; padding: 0in;
-                        page-break-inside: auto; orphans: 0; widows: 0;                        background: transparent; page-break-after: auto"
-                        align="center">&nbsp;&nbsp; <font face="Helvetica, Arial, sans-serif"><a
-                            href="http://forum.videohelp.com/"><font color="#1155cc"><u><b>Video
-                                  Help<br>
-                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-                                  Forum</b></u></font></a></font></p>
+                      <p style="border: medium none; padding: 0in; page-break-inside: auto; background: transparent none repeat scroll 0% 0%; page-break-after: auto; text-align: center;"><font
+                          face="Helvetica, Arial, sans-serif"><a href="http://forum.videohelp.com/"><font
+                              color="#1155cc"><u><b>Video Help</b></u></font></a></font><span
+                          style="color: #1155cc;"><span style="font-family: Helvetica,Arial,sans-serif;">
+                          </span></span><font face="Helvetica, Arial, sans-serif"><a
+                            href="http://forum.videohelp.com/"><font color="#1155cc"><u><b>Forum</b></u></font></a></font></p>
                     </td>
                     <td style="background: transparent" width="116">
-                      <p style="border: none; padding: 0in;
-                        page-break-inside: auto; orphans: 0; widows: 0;                        background: transparent; page-break-after: auto"
-                        align="center"> <font face="Helvetica, Arial,
+                      <p style="border: medium none; padding: 0in; page-break-inside: auto; background: transparent none repeat scroll 0% 0%; page-break-after: auto; text-align: center;">
+                        <font face="Helvetica, Arial,
                           sans-serif"><a href="http://www.thegreenbutton.tv/forums/"><font
                               color="#1155cc"><u><b>MS Green Button</b></u></font></a><b>
                           </b></font> </p>
                     </td>
-                    <td style="background: transparent" width="115">
-                      <p style="border: none; padding: 0in;
-                        page-break-inside: auto; orphans: 0; widows: 0;                        background: transparent; page-break-after: auto"
-                        align="center"> </p>
-                      <font face="Helvetica, Arial, sans-serif"><br>
-                      </font> </td>
+                    <td style="background: transparent" width="115"> <font face="Helvetica, Arial, sans-serif">
+                      </font> <br>
+                    </td>
                   </tr>
                   <tr valign="top">
                     <td style="background: transparent" width="115">
@@ -1579,8 +1577,8 @@
                       <p style="border: none; padding: 0in;
                         page-break-inside: auto; orphans: 0; widows: 0;                        background: transparent; page-break-after: auto"
                         align="center"> <font face="Helvetica, Arial,
-                          sans-serif"><br>
-                        </font> </p>
+                          sans-serif"> </font> </p>
+                      <br>
                     </td>
                   </tr>
                 </tbody>
@@ -1592,6 +1590,8 @@
               <p style="margin-bottom: 0in; border: none; padding: 0in;
                 line-height: 100%; page-break-inside: auto; orphans: 0;                widows: 0; background: transparent; page-break-after:                auto"
                 align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
 
 
 
@@ -1613,13 +1613,15 @@
 
 
 
+
+
                 </p>
               <table border="1" width="100%">
                 <tbody>
                   <tr>
-                    <td><a href="https://www.gnu.org/software/bash/manual/"><span
-                          style="font-family: Helvetica,Arial,sans-serif;">Bash
-                          Reference Manual</span></a></td>
+                    <td style="text-align: center;"><b><a href="https://www.gnu.org/software/bash/manual/"><span
+                            style="font-family: Helvetica,Arial,sans-serif;">Bash
+                            Reference Manual</span></a></b></td>
                     <td><br>
                     </td>
                     <td><br>
@@ -1637,11 +1639,9 @@
               </table>
               <p style="margin-bottom: 0in; border: none; padding: 0in;
                 line-height: 100%; page-break-inside: auto; orphans: 0;                widows: 0; background: transparent; page-break-after:                auto"
-                align="center"><br>
-              </p>
-              <p style="margin-bottom: 0in; border: none; padding: 0in;
-                line-height: 100%; page-break-inside: auto; orphans: 0;                widows: 0; background: transparent; page-break-after:                auto"
                 align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
 
 
 
@@ -1679,8 +1679,7 @@
                         page-break-inside: auto; orphans: 0; widows: 0;                        background: transparent; page-break-after: auto"
                         align="center">&nbsp;&nbsp; &nbsp;&nbsp; <font face="Helvetica, Arial,
                           sans-serif"><a href="https://itsfoss.com/"><font color="#1155cc"><u><b>It's
-                                  FOSS<br>
-                                </b></u></font></a></font></p>
+                                  FOSS </b></u></font></a></font></p>
                     </td>
                     <td style="background: transparent" width="115">
                       <p style="border: medium none; padding: 0in; page-break-inside: auto; background: transparent none repeat scroll 0% 0%; page-break-after: auto; text-align: center;">
@@ -1696,7 +1695,8 @@
                         </span></span><font face="Helvetica, Arial, sans-serif"><a
                           href="https://www.appimagehub.com/" title="AppImage Hub"><font
                             color="#1155cc"><u><b>AppImage Hub</b></u></font></a></font></td>
-                    <td><br>
+                    <td style="text-align: center;"><b><a href="https://www.makeuseof.com/"><span
+                            style="font-family: Helvetica,Arial,sans-serif;">MUO</span></a></b><br>
                     </td>
                   </tr>
                   <tr valign="top">
@@ -1857,8 +1857,7 @@
                         page-break-inside: auto; orphans: 0; widows: 0;                        background: transparent; page-break-after: auto"
                         align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <font
                           face="Helvetica, Arial, sans-serif"><a href="https://sourceforge.net/projects/makulu/"><font
-                              color="#1155cc"><u><b>Makulu<br>
-                                </b></u></font></a></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                              color="#1155cc"><u><b>Makulu </b></u></font></a></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 
                         <font face="Helvetica, Arial, sans-serif"><a href="https://sourceforge.net/projects/makulu/"><font
@@ -1893,6 +1892,8 @@
 
 
 
+
+
                 <font face="Helvetica, Arial, sans-serif"><b>Science &amp;
                     Technical</b></font></p>
               <font face="Helvetica, Arial, sans-serif"> </font><font face="Helvetica, Arial, sans-serif">
@@ -1905,11 +1906,9 @@
                 <tbody>
                   <tr valign="top">
                     <td style="background: transparent" width="115">
-                      <p style="margin-bottom: 0in; border: none;
-                        padding: 0in; page-break-inside: auto; orphans:                        0; widows: 0; background: transparent;                        page-break-after: auto"
-                        align="center"> <font face="Helvetica, Arial, sans-serif"><a
-                            href="http://www.edn.com/"><font color="#1155cc"><font
-                                style="font-size:
+                      <p style="margin-bottom: 0in; border: medium none; padding: 0in; page-break-inside: auto; background: transparent none repeat scroll 0% 0%; page-break-after: auto; text-align: center;">
+                        <font face="Helvetica, Arial, sans-serif"><a href="http://www.edn.com/"><font
+                              color="#1155cc"><font style="font-size:
                                 12pt" size="3"><u><b>EDN</b></u></font></font></a></font></p>
                       <p style="border: none; padding: 0in;
                         page-break-inside: auto; orphans: 0; widows: 0;                        background: transparent; page-break-after: auto"
@@ -1917,7 +1916,7 @@
                           sans-serif"><a href="http://www.nationalgeographic.com/"><font
                               color="#1155cc"><u><b>N’tl Geographic</b></u></font></a><b><br>
                             &nbsp;&nbsp; </b><a href="http://physics.org/"><font
-                              color="#1155cc"><u><b>Physics.org</b></u></font></a><b><br>
+                              color="#1155cc"><u><b>Physics.org</b></u></font></a><b>
                           </b><a href="https://www.reddit.com/r/science/"><font
                               color="#1155cc"><u><b>Reddit Science</b></u></font></a></font></p>
                     </td>
@@ -1928,9 +1927,8 @@
                           face="Helvetica, Arial, sans-serif"><a href="http://www.wired.com/"><font
                               color="#1155cc"><font style="font-size:
                                 14pt" size="4"><u><b>Wired</b></u></font></font></a></font></p>
-                      <p style="border: none; padding: 0in;
-                        page-break-inside: auto; orphans: 0; widows: 0;                        background: transparent; page-break-after: auto"
-                        align="center"> <font face="Helvetica, Arial,
+                      <p style="border: medium none; padding: 0in; page-break-inside: auto; background: transparent none repeat scroll 0% 0%; page-break-after: auto; text-align: center;">
+                        <font face="Helvetica, Arial,
                           sans-serif"><a href="http://www.v3.co.uk/"><font color="#1155cc"><u><b>V3.uk.co</b></u></font></a></font><br>
                         <font face="Helvetica, Arial,
                           sans-serif"><b> </b><a href="https://www.syfy.com/"><font
@@ -1940,17 +1938,19 @@
                     <td style="background: transparent" width="115">
                       <p style="margin-bottom: 0in; border: none;
                         padding: 0in; page-break-inside: auto; orphans:                        0; widows: 0; background: transparent;                        page-break-after: auto"
-                        align="center"> <font face="Helvetica, Arial, sans-serif"><a
+                        align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <font face="Helvetica, Arial, sans-serif"><a
                             href="http://dvice.com/"><font color="#1155cc"><u><b>Dvice</b></u></font></a></font><br>
-                        <font face="Helvetica, Arial, sans-serif"> </font> <font
-                          face="Helvetica, Arial,
+                        &nbsp; <font face="Helvetica, Arial, sans-serif"> </font>
+                        <font face="Helvetica, Arial,
                           sans-serif"><a href="http://www.extremetech.com/"><font
                               color="#1155cc"><u><b>ExtremeTech</b></u></font></a></font></p>
                       <p style="border: none; padding: 0in;
                         page-break-inside: auto; orphans: 0; widows: 0;                        background: transparent; page-break-after: auto"
-                        align="center"> <font face="Helvetica, Arial,
+                        align="center">&nbsp; <font face="Helvetica, Arial,
                           sans-serif"><a href="https://arstechnica.com/"><font color="#1155cc"><u><b>Ars
-                                  Technica</b></u></font></a></font></p>
+                                  Technica </b></u></font></a></font></p>
+                      <div style="text-align: center;"><a href="https://www.makeuseof.com/page/about/"><b><span
+                              style="color: #1155cc;"><span style="font-family: Helvetica,Arial,sans-serif;">MUO</span></span></b></a></div>
                     </td>
                   </tr>
                   <tr valign="top">
@@ -1992,8 +1992,8 @@
                       <p style="border: none; padding: 0in;
                         page-break-inside: auto; orphans: 0; widows: 0;                        background: transparent; page-break-after: auto"
                         align="center">&nbsp;&nbsp;&nbsp;&nbsp; <font face="Helvetica, Arial, sans-serif"><a
-                            href="http://www.technologyreview.com/"><font color="#1155cc"><u><b>Technology<br>
-                                </b></u></font></a></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            href="http://www.technologyreview.com/"><font color="#1155cc"><u><b>Technology
+                                  </b></u></font></a></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 
                         <font face="Helvetica, Arial, sans-serif"><a href="http://www.technologyreview.com/"><font
@@ -2014,23 +2014,20 @@
                   </tr>
                   <tr valign="top">
                     <td style="background: transparent" width="115">
-                      <p style="border: none; padding: 0in;
-                        page-break-inside: auto; orphans: 0; widows: 0;                        background: transparent; page-break-after: auto"
-                        align="center"> <font face="Helvetica, Arial,
+                      <p style="border: medium none; padding: 0in; page-break-inside: auto; background: transparent none repeat scroll 0% 0%; page-break-after: auto; text-align: center;">
+                        <font face="Helvetica, Arial,
                           sans-serif"><a href="https://news.ycombinator.com/"><font
                               color="#1155cc"><u><b>Hacker News</b></u></font></a></font></p>
                     </td>
                     <td style="background: transparent" width="116">
-                      <p style="border: none; padding: 0in;
-                        page-break-inside: auto; orphans: 0; widows: 0;                        background: transparent; page-break-after: auto"
-                        align="center"> <font face="Helvetica, Arial,
+                      <p style="border: medium none; padding: 0in; page-break-inside: auto; background: transparent none repeat scroll 0% 0%; page-break-after: auto; text-align: center;">
+                        <font face="Helvetica, Arial,
                           sans-serif"><a href="http://www.tomshardware.com/"><font
                               color="#1155cc"><u><b>Tom’s Hardware</b></u></font></a></font></p>
                     </td>
                     <td style="background: transparent" width="115">
-                      <p style="border: none; padding: 0in;
-                        page-break-inside: auto; orphans: 0; widows: 0;                        background: transparent; page-break-after: auto"
-                        align="center"> <font face="Helvetica, Arial,
+                      <p style="border: medium none; padding: 0in; page-break-inside: auto; background: transparent none repeat scroll 0% 0%; page-break-after: auto; text-align: center;">
+                        <font face="Helvetica, Arial,
                           sans-serif"><a href="https://techcrunch.com/"><font color="#1155cc"><u><b>TechCrunch</b></u></font></a></font></p>
                     </td>
                   </tr>
@@ -2060,41 +2057,33 @@
                   </tr>
                   <tr valign="top">
                     <td style="background: transparent" width="115">
-                      <p style="margin-bottom: 0in; border: none;
-                        padding: 0in; page-break-inside: auto; orphans:                        0; widows: 0; background: transparent;                        page-break-after: auto"
-                        align="center"> <font color="#1155cc" face="Helvetica, Arial,
+                      <p style="margin-bottom: 0in; border: medium none; padding: 0in; page-break-inside: auto; background: transparent none repeat scroll 0% 0%; page-break-after: auto; text-align: center;">
+                        <font color="#1155cc" face="Helvetica, Arial,
                           sans-serif"><font style="font-size: 11pt" size="2"><u><b><a
                                   href="http://fuelfix.com/">Fuel Fix</a> </b></u></font></font>
                       </p>
-                      <p style="border: none; padding: 0in;
-                        page-break-inside: auto; orphans: 0; widows: 0;                        background: transparent; page-break-after: auto"
-                        align="center"> <font face="Helvetica, Arial,
+                      <p style="border: medium none; padding: 0in; page-break-inside: auto; background: transparent none repeat scroll 0% 0%; page-break-after: auto; text-align: center;">
+                        <font face="Helvetica, Arial,
                           sans-serif"><a href="http://www.greentechmedia.com/"><font
                               color="#1155cc"><u><b>Green Tech Media</b></u></font></a></font></p>
                     </td>
                     <td style="background: transparent" width="116">
-                      <p style="margin-bottom: 0in; border: none;
-                        padding: 0in; page-break-inside: auto; orphans:                        0; widows: 0; background: transparent;                        page-break-after: auto"
-                        align="center"> <font face="Helvetica, Arial, sans-serif"><a
-                            href="http://www.nature.com/nature/index.html"><font
+                      <p style="margin-bottom: 0in; border: medium none; padding: 0in; page-break-inside: auto; background: transparent none repeat scroll 0% 0%; page-break-after: auto; text-align: center;">
+                        <font face="Helvetica, Arial, sans-serif"><a href="http://www.nature.com/nature/index.html"><font
                               color="#1155cc"><font style="font-size:
                                 11pt" size="2"><u><b>Nature.com</b></u></font></font></a></font></p>
-                      <p style="border: none; padding: 0in;
-                        page-break-inside: auto; orphans: 0; widows: 0;                        background: transparent; page-break-after: auto"
-                        align="center"> <font face="Helvetica, Arial,
+                      <p style="border: medium none; padding: 0in; page-break-inside: auto; background: transparent none repeat scroll 0% 0%; page-break-after: auto; text-align: center;">
+                        <font face="Helvetica, Arial,
                           sans-serif"><a href="http://www.fierceenergy.com/"><font
                               color="#1155cc"><font style="font-size:
                                 11pt" size="2"><u><b>FierceEnergy</b></u></font></font></a></font></p>
                     </td>
                     <td style="background: transparent" width="115">
-                      <p style="margin-bottom: 0in; border: none;
-                        padding: 0in; page-break-inside: auto; orphans:                        0; widows: 0; background: transparent;                        page-break-after: auto"
-                        align="center"> <font face="Helvetica, Arial, sans-serif"><a
-                            href="http://www.scienceworldreport.com/"><font color="#1155cc"><u><b>Science
-                                  World Report</b></u></font></a></font></p>
-                      <p style="border: none; padding: 0in;
-                        page-break-inside: auto; orphans: 0; widows: 0;                        background: transparent; page-break-after: auto"
-                        align="center"> <font face="Helvetica, Arial,
+                      <p style="margin-bottom: 0in; border: medium none; padding: 0in; page-break-inside: auto; background: transparent none repeat scroll 0% 0%; page-break-after: auto; text-align: center;">
+                        <font face="Helvetica, Arial, sans-serif"><a href="http://www.scienceworldreport.com/"><font
+                              color="#1155cc"><u><b>Science World Report</b></u></font></a></font></p>
+                      <p style="border: medium none; padding: 0in; page-break-inside: auto; background: transparent none repeat scroll 0% 0%; page-break-after: auto; text-align: center;">
+                        <font face="Helvetica, Arial,
                           sans-serif"><a href="https://newenergyandfuel.com/"><font
                               color="#1155cc"><u><b>New Energy&amp;Fuel</b></u></font></a></font></p>
                     </td>
@@ -2104,6 +2093,8 @@
               <p style="margin-bottom: 0in; border: none; padding: 0in;
                 line-height: 100%; page-break-inside: auto; orphans: 0;                widows: 0; background: transparent; page-break-after:                auto"
                 align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
 
 
 
@@ -2138,13 +2129,13 @@
                       <p style="border: none; padding: 0in;
                         page-break-inside: auto; orphans: 0; widows: 0;                        background: transparent; page-break-after: auto"
                         align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <font face="Helvetica, Arial, sans-serif"><a
-                            href="http://stardate.org/nightsky"><font color="#1155cc"><u><b>StarDate</b></u></font></a><br>
+                            href="http://stardate.org/nightsky"><font color="#1155cc"><u><b>StarDate</b></u></font></a>
                         </font></p>
                       <p style="border: none; padding: 0in;
                         page-break-inside: auto; orphans: 0; widows: 0;                        background: transparent; page-break-after: auto"
                         align="center"><font face="Helvetica, Arial,
                           sans-serif"><a moz-do-not-send="true" href="https://earthsky.org/"><font
-                              color="#1155cc"><u><b>&nbsp;&nbsp; EarthSky.org</b></u></font></a><br>
+                              color="#1155cc"><u><b>&nbsp;&nbsp; EarthSky.org</b></u></font></a>
                         </font></p>
                     </td>
                     <td style="background: transparent" width="116">
@@ -2174,8 +2165,7 @@
                     <td valign="top">&nbsp;&nbsp; <font face="Helvetica, Arial, sans-serif"><a
                           href="https://www.lightpollutionmap.info/"><font color="#1155cc"><font
                               style="font-size:
-                              12pt" size="3"><u><b>Light Polution</b><b><br>
-                                </b></u></font></font></a></font>&nbsp;&nbsp;&nbsp;&nbsp;
+                              12pt" size="3"><u><b>Light Polution</b><b> </b></u></font></font></a></font>&nbsp;&nbsp;&nbsp;&nbsp;
 
 
                       &nbsp;&nbsp;&nbsp;&nbsp; <font face="Helvetica,
@@ -2187,8 +2177,7 @@
                             href="https://www.mountain-forecast.com/peaks/Mauna-Kea/forecasts/4205"><font
                               color="#1155cc"><u>Planets<br>
                                 <br>
-                                Mauna Kea&nbsp; Weather<br>
-                              </u></font></a></font></b></td>
+                                Mauna Kea&nbsp; Weather </u></font></a></font></b></td>
                     <td valign="top">&nbsp; &nbsp; <font face="Helvetica, Arial, sans-serif"><a
                           href="https://www.timeanddate.com/moon/usa/sunrise"><font
                             color="#1155cc"><u>Moon Phase</u></font></a><br>
@@ -2215,6 +2204,8 @@
               <p style="margin-bottom: 0in; border: none; padding: 0in;
                 line-height: 100%; page-break-inside: auto; orphans: 0;                widows: 0; background: transparent; page-break-after:                auto"
                 align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
 
 
 
@@ -2329,15 +2320,15 @@
                       <p style="border: none; padding: 0in;
                         page-break-inside: auto; orphans: 0; widows: 0;                        background: transparent; page-break-after: auto"
                         align="center"> <font face="Helvetica, Arial,
-                          sans-serif"><br>
-                        </font> </p>
+                          sans-serif"> </font> </p>
+                      <br>
                     </td>
                     <td style="background: transparent" width="115">
                       <p style="border: none; padding: 0in;
                         page-break-inside: auto; orphans: 0; widows: 0;                        background: transparent; page-break-after: auto"
                         align="center"> <font face="Helvetica, Arial,
-                          sans-serif"><br>
-                        </font> </p>
+                          sans-serif"> </font> </p>
+                      <br>
                     </td>
                   </tr>
                 </tbody>
@@ -2365,11 +2356,15 @@
 
 
 
+
+
                 <font face="Helvetica, Arial, sans-serif"><a href="https://flightclub.io/"><font
                       color="#1155cc"><u><b>Flight Club</b></u></font></a></font></p>
               <p style="margin-bottom: 0in; border: none; padding: 0in;
                 line-height: 100%; page-break-inside: auto; orphans: 0;                widows: 0; background: transparent; page-break-after:                auto"
                 align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
 
 
 
@@ -2445,6 +2440,8 @@
 
 
 
+
+
                 <font face="Helvetica, Arial, sans-serif"><b>Anki Vector</b></font></p>
               <center> <font face="Helvetica, Arial, sans-serif"> </font><font
                   face="Helvetica, Arial, sans-serif"> </font>
@@ -2495,8 +2492,8 @@
                         <p style="border: none; padding: 0in;
                           page-break-inside: auto; orphans: 0; widows:                          0; background: transparent; page-break-after:                          auto"
                           align="left"> <font face="Helvetica,
-                            Arial, sans-serif"><br>
-                          </font> </p>
+                            Arial, sans-serif"> </font> </p>
+                        <br>
                       </td>
                     </tr>
                     <tr valign="top">
@@ -2510,15 +2507,15 @@
                         <p style="border: none; padding: 0in;
                           page-break-inside: auto; orphans: 0; widows:                          0; background: transparent; page-break-after:                          auto"
                           align="center"> <font face="Helvetica,
-                            Arial, sans-serif"><br>
-                          </font> </p>
+                            Arial, sans-serif"> </font> </p>
+                        <br>
                       </td>
                       <td style="background: transparent" width="115">
                         <p style="border: none; padding: 0in;
                           page-break-inside: auto; orphans: 0; widows:                          0; background: transparent; page-break-after:                          auto"
                           align="left"> <font face="Helvetica,
-                            Arial, sans-serif"><br>
-                          </font> </p>
+                            Arial, sans-serif"> </font> </p>
+                        <br>
                       </td>
                     </tr>
                   </tbody>
@@ -2542,15 +2539,18 @@
 
 
 
-                    <br> </b></font></p>
+
+
+                    </b></font></p>
               <p style="margin-bottom: 0in; line-height: 115%" align="center"><font
-                  face="Helvetica, Arial, sans-serif"><br>
-                </font> </p>
+                  face="Helvetica, Arial, sans-serif"> </font> </p>
             </td>
             <td style="background: transparent" width="390">
               <p style="margin-bottom: 0in; border: none; padding: 0in;
                 line-height: 100%; page-break-inside: auto; orphans: 0;                widows: 0; background: transparent; page-break-after:                auto"
                 align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
 
 
 
@@ -2618,60 +2618,45 @@
                   <tr valign="top">
                     <td style="background: transparent none repeat
                       scroll 0% 0%; width: 180px; text-align: center;" width="180">
-                      <p style="border: none; padding: 0in; background:
-                        transparent" align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <b><a href="https://www.bbc.com/"><span style="font-family: Helvetica,Arial,sans-serif;">BBC
+                      <p style="border: medium none; padding: 0in; background: transparent none repeat scroll 0% 0%; text-align: center;"><b><a
+                            href="https://www.bbc.com/"><span style="font-family: Helvetica,Arial,sans-serif;">BBC
                               News</span></a></b><span style="color: #0000ee;"><font
-                            size="4"><span style="font-family: Helvetica,Arial,sans-serif;"><br>
+                            size="4"><span style="font-family: Helvetica,Arial,sans-serif;">
                             </span></font></span></p>
-                      <p style="border: none; padding: 0in; background:
-                        transparent" align="center"><span style="color: #0000ee;"><font
-                            size="4"><span style="font-family: Helvetica,Arial,sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                              </span></font></span><font face="Helvetica, Arial, sans-serif"><a
-                            href="http://www.bing.com/news"><font color="#0000ee"><font
-                                style="font-size:
+                      <p style="border: medium none; padding: 0in; background: transparent none repeat scroll 0% 0%; text-align: center;"><span
+                          style="color: #0000ee;"><font size="4"><span style="font-family: Helvetica,Arial,sans-serif;"></span></font></span><font
+                          face="Helvetica, Arial, sans-serif"><a href="http://www.bing.com/news"><font
+                              color="#0000ee"><font style="font-size:
                                 14pt" size="4"><u><b>Bing News</b></u></font></font></a><font
                             style="font-size: 14pt" size="4"><br>
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
                             &nbsp; </font><a href="https://medium.com/"><font color="#1155cc"><font
                                 style="font-size:
+                                14pt" size="4"><u><b><br>
+                                  </b></u></font></font></a></font><font face="Helvetica, Arial, sans-serif"><a
+                            href="https://medium.com/"><font color="#1155cc"><font
+                                style="font-size:
                                 14pt" size="4"><u><b>Medium</b></u></font></font></a></font></p>
                     </td>
                     <td style="background: transparent none repeat
                       scroll 0% 0%; width: 180px; text-align: center;" width="180">
-                      <p style="border: none; padding: 0in; background:
-                        transparent" align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-
-
-
-
-
-
-
-
-                        &nbsp; <font face="Helvetica, Arial,
+                      <p style="border: medium none; padding: 0in; background: transparent none repeat scroll 0% 0%; text-align: center;"><font
+                          face="Helvetica, Arial,
                           sans-serif"><a href="https://www.npr.org/"><font color="#1155cc"><font
                                 style="font-size:
                                 12pt" size="3"><u><b>NPR &nbsp;</b></u></font></font></a><font
                             style="font-size: 12pt" size="3"> </font><a href="https://text.npr.org/"
                             target="_blank"><font color="#1155cc"><font style="font-size:
-                                12pt" size="3"><u>text</u></font></font></a><font
-                            style="font-size: 12pt" size="3"> </font><font color="#0000ee"><font
-                              style="font-size:
-                              14pt" size="4"><u><b><br>
-                                </b></u></font></font></font> &nbsp; &nbsp;
-                        &nbsp; &nbsp; <font size="+1" face="Helvetica, Arial, sans-serif"><b><a
+                                12pt" size="3"><u>[txt]</u></font></font></a></font><br>
+                        <font size="+1" face="Helvetica, Arial, sans-serif"><b><a
                               moz-do-not-send="true" href="http://www.reuters.com/">Reuters</a></b></font>
-                        &nbsp;&nbsp;<font face="Helvetica, Arial,
-                          sans-serif"><font style="font-size: 14pt" size="4">&nbsp;
-                            <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
-                              moz-do-not-send="true" href="https://www.apnews.com/">AP
-                              News</a> <br>
-                            &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <b><a
-                                href="https://www.icij.org/">ICIJ</a></b>&nbsp;
-                            <br>
-                          </font></font></p>
+                        <br>
+                        <font face="Helvetica, Arial,
+                          sans-serif"><font style="font-size: 14pt" size="4"><a
+                              moz-do-not-send="true" href="https://searchgo.co/">AP
+                              News</a><strong><a moz-do-not-send="true" href="https://searchgo.co/"><br>
+                                SearchGO</a></strong><b><a href="https://www.icij.org/"><br>
+                                ICIJ</a></b>&nbsp; </font></font></p>
                     </td>
                   </tr>
                   <tr valign="top">
@@ -2681,10 +2666,10 @@
                             href="http://www.cnn.com/"><font color="#1155cc"><font
                                 style="font-size:
                                 14pt" size="4"><u><b>CNN</b></u></font></font></a><font
-                            style="font-size: 14pt" size="4"> </font><a href="http://lite.cnn.io/en"><font
-                              color="#1155cc"><u>[text]</u></font></a><font style="font-size: 14pt"
-                            size="4"> </font><a href="http://time.com/"><font color="#1155cc"><font
-                                style="font-size:
+                            style="font-size: 14pt" size="4"> </font><a href="http://lite.cnn.io/en"
+                            target="_blank"><font color="#1155cc"><u>[txt]</u></font></a><font
+                            style="font-size: 14pt" size="4"> </font><a href="http://time.com/"><font
+                              color="#1155cc"><font style="font-size:
                                 14pt" size="4"><u><b>Time</b></u></font></font></a><font
                             style="font-size: 14pt" size="4"><b> </b></font><a
                             href="https://www.vox.com/"><font color="#1155cc"><font
@@ -2719,12 +2704,13 @@
                           &nbsp;&nbsp;&nbsp; <font style="font-size:
                             12pt" size="3"><b> </b></font><a href="http://www.huffingtonpost.com/"><font
                               color="#1155cc"><font style="font-size:
-                                12pt" size="3"><u><b>Huffington Post<br>
-                                  </b></u></font></font></a><br>
-                        </font>&nbsp;&nbsp;&nbsp; <font face="Helvetica, Arial, sans-serif"><a
-                            href="https://www.csmonitor.com/"><font color="#1155cc"><u><b>CS
+                                12pt" size="3"><u><b>Huffington Post </b></u></font></font></a>
+                        </font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span
+                          style="color: #1155cc;"><span style="font-family: Helvetica,Arial,sans-serif;"></span></span><font
+                          face="Helvetica, Arial, sans-serif"><a href="https://www.csmonitor.com/"><font
+                              color="#1155cc"><u><b>&nbsp;&nbsp;&nbsp; CS
                                   Monitor</b></u></font></a><b> </b><a href="https://www.csmonitor.com/layout/set/text/textedition"><font
-                              color="#1155cc"><u><b> txt</b></u></font></a></font><br>
+                              color="#1155cc"><u><b> [txt]</b></u></font></a></font>
                       </p>
                     </td>
                     <td style="background: transparent" width="180">
@@ -2733,16 +2719,15 @@
                         <font face="Helvetica,                          Arial, sans-serif"><a
                             href="http://www.nytimes.com/"><font color="#1155cc"><font
                                 style="font-size:
-                                14pt" size="4"><u><b>New York Times<br>
-                                  </b></u></font></font></a><font style="font-size: 14pt"
-                            size="4"> <br>
+                                14pt" size="4"><u><b>New York Times </b></u></font></font></a><font
+                            style="font-size: 14pt" size="4"> <br>
                             &nbsp;&nbsp; </font><a href="https://www.washingtonpost.com/"><font
                               color="#1155cc"><font style="font-size:
                                 12pt" size="3"><u><b>Washington Post</b></u></font></font></a></font></p>
                       <p style="border: none; padding: 0in; background:
-                        transparent" align="center">&nbsp;&nbsp;&nbsp; <font face="Helvetica, Arial, sans-serif"><a
-                            href="http://www.latimes.com/"><font color="#1155cc"><font
-                                style="font-size:
+                        transparent" align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <font face="Helvetica, Arial, sans-serif"><a href="http://www.latimes.com/"><font
+                              color="#1155cc"><font style="font-size:
                                 14pt" size="4"><u><b>LA Times</b></u></font></font></a></font></p>
                     </td>
                   </tr>
@@ -2764,9 +2749,10 @@
 
 
 
+
+
                     Internet Status&nbsp;
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <br>
                   </font></b></p>
               <center> <font face="Helvetica, Arial, sans-serif"> </font>
                 <table style="page-break-before: auto; page-break-after:
@@ -2881,8 +2867,7 @@
                               href="http://websiteoptimization.com/services/analyze/"><font
                                 color="#1155cc"><font style="font-size:
                                   12pt" size="3"><u><b>Web Page Analyze</b></u></font></font></a><font
-                              style="font-size: 12pt" size="3"><b>r <br>
-                              </b></font></font></p>
+                              style="font-size: 12pt" size="3"><b>r </b></font></font></p>
                       </td>
                     </tr>
                     <tr valign="top">
@@ -2908,8 +2893,7 @@
                         width="180">
                         <p style="border: none; padding: 0in;
                           page-break-inside: auto; orphans: 0; widows:                          0; background: transparent; page-break-after:                          auto"
-                          align="center">&nbsp; <br>
-                        </p>
+                          align="center">&nbsp; </p>
                       </td>
                       <td style="background: transparent" width="180">
                         <p style="border: none; padding: 0in;
@@ -2936,6 +2920,8 @@
 
 
 
+
+
                     </font></b><font face="Helvetica, Arial, sans-serif"><b>Reference
                     Desk</b></font> </p>
               <center> <font face="Helvetica, Arial, sans-serif"> </font><font
@@ -2948,38 +2934,42 @@
                     <tr valign="top">
                       <td style="background: transparent" width="115">
                         <p style="border: medium none; padding: 0in; page-break-inside: auto; background: transparent none repeat scroll 0% 0%; page-break-after: auto; text-align: center;">
-                          <a href="https://chat.openai.com/chat" target="_blank"><font
-                              face="Helvetica,
-                            Arial, sans-serif"><b>ChatGPT</b></font></a></p>
+                          <a href="https://chat.openai.com/chat"><font face="Helvetica,
+                            Arial, sans-serif"><b>ChatGPT</b></font></a><a href="https://beta.openai.com/playground"
+                            target="_blank"><font face="Helvetica,
+                            Arial, sans-serif"><b><br>
+                                <br>
+                                OpenAI beta</b></font></a></p>
                       </td>
                       <td style="background: transparent" width="116">
                         <p style="border: none; padding: 0in;
                           page-break-inside: auto; orphans: 0; widows:                          0; background: transparent; page-break-after:                          auto"
                           align="center">&nbsp;&nbsp;&nbsp; <font face="Helvetica, Arial, sans-serif"><a
                               href="http://www.reverso.net/spell-checker/english-spelling-grammar/"><font
-                                color="#1155cc"><u><b>Grammar</b></u></font></a></font></p>
+                                color="#1155cc"><u><b>Grammar<br>
+                                  </b></u></font></a></font><br>
+                          &nbsp;&nbsp;&nbsp; <a href="http://www.reverso.net/spell-checker/english-spelling-grammar/"><font
+                              face="Helvetica, Arial, sans-serif"></font></a><font
+                            face="Helvetica, Arial, sans-serif"><a href="https://www.grammarly.com/"><font
+                                color="#1155cc"><u><b>Grammarly</b></u></font></a></font></p>
                       </td>
-                      <td style="background: transparent" width="115">
-                        <p style="border: none; padding: 0in;
-                          page-break-inside: auto; orphans: 0; widows:                          0; background: transparent; page-break-after:                          auto"
-                          align="center">&nbsp;&nbsp; <font face="Helvetica, Arial, sans-serif"><a
-                              href="https://www.grammarly.com/"><font color="#1155cc"><u><b>Grammarly</b></u></font></a></font></p>
+                      <td style="background: transparent" width="115"> <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp; <font face="Helvetica, Arial, sans-serif"><a
+                            href="https://www.gutenberg.org/"><font color="#1155cc"><u><b>Project
+                                  </b></u></font></a></font><br>&nbsp; <font face="Helvetica, Arial, sans-serif"><a
+                            href="https://www.gutenberg.org/"><font color="#1155cc"><u><b>Guttenberg</b></u></font></a></font><br>
+                        <br>
                       </td>
                     </tr>
                     <tr valign="top">
                       <td style="background: transparent" width="115">
-                        <p style="border: none; padding: 0in;
-                          page-break-inside: auto; orphans: 0; widows:                          0; background: transparent; page-break-after:                          auto"
-                          align="center">&nbsp;&nbsp;&nbsp;&nbsp; <font face="Helvetica, Arial, sans-serif"><a
-                              href="http://crofsblogs.typepad.com/english/"><font
-                                color="#1155cc"><u><b>Ask the<br>
-                                  </b></u></font></a></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
+                        <p style="border: medium none; padding: 0in; page-break-inside: auto; background: transparent none repeat scroll 0% 0%; page-break-after: auto; text-align: center;"><font
+                            face="Helvetica, Arial, sans-serif"><a href="http://crofsblogs.typepad.com/english/"><font
+                                color="#1155cc"><u><b>Ask the&nbsp;</b></u></font></a></font>
                           <font face="Helvetica, Arial, sans-serif"><a href="http://crofsblogs.typepad.com/english/"><font
-                                color="#1155cc"><u><b>English<br>
-                                  </b></u></font></a></font>&nbsp;&nbsp;&nbsp;&nbsp;
-
-                          <font face="Helvetica, Arial, sans-serif"><a href="http://crofsblogs.typepad.com/english/"><font
+                                color="#1155cc"><u><b>English<span style="color: black;"><span
+                                        style="font-family: serif;"> </span></span></b></u></font></a></font><font
+                            face="Helvetica, Arial, sans-serif"><a href="http://crofsblogs.typepad.com/english/"><font
                                 color="#1155cc"><u><b>Teacher</b></u></font></a></font></p>
                       </td>
                       <td style="background: transparent" width="116">
@@ -2987,7 +2977,7 @@
                           page-break-inside: auto; orphans: 0; widows:                          0; background: transparent; page-break-after:                          auto"
                           align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <font face="Helvetica, Arial, sans-serif"><a
                               href="https://www.howtopronounce.com/"><font color="#1155cc"><u><b>How
-                                    to<br>
+                                    to <br>
                                   </b></u></font></a></font>&nbsp;&nbsp; <font
                             face="Helvetica, Arial, sans-serif"><a href="https://www.howtopronounce.com/"><font
                                 color="#1155cc"><u><b>Pronounce</b></u></font></a></font></p>
@@ -3001,13 +2991,10 @@
                     </tr>
                     <tr valign="top">
                       <td style="background: transparent" width="115">
-                        <p style="border: none; padding: 0in;
-                          page-break-inside: auto; orphans: 0; widows:                          0; background: transparent; page-break-after:                          auto"
-                          align="center">&nbsp;&nbsp; <font face="Helvetica, Arial, sans-serif"><a
-                              href="http://www.controlledvocabulary.com/"><font
-                                color="#1155cc"><u><b>Controlled<br>
-                                  </b></u></font></a></font>&nbsp;&nbsp; <font
+                        <p style="border: medium none; padding: 0in; page-break-inside: auto; background: transparent none repeat scroll 0% 0%; page-break-after: auto; text-align: center;"><font
                             face="Helvetica, Arial, sans-serif"><a href="http://www.controlledvocabulary.com/"><font
+                                color="#1155cc"><u><b>Controlled</b></u></font></a></font>
+                          <font face="Helvetica, Arial, sans-serif"><a href="http://www.controlledvocabulary.com/"><font
                                 color="#1155cc"><u><b>Vocabulary</b></u></font></a></font></p>
                       </td>
                       <td style="background: transparent" width="116">
@@ -3016,19 +3003,18 @@
                           align="left"><b><span style="font-family: Helvetica,Arial,sans-serif;">&nbsp;&nbsp;
                               </span></b><a href="https://www.calculator.net/date-calculator.html"><b><span
                                 style="font-family: Helvetica,Arial,sans-serif;">Date
-                                Calc<br>
-                              </span></b></a></p>
+                                Calc </span></b></a></p>
                         <p style="border: none; padding: 0in;
                           page-break-inside: auto; orphans: 0; widows:                          0; background: transparent; page-break-after:                          auto"
                           align="left"><a href="https://www.timeanddate.com/"><b><span
                                 style="font-family: Helvetica,Arial,sans-serif;">Time
                                 and Date</span></b></a> <font face="Helvetica, Arial, sans-serif"><a
-                              moz-do-not-send="true" href="https://www.calculator.net/"><b><br>
+                              moz-do-not-send="true" href="https://www.calculator.net/"><b>
                               </b></a></font></p>
                         <p style="border: none; padding: 0in;
                           page-break-inside: auto; orphans: 0; widows:                          0; background: transparent; page-break-after:                          auto"
                           align="left"><font face="Helvetica, Arial, sans-serif"><a
-                              moz-do-not-send="true" href="https://www.calculator.net/"><b>Calculator.net</b></a><br>
+                              moz-do-not-send="true" href="https://www.calculator.net/"><b>Calculator.net</b></a>
                           </font> </p>
                       </td>
                       <td style="background: transparent" width="115">
@@ -3043,8 +3029,7 @@
                           align="center"><font face="Helvetica,
                             Arial, sans-serif"><b><a href="https://www.remove.bg/"><span
                                   style="color: #1155cc;"><font size="4">Remove
-                                    BG</font></span></a></b><br>
-                          </font> </p>
+                                    BG</font></span></a></b> </font> </p>
                       </td>
                     </tr>
                     <tr>
@@ -3079,6 +3064,8 @@
 
 
 
+
+
                 <b><font face="Helvetica, Arial,                    sans-serif">Nest
                     Cam Sites</font></b></p>
               <font face="Helvetica, Arial, sans-serif"> </font>
@@ -3089,16 +3076,17 @@
                 <tbody>
                   <tr valign="top">
                     <td style="background: transparent" width="180">
-                      <p style="border: none; padding: 0in;
-                        page-break-inside: auto; orphans: 0; widows: 0;                        background: transparent; page-break-after: auto"
-                        align="center"> <font face="Helvetica, Arial,
-                          sans-serif"><a href="https://youtu.be/UmclL6funN8"><font
+                      <p style="border: medium none; padding: 0in; page-break-inside: auto; background: transparent none repeat scroll 0% 0%; page-break-after: auto; text-align: center;">
+                        <font face="Helvetica, Arial,
+                          sans-serif"><a href="https://youtu.be/IVmL3diwJuw"><font
                               color="#1155cc"><font style="font-size:
-                                11pt" size="2"><u><b>Decorah Eagle Cam</b></u></font></font></a><br>
+                                11pt" size="2"><u><b>Decorah Eagle Cam</b></u></font></font></a>
                         </font> <font face="Helvetica, Arial,
                           sans-serif"><a href="http://www.youtube.com/user/ries96"><font
                               color="#1155cc"><font style="font-size:
-                                9pt" size="2"><u><b> Youtube Channel</b></u></font></font></a><font
+                                9pt" size="2"><u><b> <br>
+                                    <br>
+                                    Youtube Channel</b></u></font></font></a><font
                             style="font-size: 9pt" size="2"> </font><font style="font-size: 9pt"
                             size="2"><b> </b></font><a href="http://www.facebook.com/pages/Decorah-Eagles/166402660081214"><font
                               color="#1155cc"><font style="font-size:
@@ -3106,10 +3094,8 @@
                       </p>
                     </td>
                     <td style="background: transparent" width="180">
-                      <p style="margin-bottom: 0in; border: none;
-                        padding: 0in; page-break-inside: auto; orphans:                        0; widows: 0; background: transparent;                        page-break-after: auto"
-                        align="center"> <font face="Helvetica, Arial, sans-serif"><a
-                            href="http://eagleholic.wordpress.com/bald-eagle-cams/"><font
+                      <p style="margin-bottom: 0in; border: medium none; padding: 0in; page-break-inside: auto; background: transparent none repeat scroll 0% 0%; page-break-after: auto; text-align: center;">
+                        <font face="Helvetica, Arial, sans-serif"><a href="http://eagleholic.wordpress.com/bald-eagle-cams/"><font
                               color="#1155cc"><font style="font-size:
                                 11pt" size="2"><u><b>List of Eagle Cams</b></u></font></font></a></font></p>
                       <p style="border: none; padding: 0in;
@@ -3124,8 +3110,7 @@
 
 
 
-                        <font face="Helvetica, Arial, sans-serif"><br>
-                        </font> </p>
+                        <font face="Helvetica, Arial, sans-serif"> </font> </p>
                     </td>
                   </tr>
                   <tr valign="top">
@@ -3141,13 +3126,11 @@
                       <p style="border: none; padding: 0in;
                         page-break-inside: auto; orphans: 0; widows: 0;                        background: transparent; page-break-after: auto"
                         align="center"> <font face="Helvetica, Arial,
-                          sans-serif"><br>
-                        </font> </p>
+                          sans-serif"> </font> </p>
                     </td>
                     <td style="background: transparent" width="180">
-                      <p style="border: none; padding: 0in;
-                        page-break-inside: auto; orphans: 0; widows: 0;                        background: transparent; page-break-after: auto"
-                        align="center"> <font face="Helvetica, Arial,
+                      <p style="border: medium none; padding: 0in; page-break-inside: auto; background: transparent none repeat scroll 0% 0%; page-break-after: auto; text-align: center;">
+                        <font face="Helvetica, Arial,
                           sans-serif"><a href="https://twitter.com/SWFLEagleCAM"><font
                               color="#1155cc"><font style="font-size:
                                 11pt" size="2"><u><b>SW Flor Eagle Website</b></u></font></font></a><font
@@ -3158,64 +3141,56 @@
                   </tr>
                   <tr valign="top">
                     <td style="background: transparent" width="180">
-                      <p style="border: none; padding: 0in;
-                        page-break-inside: auto; orphans: 0; widows: 0;                        background: transparent; page-break-after: auto"
-                        align="center"> <font face="Helvetica, Arial,
-                          sans-serif"><a href="http://www.berry.edu/eaglecam/"><font
+                      <p style="border: medium none; padding: 0in; page-break-inside: auto; background: transparent none repeat scroll 0% 0%; page-break-after: auto; text-align: center;">
+                        <font face="Helvetica, Arial,
+                          sans-serif"><a href="https://www.berry.edu/eaglecam/"><font
                               color="#1155cc"><font style="font-size:
                                 11pt" size="2"><u><b>Berry Eagle Cam</b></u></font></font></a></font></p>
                     </td>
                     <td style="background: transparent" width="180">
-                      <p style="border: none; padding: 0in;
-                        page-break-inside: auto; orphans: 0; widows: 0;                        background: transparent; page-break-after: auto"
-                        align="center"> <font face="Helvetica, Arial,
+                      <p style="border: medium none; padding: 0in; page-break-inside: auto; background: transparent none repeat scroll 0% 0%; page-break-after: auto; text-align: center;">
+                        <font face="Helvetica, Arial,
                           sans-serif"><a href="http://www.ustream.tv/channel/harrison-bay-eagle-cam"><font
                               color="#1155cc"><u><b>Harrison Bay TN Eagle Cam</b></u></font></a></font></p>
                     </td>
                   </tr>
                   <tr valign="top">
                     <td style="background: transparent" width="180">
-                      <p style="margin-bottom: 0in; border: none;
-                        padding: 0in; page-break-inside: auto; orphans:                        0; widows: 0; background: transparent;                        page-break-after: auto"
-                        align="center"> <font face="Helvetica, Arial, sans-serif"><a
-                            href="http://www.ustream.tv/two-harbors-cam"><font color="#1155cc"><u><b>Twin
-                                  Harbor Eagle Cam</b></u></font></a></font></p>
+                      <p style="margin-bottom: 0in; border: medium none; padding: 0in; page-break-inside: auto; background: transparent none repeat scroll 0% 0%; page-break-after: auto; text-align: center;">
+                        <font face="Helvetica, Arial, sans-serif"><a href="http://www.ustream.tv/two-harbors-cam"><font
+                              color="#1155cc"><u><b>Twin Harbor Eagle Cam</b></u></font></a></font></p>
                       <p style="margin-bottom: 0in" align="center"><font face="Helvetica, Arial, sans-serif"><a
                             href="https://www.youtube.com/watch?v=RmmAzrAkKqI"><font
                               color="#1155cc"><u><b>West End Eagle Cam 1</b></u></font></a><b>
                           </b></font> </p>
-                      <p align="center"><font face="Helvetica, Arial,
+                      <p style="text-align: center;"><font face="Helvetica, Arial,
                           sans-serif"><a href="http://www.ustream.tv/west-end-cam-wide-view"><font
                               color="#1155cc"><u><b>Cam 2</b></u></font></a></font></p>
                     </td>
                     <td style="background: transparent" width="180">
-                      <p style="margin-bottom: 0in; border: none;
-                        padding: 0in; page-break-inside: auto; orphans:                        0; widows: 0; background: transparent;                        page-break-after: auto"
-                        align="center"> <font face="Helvetica, Arial, sans-serif"><a
-                            href="https://youtu.be/7utMaDb1W08"><font color="#1155cc"><font
-                                style="font-size:
+                      <p style="margin-bottom: 0in; border: medium none; padding: 0in; page-break-inside: auto; background: transparent none repeat scroll 0% 0%; page-break-after: auto; text-align: center;">
+                        <font face="Helvetica, Arial, sans-serif"><a href="https://www.youtube.com/watch?v=B4-L2nfGcuE"><font
+                              color="#1155cc"><font style="font-size:
                                 12pt" size="3"><u><b>Big Bear Nest</b></u></font></font></a></font></p>
                       <p style="margin-bottom: 0in; border: none;
                         padding: 0in; page-break-inside: auto; orphans:                        0; widows: 0; background: transparent;                        page-break-after: auto"
-                        align="center"> <font face="Helvetica, Arial, sans-serif"><br>
+                        align="center"> <font face="Helvetica, Arial, sans-serif">
                         </font> </p>
-                      <p style="border: none; padding: 0in;
-                        page-break-inside: auto; orphans: 0; widows: 0;                        background: transparent; page-break-after: auto"
-                        align="center"> <font face="Helvetica, Arial,
+                      <p style="border: medium none; padding: 0in; page-break-inside: auto; background: transparent none repeat scroll 0% 0%; page-break-after: auto; text-align: center;">
+                        <font face="Helvetica, Arial,
                           sans-serif"><a href="http://www.okcowlcam.com/"><font
                               color="#1155cc"><u><b>OKC Owl Cam</b></u></font></a></font></p>
                     </td>
                   </tr>
                   <tr valign="top">
                     <td style="background: transparent" width="180">
-                      <p style="border: none; padding: 0in;
-                        page-break-inside: auto; orphans: 0; widows: 0;                        background: transparent; page-break-after: auto"
-                        align="center"> <font face="Helvetica, Arial,
+                      <p style="border: medium none; padding: 0in; page-break-inside: auto; background: transparent none repeat scroll 0% 0%; page-break-after: auto; text-align: center;">
+                        <font face="Helvetica, Arial,
                           sans-serif"><a href="http://www.iws.org/interactive_nestchat_allUstream.html"><font
                               color="#1155cc"><u><b>IWS Eagle Cams</b></u></font></a></font></p>
                     </td>
                     <td style="background: transparent" width="180">
-                      <p align="center"> <font face="Helvetica, Arial,
+                      <p style="text-align: center;"> <font face="Helvetica, Arial,
                           sans-serif"><a href="https://www.youtube.com/watch?v=DH0VmRsj05c&amp;list=PLeOHxe1QVlor4cPetkCJLGmIWDgz0kdac&amp;index=1"><font
                               color="#1155cc"><u><b>Mississippi FlyWay Cam</b></u></font></a></font></p>
                     </td>
@@ -3225,15 +3200,15 @@
                       <p style="border: none; padding: 0in;
                         page-break-inside: auto; orphans: 0; widows: 0;                        background: transparent; page-break-after: auto"
                         align="center"> <font face="Helvetica, Arial,
-                          sans-serif"><br>
-                        </font> </p>
+                          sans-serif"> </font> </p>
+                      <br>
                     </td>
                     <td style="background: transparent" width="180">
                       <p style="border: none; padding: 0in;
                         page-break-inside: auto; orphans: 0; widows: 0;                        background: transparent; page-break-after: auto"
                         align="left"> <font face="Helvetica, Arial,
-                          sans-serif"><br>
-                        </font> </p>
+                          sans-serif"> </font> </p>
+                      <br>
                     </td>
                   </tr>
                 </tbody>
@@ -3241,6 +3216,8 @@
               <p style="margin-bottom: 0in; border: none; padding: 0in;
                 line-height: 100%; page-break-inside: auto; orphans: 0;                widows: 0; background: transparent; page-break-after:                auto"
                 align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
 
 
 
@@ -3295,8 +3272,7 @@
                           align="center"> <font face="Helvetica,
                             Arial, sans-serif"><a href="https://twitter.com/Erdayastronaut"><font
                                 color="#1155cc"><font style="font-size:
-                                  8pt" size="1"><u>@EveryDa6:53AyAstro<br>
-                                  </u></font></font></a></font></p>
+                                  8pt" size="1"><u>@EveryDa6:53AyAstro </u></font></font></a></font></p>
                       </td>
                     </tr>
                     <tr valign="top">
@@ -3304,22 +3280,22 @@
                         <p style="border: none; padding: 0in;
                           page-break-inside: auto; orphans: 0; widows:                          0; background: transparent; page-break-after:                          auto"
                           align="center"> <font face="Helvetica,
-                            Arial, sans-serif"><br>
-                          </font> </p>
+                            Arial, sans-serif"> </font> </p>
+                        <br>
                       </td>
                       <td style="background: transparent" width="84">
                         <p style="border: none; padding: 0in;
                           page-break-inside: auto; orphans: 0; widows:                          0; background: transparent; page-break-after:                          auto"
                           align="center"> <font face="Helvetica,
-                            Arial, sans-serif"><br>
-                          </font> </p>
+                            Arial, sans-serif"> </font> </p>
+                        <br>
                       </td>
                       <td style="background: transparent" width="84">
                         <p style="border: none; padding: 0in;
                           page-break-inside: auto; orphans: 0; widows:                          0; background: transparent; page-break-after:                          auto"
                           align="center"> <font face="Helvetica,
-                            Arial, sans-serif"><br>
-                          </font> </p>
+                            Arial, sans-serif"> </font> </p>
+                        <br>
                       </td>
                       <td style="background: transparent" width="83">
                         <p style="border: none; padding: 0in;
@@ -3342,15 +3318,14 @@
                         <p style="border: medium none; padding: 0in; page-break-inside: auto; background: transparent none repeat scroll 0% 0%; page-break-after: auto; text-align: center;">
                           <font face="Helvetica,
                             Arial, sans-serif"><a moz-do-not-send="true" href="https://www.facebook.com/groups/782693438555521">Platte
-                              County BintheD</a><br>
-                          </font> </p>
+                              County BintheD</a> </font> </p>
                       </td>
                       <td style="background: transparent" width="84">
                         <p style="border: none; padding: 0in;
                           page-break-inside: auto; orphans: 0; widows:                          0; background: transparent; page-break-after:                          auto"
                           align="center"> <font face="Helvetica,
-                            Arial, sans-serif"><br>
-                          </font> </p>
+                            Arial, sans-serif"> </font> </p>
+                        <br>
                       </td>
                       <td style="background: transparent" width="83">
                         <p style="border: none; padding: 0in;
@@ -3376,22 +3351,22 @@
                         <p style="border: none; padding: 0in;
                           page-break-inside: auto; orphans: 0; widows:                          0; background: transparent; page-break-after:                          auto"
                           align="center"> <font face="Helvetica,
-                            Arial, sans-serif"><br>
-                          </font> </p>
+                            Arial, sans-serif"> </font> </p>
+                        <br>
                       </td>
                       <td style="background: transparent" width="84">
                         <p style="border: none; padding: 0in;
                           page-break-inside: auto; orphans: 0; widows:                          0; background: transparent; page-break-after:                          auto"
                           align="center"> <font face="Helvetica,
-                            Arial, sans-serif"><br>
-                          </font> </p>
+                            Arial, sans-serif"> </font> </p>
+                        <br>
                       </td>
                       <td style="background: transparent" width="83">
                         <p style="border: none; padding: 0in;
                           page-break-inside: auto; orphans: 0; widows:                          0; background: transparent; page-break-after:                          auto"
                           align="center"> <font face="Helvetica,
-                            Arial, sans-serif"><br>
-                          </font> </p>
+                            Arial, sans-serif"> </font> </p>
+                        <br>
                       </td>
                     </tr>
                   </tbody>
@@ -3405,6 +3380,8 @@
               <p style="margin-bottom: 0in; border: none; padding: 0in;
                 line-height: 100%; page-break-inside: auto; orphans: 0;                widows: 0; background: transparent; page-break-after:                auto"
                 align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
 
 
 
@@ -3460,8 +3437,7 @@
                                 12pt" size="3"><u><b>SMDP</b></u></font></font></a><font
                             style="font-size: 12pt" size="3"><b><br>
                               &nbsp;&nbsp;&nbsp;&nbsp; </b></font><a href="http://www.sgvtribune.com/"><font
-                              color="#1155cc"><u><b>San Gabriel Valley<br>
-                                </b></u></font></a></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font
+                              color="#1155cc"><u><b>San Gabriel Valley </b></u></font></a></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font
                           face="Helvetica, Arial, sans-serif"><a href="http://www.sgvtribune.com/"><font
                               color="#1155cc"><u><b> News</b></u></font></a><font
                             style="font-size: 12pt" size="3"><b><br>
@@ -3476,6 +3452,8 @@
               <p style="margin-bottom: 0in; border: none; padding: 0in;
                 line-height: 115%; page-break-inside: auto; orphans: 0;                widows: 0; background: transparent; page-break-after:                auto"
                 align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
 
 
 
@@ -3518,8 +3496,7 @@
                         <font face="Helvetica, Arial, sans-serif"><a href="http://www.fox4kc.com/"><font
                               color="#0000ee"><font style="font-size:
                                 12pt" size="3"><u><b>KC Ch 4 </b></u></font></font></a><font
-                            style="font-size: 12pt" size="3"><b><br>
-                            </b></font></font></p>
+                            style="font-size: 12pt" size="3"><b> </b></font></font></p>
                     </td>
                     <td style="background: transparent" width="180">
                       <p style="margin-bottom: 0in; border: none;
@@ -3571,7 +3548,7 @@
                 line-height: 115%; page-break-inside: auto; orphans: 0;                widows: 0; background: transparent; page-break-after:                auto"
                 align="center"> <font face="Helvetica, Arial,
                   sans-serif"><a href="http://www.kcgasprices.com/"><font color="#1155cc"><font
-                        style="font-size: 12pt" size="3"><u><b>Gas Prices in KC<br>
+                        style="font-size: 12pt" size="3"><u><b>Gas Prices in KC
                           </b></u></font></font></a><a href="http://oilprice.com/"><font
                       color="#1155cc"><u><b>OilPrice.com</b></u></font></a></font></p>
               <p style="margin-bottom: 0in; border: none; padding: 0in;
@@ -3595,11 +3572,10 @@
                       color="#0000ee"><font style="font-size: 12pt" size="3"><u><b>
                           </b></u></font></font></a></font> </p>
               <p style="margin-bottom: 0in; border: none; padding: 0in;
-                line-height: 100%; page-break-inside: auto; orphans: 0;                widows: 0; background: transparent; page-break-after:                auto"
-                align="left"> </p>
-              <p style="margin-bottom: 0in; border: none; padding: 0in;
                 line-height: 115%; page-break-inside: auto; orphans: 0;                widows: 0; background: transparent; page-break-after:                auto"
                 align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
 
 
 
@@ -3758,11 +3734,10 @@
               </table>
               <p style="margin-bottom: 0in; border: none; padding: 0in;
                 line-height: 100%; page-break-inside: auto; orphans: 0;                widows: 0; background: transparent; page-break-after:                auto"
-                align="center"> </p>
-              <p style="margin-bottom: 0in; border: none; padding: 0in;
-                line-height: 100%; page-break-inside: auto; orphans: 0;                widows: 0; background: transparent; page-break-after:                auto"
                 align="center"><font face="Helvetica, Arial,
                   sans-serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
 
 
 
@@ -3834,7 +3809,7 @@
                         align="center">&nbsp; <font face="Helvetica,
                           Arial, sans-serif"><a href="https://www.bing.com/search?q=Election%202016%20Polls%20By%20State&amp;FORM=MH14HO&amp;OCID=MH14HO&amp;wt.mc_id=MH14HO"><font
                               color="#1155cc"><u> </u></font></a><a moz-do-not-send="true"
-                            href="https://ballotpedia.org/Main_Page">Ballotpedia</a><br>
+                            href="https://ballotpedia.org/Main_Page">Ballotpedia</a>
                         </font> </p>
                     </td>
                   </tr>
@@ -3845,6 +3820,8 @@
                 align="center"><b><font face="Helvetica, Arial,
                     sans-serif">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
 
 
 
@@ -3932,8 +3909,9 @@
                     <td style="background: transparent" width="115">
                       <p style="border: none; padding: 0in;
                         font-variant: normal; font-style: normal;                        page-break-inside: auto; orphans: 0; widows: 0;                        background: transparent; text-decoration: none;                        page-break-after: auto"
-                        align="center"> <font face="Helvetica, Arial, sans-serif"><br>
+                        align="center"> <font face="Helvetica, Arial, sans-serif">
                         </font> </p>
+                      <br>
                     </td>
                   </tr>
                 </tbody>
@@ -3941,6 +3919,8 @@
               <p style="margin-bottom: 0in; border: none; padding: 0in;
                 line-height: 100%; page-break-inside: auto; orphans: 0;                widows: 0; background: transparent; page-break-after:                auto"
                 align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
 
 
 
@@ -3968,18 +3948,17 @@
                                   9pt" size="2"><u><b>HST Staff Contacts</b></u></font></font></a></font></p>
                       </td>
                       <td style="background: transparent" width="116">
-                        <p style="border: none; padding: 0in;
-                          page-break-inside: auto; orphans: 0; widows:                          0; background: transparent; page-break-after:                          auto"
-                          align="center"> <font face="Helvetica,
+                        <p style="border: medium none; padding: 0in; page-break-inside: auto; background: transparent none repeat scroll 0% 0%; page-break-after: auto; text-align: center;">
+                          <font face="Helvetica,
                             Arial, sans-serif"><a href="https://www.trumanlibrary.org/photographs/index.php"><font
-                                color="#1155cc"><u><b>HSTL Photo DB</b></u></font></a></font></p>
+                                color="#1155cc"><u><b>HSTL Photo Database</b></u></font></a></font></p>
                       </td>
                       <td style="background: transparent" width="115">
                         <p style="border: none; padding: 0in;
                           page-break-inside: auto; orphans: 0; widows:                          0; background: transparent; page-break-after:                          auto"
                           align="left"> <font face="Helvetica,
-                            Arial, sans-serif"><br>
-                          </font> </p>
+                            Arial, sans-serif"> </font> </p>
+                        <br>
                       </td>
                     </tr>
                     <tr valign="top">
@@ -3987,22 +3966,22 @@
                         <p style="border: none; padding: 0in;
                           page-break-inside: auto; orphans: 0; widows:                          0; background: transparent; page-break-after:                          auto"
                           align="left"> <font face="Helvetica,
-                            Arial, sans-serif"><br>
-                          </font> </p>
+                            Arial, sans-serif"> </font> </p>
+                        <br>
                       </td>
                       <td style="background: transparent" width="116">
                         <p style="border: none; padding: 0in;
                           page-break-inside: auto; orphans: 0; widows:                          0; background: transparent; page-break-after:                          auto"
                           align="left"> <font face="Helvetica,
-                            Arial, sans-serif"><br>
-                          </font> </p>
+                            Arial, sans-serif"> </font> </p>
+                        <br>
                       </td>
                       <td style="background: transparent" width="115">
                         <p style="border: none; padding: 0in;
                           page-break-inside: auto; orphans: 0; widows:                          0; background: transparent; page-break-after:                          auto"
                           align="left"> <font face="Helvetica,
-                            Arial, sans-serif"><br>
-                          </font> </p>
+                            Arial, sans-serif"> </font> </p>
+                        <br>
                       </td>
                     </tr>
                   </tbody>
@@ -4010,28 +3989,37 @@
               </center>
               <p style="margin-bottom: 0in; border: none; padding: 0in;
                 line-height: 100%; page-break-inside: auto; orphans: 0;                widows: 0; background: transparent; page-break-after:                auto"
-                align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 
+                &nbsp; &nbsp; &nbsp;&nbsp; <font face="Helvetica, Arial, sans-serif"><b>Robotics
+                    </b></font></p>
+              <table border="1" width="100%">
+                <tbody>
+                  <tr>
+                    <td><a href="https://www.therobotreport.com/"><span style="font-family: Helvetica,Arial,sans-serif;">The
+                          Robot Report</span></a></td>
+                    <td><br>
+                    </td>
+                    <td><br>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><br>
+                    </td>
+                    <td><br>
+                    </td>
+                    <td><br>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <p style="margin-bottom: 0in; border: none; padding: 0in;
+                line-height: 100%; page-break-inside: auto; orphans: 0;                widows: 0; background: transparent; page-break-after:                auto"
+                align="center"><font face="Helvetica, Arial, sans-serif"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                <font face="Helvetica, Arial, sans-serif"><b>Audio Sources</b></font></p>
+                    Audio Sources</b></font></p>
               <center> <font face="Helvetica, Arial, sans-serif"> </font><font
                   face="Helvetica, Arial, sans-serif"> </font>
                 <table style="page-break-before: auto; page-break-after:
@@ -4067,22 +4055,22 @@
                         <p style="border: none; padding: 0in;
                           page-break-inside: auto; orphans: 0; widows:                          0; background: transparent; page-break-after:                          auto"
                           align="left"> <font face="Helvetica,
-                            Arial, sans-serif"><br>
-                          </font> </p>
+                            Arial, sans-serif"> </font> </p>
+                        <br>
                       </td>
                       <td style="background: transparent" width="116">
                         <p style="border: none; padding: 0in;
                           page-break-inside: auto; orphans: 0; widows:                          0; background: transparent; page-break-after:                          auto"
                           align="left"> <font face="Helvetica,
-                            Arial, sans-serif"><br>
-                          </font> </p>
+                            Arial, sans-serif"> </font> </p>
+                        <br>
                       </td>
                       <td style="background: transparent" width="115">
                         <p style="border: none; padding: 0in;
                           page-break-inside: auto; orphans: 0; widows:                          0; background: transparent; page-break-after:                          auto"
                           align="left"> <font face="Helvetica,
-                            Arial, sans-serif"><br>
-                          </font> </p>
+                            Arial, sans-serif"> </font> </p>
+                        <br>
                       </td>
                     </tr>
                   </tbody>
@@ -4091,6 +4079,8 @@
               <p style="margin-bottom: 0in; border: none; padding: 0in;
                 line-height: 100%; page-break-inside: auto; orphans: 0;                widows: 0; background: transparent; page-break-after:                auto"
                 align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
 
 
 
@@ -4139,8 +4129,8 @@
                         <p style="border: none; padding: 0in;
                           page-break-inside: auto; orphans: 0; widows:                          0; background: transparent; page-break-after:                          auto"
                           align="left"> <font face="Helvetica,
-                            Arial, sans-serif"><br>
-                          </font> </p>
+                            Arial, sans-serif"> </font> </p>
+                        <br>
                       </td>
                     </tr>
                   </tbody>
@@ -4149,6 +4139,8 @@
               <p style="margin-bottom: 0in; border: none; padding: 0in;
                 line-height: 100%; page-break-inside: auto; orphans: 0;                widows: 0; background: transparent; page-break-after:                auto"
                 align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
 
 
 
@@ -4189,16 +4181,14 @@
                           <font face="Helvetica,
                             Arial, sans-serif"><b><br>
                               <a href="https://www.youtube.com/c/TheTeslaSpace">Tesla
-                                Space</a></b><br>
-                          </font> </p>
+                                Space</a></b> </font> </p>
                       </td>
                       <td style="background: transparent" width="115">
                         <p style="border: medium none; padding: 0in; page-break-inside: auto; background: transparent none repeat scroll 0% 0%; page-break-after: auto; text-align: center;">
                           <font face="Helvetica,
                             Arial, sans-serif"><a href="https://www.spacex.com/"><font
                                 color="#1155cc"><u><b><br>
-                                    SpaceX&nbsp;&nbsp; <br>
-                                  </b></u></font></a></font></p>
+                                    SpaceX&nbsp;&nbsp; </b></u></font></a></font></p>
                       </td>
                     </tr>
                     <tr valign="top">
@@ -4206,15 +4196,15 @@
                         <p style="border: none; padding: 0in;
                           page-break-inside: auto; orphans: 0; widows:                          0; background: transparent; page-break-after:                          auto"
                           align="center"> <font face="Helvetica,
-                            Arial, sans-serif"><br>
-                          </font> </p>
+                            Arial, sans-serif"> </font> </p>
+                        <br>
                       </td>
                       <td style="background: transparent" width="116">
                         <p style="border: none; padding: 0in;
                           page-break-inside: auto; orphans: 0; widows:                          0; background: transparent; page-break-after:                          auto"
                           align="center"> <font face="Helvetica,
-                            Arial, sans-serif"><br>
-                          </font> </p>
+                            Arial, sans-serif"> </font> </p>
+                        <br>
                       </td>
                       <td style="background: transparent" width="115">
                         <p style="border: medium none; padding: 0in; page-break-inside: auto; background: transparent none repeat scroll 0% 0%; page-break-after: auto; text-align: center;">
@@ -4228,15 +4218,14 @@
                         <p style="border: medium none; padding: 0in; page-break-inside: auto; background: transparent none repeat scroll 0% 0%; page-break-after: auto; text-align: center;">
                           <font face="Helvetica,
                             Arial, sans-serif"><br>
-                            <b><a href="https://www.youtube.com/@TechnovationGlobal">Technovation</a></b><br>
+                            <b><a href="https://www.youtube.com/@TechnovationGlobal">Technovation</a></b>
                           </font> </p>
                       </td>
                       <td style="background: transparent" width="116">
                         <p style="border: medium none; padding: 0in; page-break-inside: auto; background: transparent none repeat scroll 0% 0%; page-break-after: auto; text-align: center;">
                           <font face="Helvetica,
                             Arial, sans-serif"><a href="https://www.youtube.com/@AINewsYT">AI
-                              News</a><br>
-                          </font> </p>
+                              News</a> </font> </p>
                       </td>
                       <td style="background: transparent" width="115">
                         <p style="border: medium none; padding: 0in; page-break-inside: auto; background: transparent none repeat scroll 0% 0%; page-break-after: auto; text-align: center;">
@@ -4250,31 +4239,30 @@
                         <p style="border: none; padding: 0in;
                           page-break-inside: auto; orphans: 0; widows:                          0; background: transparent; page-break-after:                          auto"
                           align="left"> <font face="Helvetica,
-                            Arial, sans-serif"><br>
-                          </font> </p>
+                            Arial, sans-serif"> </font> </p>
+                        <br>
                       </td>
                       <td style="background: transparent" width="116">
                         <p style="border: none; padding: 0in;
                           page-break-inside: auto; orphans: 0; widows:                          0; background: transparent; page-break-after:                          auto"
                           align="left"> <font face="Helvetica,
-                            Arial, sans-serif"><br>
-                          </font> </p>
+                            Arial, sans-serif"> </font> </p>
+                        <br>
                       </td>
-                      <td style="background: transparent" align="center" width="115"><br>
+                      <td style="background: transparent" width="115"><br>
                       </td>
                     </tr>
                   </tbody>
                 </table>
               </center>
-              <p style="margin-bottom: 0in; border: none; padding: 0in;
-                line-height: 100%; page-break-inside: auto; orphans: 0;                widows: 0; background: transparent; page-break-after:                auto"
-                align="center"> </p>
             </td>
             <td style="background: transparent none repeat scroll 0% 0%; width: 389px; text-align: center;"
               width="389">
               <p style="margin-bottom: 0in; border: none; padding: 0in;
                 line-height: 115%; page-break-inside: auto; orphans: 0;                widows: 0; background: transparent; page-break-after:                auto"
                 align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
 
 
 
@@ -4310,50 +4298,44 @@
                       height="37">
                       <p style="margin-bottom: 0in; border: none;
                         padding: 0in; page-break-inside: auto; orphans:                        0; widows: 0; background: transparent;                        page-break-after: auto"
-                        align="center"> <font face="Helvetica, Arial, sans-serif"><a
-                            href="https://weather.com/weather/today/l/64079:4:US"><font
-                              color="#1155cc"><font style="font-size:
-                                12pt" size="3"><u><b>Weather.com</b></u></font></font></a></font></p>
-                      <p style="margin-bottom: 0in; border: none;
-                        padding: 0in; page-break-inside: auto; orphans:                        0; widows: 0; background: transparent;                        page-break-after: auto"
-                        align="center">&nbsp;&nbsp; <font face="Helvetica, Arial, sans-serif"><a
-                            href="http://darksky.net/"><font color="#1155cc"><font
-                                style="font-size:
-                                12pt" size="3"><u><b>Dark Sky</b></u></font></font></a></font></p>
-                      <p style="margin-bottom: 0in; border: none;
-                        padding: 0in; page-break-inside: auto; orphans:                        0; widows: 0; background: transparent;                        page-break-after: auto"
                         align="center"><font face="Helvetica, Arial, sans-serif"><a
-                            href="https://poweroutage.us/"><font color="#1155cc"><u>Poweoutage.us<br>
-                                <br>
-                              </u></font></a></font><font face="Helvetica, Arial, sans-serif"><a
+                            href="https://poweroutage.us/"><font color="#1155cc"><u>Poweoutage.us
+                                </u></font></a></font><font face="Helvetica, Arial, sans-serif"><a
                             href="https://outagemap.evergy.com/"><font color="#1155cc"><u>Evergy
                                 Outage</u></font></a></font><br>
-                        <font face="Helvetica, Arial, sans-serif"><a href="https://poweroutage.us/"><font
-                              color="#1155cc"><u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                Map</u></font></a></font></p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <font
+                          face="Helvetica, Arial, sans-serif"><a href="https://poweroutage.us/"><font
+                              color="#1155cc"><u>Map</u></font></a></font></p>
                     </td>
                     <td style="background: transparent" width="116">
                       <p style="margin-bottom: 0in; border: none;
-                        padding: 0in; page-break-inside: auto; orphans:                        0; widows: 0; background: transparent;                        page-break-after: auto">
-                        <font face="Helvetica,
-                          Arial, sans-serif"><a href="http://darksky.net/"><font
-                              color="#1155cc"><u> </u></font></a></font> <font
-                          face="Helvetica, Arial, sans-serif"><a href="http://weather.weatherbug.com/MO/Platte%20City-weather.html?zcode=z6286"><font
+                        padding: 0in; page-break-inside: auto; orphans:                        0; widows: 0; background: transparent;                        page-break-after: auto"><font
+                          face="Helvetica, Arial, sans-serif"><a href="https://weather.com/weather/today/l/64079:4:US"><font
+                              color="#1155cc"><font style="font-size:
+                                12pt" size="3"><u><b>&nbsp;Weather.com</b></u></font></font></a></font>&nbsp;
+                        </p>
+                      <p style="margin-bottom: 0in; border: none;
+                        padding: 0in; page-break-inside: auto; orphans:                        0; widows: 0; background: transparent;                        page-break-after: auto">&nbsp;
+                        <font face="Helvetica,                          Arial, sans-serif"><a
+                            href="http://darksky.net/"><font color="#1155cc"><u>
+                              </u></font></a></font> <font face="Helvetica, Arial, sans-serif"><a
+                            href="http://weather.weatherbug.com/MO/Platte%20City-weather.html?zcode=z6286"><font
                               color="#0000ee"><font style="font-size:
                                 11pt" size="2"><u><b>WeatherBug</b></u></font></font></a></font></p>
-                      <p style="border: none; padding: 0in;
-                        page-break-inside: auto; orphans: 0; widows: 0;                        background: transparent; page-break-after: auto"
-                        align="center"> <font face="Helvetica, Arial,
+                      <h5 style=" border: medium none; padding: 0in; page-break-inside: auto; background: transparent none repeat scroll 0% 0%; page-break-after: auto; text-align: center;">
+                        <font face="Helvetica, Arial,
                           sans-serif"><a href="http://www.weathernationtv.com/LocalWeather"><font
                               color="#1155cc"><font style="font-size:
-                                11pt" size="2"><u><b>WeatherNation</b></u></font></font></a><br>
-                          <br>
-                          &nbsp;&nbsp;&nbsp;&nbsp; </font> <font face="Helvetica, Arial, sans-serif"><a
-                            href="https://www.google.com/search?channel=fs&amp;client=ubuntu&amp;q=sunrise+time"><font
-                              color="#1155cc"><u>Sunrise</u></font></a><br>
-                          &nbsp;&nbsp;&nbsp; &nbsp; </font> <font face="Helvetica, Arial, sans-serif"><a
-                            href="https://www.google.com/search?client=ubuntu&amp;hs=7Uc&amp;channel=fs&amp;sxsrf=ALeKk00wunSC4h0-fK0mELhNs4opJSEatA%3A1600427729410&amp;ei=0ZZkX8HEGIiKtQWQpoHgBw&amp;q=sunset+time&amp;oq=sunset+time&amp;gs_lcp=CgZwc3ktYWIQAzIMCAAQsQMQQxBGEP4BMgcIABCxAxBDMgIIADICCAAyAggAMgUIABCxAzICCAAyAggAMgIIADICCAA6BAgAEEc6BggAEAcQHjoICAAQBxAKEB46BQgAEJECOgQIABBDOgcIABAUEIcCOggIABCxAxCDAVDqiAVYqqAFYNKjBWgAcAJ4AIABdYgBwgSSAQM0LjKYAQCgAQGqAQdnd3Mtd2l6yAEIwAEB&amp;sclient=psy-ab&amp;ved=0ahUKEwiB8bLyyfLrAhUIRa0KHRBTAHwQ4dUDCAw&amp;uact=5"><font
-                              color="#1155cc"><u>Sunset</u></font></a></font></p>
+                                11pt" size="2"><u><b>WeatherNation</b></u></font></font></a></font>
+                      </h5>
+                      <h5><span style="color: #1155cc;"><span style="font-family: Helvetica,Arial,sans-serif;">&nbsp;&nbsp;</span></span>
+                        &nbsp;<b><span style="font-family: Helvetica,Arial,sans-serif;">
+                            <a href="https://wttr.in/kmci">KCI&nbsp;</a>&nbsp; <a
+                              href="https://v2.wttr.in/kmci">alt</a></span></b></h5>
+                      <h5><span style="color: #1155cc;"><span style="font-family: Helvetica,Arial,sans-serif;">&nbsp;&nbsp;</span></span>
+                        &nbsp;<b><span style="font-family: Helvetica,Arial,sans-serif;">
+                            <a href="https://wttr.in/klax">LAX </a>&nbsp; <a href="https://v2.wttr.in/klax">alt</a></span></b></h5>
+                      <h5><a href="https://v2.wttr.in/kmci"></a></h5>
                     </td>
                     <td style="background: #ffffff" bgcolor="#ffffff" width="146">
                       <p style="margin-bottom: 0in; border: none;
@@ -4367,11 +4349,25 @@
                         padding: 0in; page-break-inside: auto; orphans:                        0; widows: 0; background: transparent;                        page-break-after: auto">&nbsp;
                         <font face="Helvetica, Arial, sans-serif"><a href="http://w1.weather.gov/data/obhistory/KMCI.html"><font
                               color="#1155cc"><u>NOAA PC History</u></font></a>
-                          <br>
                         </font> <font face="Helvetica, Arial,
                           sans-serif"><br>
                           &nbsp; <a href="https://water.weather.gov/ahps2/hydrograph.php?wfo=eax&amp;gage=plcm7"><font
-                              color="#1155cc"><u><b>PC Flood Stage</b></u></font></a></font></p>
+                              color="#1155cc"><u><b><br>
+                                </b></u></font></a></font><font face="Helvetica, Arial,
+                          sans-serif"><a href="https://water.weather.gov/ahps2/hydrograph.php?wfo=eax&amp;gage=plcm7"><font
+                              color="#1155cc"><u><b>&nbsp;PC Flood Stage </b></u></font></a></font><br>
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <font face="Helvetica, Arial,
+                          sans-serif"><a href="https://cdec.water.ca.gov/resapp/RescondMain"><font
+                              color="#1155cc"><u><b><font size="-1" face="Helvetica, Arial, sans-serif"><font
+                                      color="#0000ee"><u><b>CA Lakes</b></u></font></font></b></u></font></a></font>
+                        <br>
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <font face="Helvetica, Arial,
+                          sans-serif"><a href="https://mead.uslakes.info/level.asp"><font
+                              color="#1155cc"><u><b><font size="-1" face="Helvetica, Arial, sans-serif"><font
+                                      color="#0000ee"><u><b>Lake Meade</b></u></font></font>
+                                </b></u></font></a></font></p>
                     </td>
                   </tr>
                 </tbody>
@@ -4394,6 +4390,8 @@
               <p style="text-indent: -0.19in; margin-bottom: 0in;
                 border: none; padding: 0in; line-height: 100%;                page-break-inside: auto; orphans: 0; widows: 0;                background: transparent; page-break-after: auto"
                 align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
 
 
 
@@ -4677,11 +4675,11 @@
 
 
 
+
+
                       </b></font><a href="https://www.lawrencetraincam.com/?i=1"><font
                       color="#1155cc"><font style="font-size: 12pt" size="3"><u><b>Lawrence
-                            KS Station CAM</b></u></font></font></a><br>
-                  <br>
-                </font></p>
+                            KS Station CAM</b></u></font></font></a> </font></p>
               <center> <font face="Helvetica, Arial, sans-serif"> </font>
                 <table style="page-break-before: auto; page-break-after:
                   auto" cellspacing="0" cellpadding="7" border="1" width="390">
@@ -4713,8 +4711,7 @@
 
 
 
-                                      <br> </b></u></font></font></a></font></p>
-                      </td>
+                                      </b></u></font></font></a></font></p> </td>
                       <td style="background: transparent" width="180">
                         <p style="text-indent: -0.19in" align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
@@ -4771,13 +4768,16 @@
 
 
 
+
+
                 <font face="Helvetica, Arial, sans-serif"><a href="https://twitter.com/AmtrakAlerts?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><font
                       color="#1155cc"><font style="font-size: 12pt" size="3"><u><b>Amtrak
                             Alerts on Twitter</b></u></font></font></a><font style="font-size: 12pt"
                     size="3"><b> </b></font><a href="https://www.online-stopwatch.com/countdown-timer/"
                     moz-do-not-send="true"><font color="#1155cc"><font style="font-size: 12pt"
-                        size="3"><u><b> <br>
-                          </b></u></font></font></a></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        size="3"><u><b> </b></u></font></font></a></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
 
 
 
@@ -4814,8 +4814,12 @@
 
 
 
+
+
                 <b><span style="font-family: Helvetica,Arial,sans-serif;">Drone
                     Info &nbsp;</span></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
 
 
 
@@ -4866,12 +4870,13 @@
               <p style="text-indent: -0.19in; margin-bottom: 0in;
                 border: none; padding: 0in; line-height: 100%;                page-break-inside: auto; orphans: 0; widows: 0;                background: transparent; page-break-after: auto"
                 align="center"><font style="font-size: 12pt" size="3" face="Helvetica,
-                  Arial, sans-serif"><b><br>
-                  </b></font></p>
+                  Arial, sans-serif"><b> </b></font></p>
               <p style="text-indent: -0.19in; margin-bottom: 0in;
                 border: none; padding: 0in; line-height: 100%;                page-break-inside: auto; orphans: 0; widows: 0;                background: transparent; page-break-after: auto"
                 align="center"><font style="font-size: 12pt" size="3" face="Helvetica,
                   Arial, sans-serif"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
 
 
 
@@ -5012,7 +5017,8 @@
                   <tr>
                     <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.airnav.com/airports/"><b><span
                             style="font-family: Helvetica,Arial,sans-serif;">Airnav.com</span></b></a></td>
-                    <td><br>
+                    <td style="text-align: center;" class="cjk"><b style="font-family: Helvetica,Arial,sans-serif;"><a
+                          href="https://globe.adsbexchange.com/">ADS-B Exchange</a></b><br>
                     </td>
                   </tr>
                 </tbody>
@@ -5020,8 +5026,8 @@
               <p style="text-indent: -0.19in; margin-bottom: 0in;
                 border: none; padding: 0in; line-height: 100%;                page-break-inside: auto; orphans: 0; widows: 0;                background: transparent; page-break-after: auto"
                 align="center">&nbsp;&nbsp;&nbsp; <font face="Helvetica, Arial, sans-serif"><font
-                    style="font-size: 12pt" size="3"><b><br>
-                    </b></font></font><font face="Helvetica, Arial,
+                    style="font-size: 12pt" size="3"><b> </b></font></font><font
+                  face="Helvetica, Arial,
                   sans-serif"><font style="font-size: 12pt" size="3"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 
@@ -5030,13 +5036,14 @@
                           href="https://simpleflying.com/"><font color="#1155cc"><font
                               style="font-size:
                               12pt" size="3"><u><b>SimpleFlying.com</b></u></font></font></a><font
-                          style="font-size: 12pt" size="3"><b><br>
-                          </b></font></font>&nbsp; </b></font></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          style="font-size: 12pt" size="3"><b> </b></font></font>&nbsp;
+                      </b></font></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <br>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
                 <font style="font-size: 12pt" size="3" face="Helvetica,
-                  Arial, sans-serif"><b>Mapping Sites<br>
-                  </b></font></p>
+                  Arial, sans-serif"><b>Mapping Sites </b></font></p>
               <center> <font face="Helvetica, Arial, sans-serif"> </font><font
                   face="Helvetica, Arial, sans-serif"> </font>
                 <table style="page-break-before: auto; page-break-after:
@@ -5049,8 +5056,7 @@
                         <p style="border: medium none; padding: 0in; page-break-inside: auto; background: transparent none repeat scroll 0% 0%; page-break-after: auto; text-align: center;">
                           <font face="Helvetica,
                             Arial, sans-serif"><b><a href="https://www.google.com/maps/">Google
-                                Maps</a></b><br>
-                          </font></p>
+                                Maps</a></b> </font></p>
                       </td>
                       <td style="background: transparent" width="116">
                         <p style="border: medium none; padding: 0in; page-break-inside: auto; background: transparent none repeat scroll 0% 0%; page-break-after: auto; text-align: center;"><b><a
@@ -5060,18 +5066,15 @@
                       <td style="background: transparent" width="115">
                         <p style="border: medium none; padding: 0in; page-break-inside: auto; background: transparent none repeat scroll 0% 0%; page-break-after: auto; text-align: center;">
                           <font face="Helvetica,
-                            Arial, sans-serif"><b><a href="https://zoom.earth/">Zoom.Earth</a></b><br>
+                            Arial, sans-serif"><b><a href="https://zoom.earth/">Zoom.Earth</a></b>
                           </font> </p>
                       </td>
                     </tr>
                     <tr valign="top">
-                      <td style="background: transparent" width="115">
-                        <p style="border: none; padding: 0in;
-                          page-break-inside: auto; orphans: 0; widows:                          0; background: transparent; page-break-after:                          auto"
-                          align="center"> </p>
-                        <font face="Helvetica, Arial, sans-serif"><font style="font-size: 12pt"
-                            size="3"><b> </b></font><a href="https://www.openstreetmap.org/"><font
-                              color="#1155cc"><font style="font-size: 12pt" size="3"><u><b>OpenStreetMap</b></u></font></font></a><font
+                      <td style="background: transparent" width="115"> <font face="Helvetica, Arial, sans-serif"><font
+                            style="font-size: 12pt" size="3"><b> </b></font><a
+                            href="https://www.openstreetmap.org/"><font color="#1155cc"><font
+                                style="font-size: 12pt" size="3"><u><b>OpenStreetMap</b></u></font></font></a><font
                             style="font-size: 12pt" size="3"><b>&nbsp;</b></font></font>
                       </td>
                       <td style="background: transparent" width="116">
@@ -5079,21 +5082,17 @@
                           page-break-inside: auto; orphans: 0; widows:                          0; background: transparent; page-break-after:                          auto"
                           align="center"> <font face="Helvetica,
                             Arial, sans-serif"><b><a href="https://firms.modaps.eosdis.nasa.gov/">NASA
-                                /FIRMS</a></b><br>
-                          </font> </p>
+                                /FIRMS</a></b> </font> </p>
                       </td>
                       <td style="background: transparent" width="115">
-                        <p style="border: none; padding: 0in;
-                          page-break-inside: auto; orphans: 0; widows:                          0; background: transparent; page-break-after:                          auto"
-                          align="center"> <font face="Helvetica,
-                            Arial, sans-serif"><br>
-                          </font> </p>
+                        <p style="border: medium none; padding: 0in; page-break-inside: auto; background: transparent none repeat scroll 0% 0%; page-break-after: auto; text-align: center;">
+                          <font face="Helvetica,
+                            Arial, sans-serif"><b><a href="https://www.trafficspotter.com/">Traffic
+                                Spotter</a></b> </font> </p>
                       </td>
                     </tr>
                     <tr valign="top">
                       <td style="background: transparent" width="115">
-                        <p style="border: medium none; padding: 0in; page-break-inside: auto; background: transparent none repeat scroll 0% 0%; page-break-after: auto; text-align: center;">
-                        </p>
                         <div style="text-align: center;"><font face="Helvetica, Arial, sans-serif"><a
                               href="http://traveler.modot.org/map/"><font color="#0000ee"><font
                                   style="font-size: 12pt" size="3"><u><b>MODOT
@@ -5103,15 +5102,15 @@
                         <p style="border: none; padding: 0in;
                           page-break-inside: auto; orphans: 0; widows:                          0; background: transparent; page-break-after:                          auto"
                           align="center"> <font face="Helvetica,
-                            Arial, sans-serif"><br>
-                          </font> </p>
+                            Arial, sans-serif"> </font> </p>
+                        <br>
                       </td>
                       <td style="background: transparent" width="115">
                         <p style="border: none; padding: 0in;
                           page-break-inside: auto; orphans: 0; widows:                          0; background: transparent; page-break-after:                          auto"
                           align="center"> <font face="Helvetica,
-                            Arial, sans-serif"><br>
-                          </font> </p>
+                            Arial, sans-serif"> </font> </p>
+                        <br>
                       </td>
                     </tr>
                   </tbody>
@@ -5119,6 +5118,8 @@
               </center>
               <p style="margin-bottom: 0in; line-height: 115%" align="center"><font
                   style="font-size: 9pt" size="2" face="Helvetica, Arial, sans-serif"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
 
 
 
@@ -5158,8 +5159,7 @@
                       <p style="text-align: center;"> <font face="Helvetica, Arial,
                           sans-serif"><a href="http://www.wunderground.com/US/CA/Sylmar.html"><font
                               color="#0000ee"><font style="font-size:
-                                12pt" size="3"><u><b>Van Nuys&nbsp;&nbsp; <br>
-                                  </b></u></font></font></a></font></p>
+                                12pt" size="3"><u><b>Van Nuys&nbsp;&nbsp; </b></u></font></font></a></font></p>
                     </td>
                     <td style="background: #ffffff" bgcolor="#ffffff" width="121">
                       <p style="text-indent: -0.25in" align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -5202,6 +5202,8 @@
               </table>
               <p style="text-indent: -0.19in; margin-bottom: 0in;
                 line-height: 100%" align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
 
 
 
@@ -5422,7 +5424,7 @@
                     &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://openweathermap.org/">Open
                       Weather Map</a>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <br></b></font></p>
+                    </b></font></p>
               <p style="text-indent: -0.19in; margin-bottom: 0in;
                 border: none; padding: 0in; line-height: 100%;                page-break-inside: auto; orphans: 0; widows: 0;                background: transparent; page-break-after: auto"
                 align="center"><font style="font-size: 12pt" size="3" face="Helvetica, Arial, sans-serif"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -5441,7 +5443,11 @@
 
 
 
-                    <br></b></font><font style="font-size: 12pt" size="3" face="Helvetica, Arial, sans-serif"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+                    </b></font><font style="font-size: 12pt" size="3" face="Helvetica, Arial, sans-serif"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
                     Webcams</b></font></p>
               <font face="Helvetica, Arial, sans-serif"> </font>
               <table style="page-break-before: auto; page-break-after:
@@ -5521,8 +5527,7 @@
                         padding: 0in; page-break-inside: auto; orphans:                        0; widows: 0; background: transparent;                        page-break-after: auto"
                         align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <font face="Helvetica, Arial, sans-serif"><a
                             href="http://www.earthcam.com/france/paris/?cam=eiffeltower_hd"><font
-                              color="#1155cc"><u><b>Paris Eiffel Tower&nbsp; <br>
-                                </b></u></font></a></font></p>
+                              color="#1155cc"><u><b>Paris Eiffel Tower&nbsp; </b></u></font></a></font></p>
                     </td>
                     <td style="background: transparent" width="180">
                       <p style="text-indent: -0.19in; margin-bottom:
@@ -5668,10 +5673,8 @@
                         align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <font face="Helvetica, Arial, sans-serif"><a
                             href="http://www.earthcam.com/usa/newyork/timessquare/"><font
                               color="#1155cc"><u><b>Times Square
-                                  NY&nbsp;&nbsp;&nbsp; </b></u></font></a><b></b><a
-                            href="http://www.earthcam.com/usa/newyork/statueofliberty/?cam=liberty_hd"><font
-                              color="#1155cc"><u><b><br>
-                                </b></u></font></a></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                  NY&nbsp;&nbsp;&nbsp; </b></u></font></a><a href="http://www.earthcam.com/usa/newyork/statueofliberty/?cam=liberty_hd"><font
+                              color="#1155cc"><u><b> </b></u></font></a></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 
 
@@ -5685,8 +5688,7 @@
                         0in; border: none; padding: 0in;                        page-break-inside: auto; orphans: 0; widows: 0;                        background: transparent; page-break-after: auto"
                         align="center">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <font face="Helvetica, Arial, sans-serif"><a
                             href="http://207.251.86.238/cctv5.jpg?math=0.27396661760314245"><font
-                              color="#1155cc"><u><b>Columbus Circle <br>
-                                </b></u></font></a></font></p>
+                              color="#1155cc"><u><b>Columbus Circle </b></u></font></a></font></p>
                       <p style="text-indent: -0.19in; margin-bottom:
                         0in; border: none; padding: 0in;                        page-break-inside: auto; orphans: 0; widows: 0;                        background: transparent; page-break-after: auto"
                         align="center">&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
@@ -5719,8 +5721,7 @@
                       <p style="text-indent: -0.19in; margin-bottom:
                         0in; border: none; padding: 0in;                        page-break-inside: auto; orphans: 0; widows: 0;                        background: transparent; page-break-after: auto"
                         align="center"> <font face="Helvetica, Arial,
-                          sans-serif"><br>
-                        </font> </p>
+                          sans-serif"> </font> </p>
                       <p style="text-indent: -0.19in; margin-bottom:
                         0in; border: none; padding: 0in;                        page-break-inside: auto; orphans: 0; widows: 0;                        background: transparent; page-break-after: auto"
                         align="center">&nbsp;&nbsp;&nbsp;&nbsp; <font face="Helvetica, Arial, sans-serif"><a
@@ -5729,8 +5730,7 @@
                       <p style="text-indent: -0.19in; margin-bottom:
                         0in; border: none; padding: 0in;                        page-break-inside: auto; orphans: 0; widows: 0;                        background: transparent; page-break-after: auto"
                         align="center"> <font face="Helvetica, Arial,
-                          sans-serif"><br>
-                        </font> </p>
+                          sans-serif"> </font> </p>
                       <p style="text-indent: -0.19in; border: none;
                         padding: 0in; page-break-inside: auto; orphans:                        0; widows: 0; background: transparent;                        page-break-after: auto"
                         align="center">&nbsp;&nbsp;&nbsp;&nbsp; <font face="Helvetica, Arial, sans-serif"><a
@@ -5818,8 +5818,7 @@
                           sans-serif"><a href="http://pixelcaster.com/yosemite/webcams/turtleback.jpg"><font
                               color="#1155cc"><u><b>Yosemite Valley</b></u></font></a><b>
                           </b><a href="http://pixelcaster.com/yosemite/webcams/sentinel.jpg"><font
-                              color="#1155cc"><u><b><br>
-                                </b></u></font></a></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                              color="#1155cc"><u><b> </b></u></font></a></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 
 
@@ -5851,7 +5850,7 @@
                       <p style="text-indent: -0.19in; border: none;
                         padding: 0in; page-break-inside: auto; orphans:                        0; widows: 0; background: transparent;                        page-break-after: auto"
                         align="center"> <font face="Helvetica, Arial, sans-serif"><a
-                            href="http://www.opentopia.com/"><font color="#1155cc"><u><b><br>
+                            href="http://www.opentopia.com/"><font color="#1155cc"><u><b>
                                 </b></u></font></a></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 
@@ -5899,6 +5898,8 @@
               <p style="text-indent: -0.19in; margin-bottom: 0in;
                 border: none; padding: 0in; line-height: 100%;                page-break-inside: auto; orphans: 0; widows: 0;                background: transparent; page-break-after: auto"
                 align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
 
 
 
@@ -5975,8 +5976,9 @@
                     <td style="background: transparent" align="center" width="180">
                       <p style="text-indent: -0.19in; border: none;
                         padding: 0in; page-break-inside: auto; orphans:                        0; widows: 0; background: transparent;                        page-break-after: auto"
-                        align="center"> <font face="Helvetica, Arial, sans-serif"><br>
+                        align="center"> <font face="Helvetica, Arial, sans-serif">
                         </font> </p>
+                      <br>
                     </td>
                   </tr>
                 </tbody>
@@ -6004,12 +6006,13 @@
 
 
 
+
+
                 <font face="Helvetica, Arial, sans-serif"><b>Photography</b></font></p>
               <p style="text-indent: -0.19in; margin-bottom: 0in;
                 border: none; padding: 0in; line-height: 100%;                page-break-inside: auto; orphans: 0; widows: 0;                background: transparent; page-break-after: auto"
                 align="center"> <font face="Helvetica, Arial,
-                  sans-serif"><br>
-                </font> </p>
+                  sans-serif"> </font> </p>
               <center> <font face="Helvetica, Arial, sans-serif"> </font>
                 <table style="page-break-before: auto; page-break-after:
                   auto" cellspacing="0" cellpadding="7" border="1" width="390">
@@ -6028,8 +6031,8 @@
                         <p style="border: none; padding: 0in;
                           page-break-inside: auto; orphans: 0; widows:                          0; background: transparent; page-break-after:                          auto"
                           align="left"> <font face="Helvetica,
-                            Arial, sans-serif"><br>
-                          </font> </p>
+                            Arial, sans-serif"> </font> </p>
+                        <br>
                       </td>
                     </tr>
                   </tbody>
@@ -6038,13 +6041,14 @@
               <p style="text-indent: -0.19in; margin-bottom: 0in;
                 border: none; padding: 0in; line-height: 100%;                page-break-inside: auto; orphans: 0; widows: 0;                background: transparent; page-break-after: auto"
                 align="center"> <font face="Helvetica, Arial,
-                  sans-serif"><br>
-                </font> </p>
+                  sans-serif"> </font> </p>
               <p style="text-indent: -0.19in; margin-bottom: 0in;
                 border: none; padding: 0in; line-height: 100%;                page-break-inside: auto; orphans: 0; widows: 0;                background: transparent; page-break-after: auto"
                 align="center"> <font face="Helvetica, Arial,
                   sans-serif"><b>&nbsp;&nbsp;
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
 
 
 
@@ -6155,6 +6159,8 @@
 
 
 
+
+
                 <font face="Helvetica, Arial, sans-serif"><a href="http://192.168.1.135:8080/greet.html"><font
                       color="#1155cc"><u><b>Web Cam</b></u></font></a></font></p>
               <p style="text-indent: -0.19in; margin-bottom: 0in;
@@ -6181,9 +6187,9 @@
 
 
 
-                    WebSDR<br>
-                  </b><br>
-                </font> </p>
+
+
+                    WebSDR </b> </font> </p>
               <center> <font face="Helvetica, Arial, sans-serif"> </font><font
                   face="Helvetica, Arial, sans-serif"> </font>
                 <table style="page-break-before: auto; page-break-after:
@@ -6202,33 +6208,29 @@
                         <p style="border: none; padding: 0in;
                           page-break-inside: auto; orphans: 0; widows:                          0; background: transparent; page-break-after:                          auto"
                           align="left"> <font face="Helvetica,
-                            Arial, sans-serif"><br>
-                          </font> </p>
+                            Arial, sans-serif"> </font> </p>
                       </td>
                       <td style="background: transparent" width="116">
                         <p style="border: none; padding: 0in;
                           page-break-inside: auto; orphans: 0; widows:                          0; background: transparent; page-break-after:                          auto"
                           align="left"> <font face="Helvetica,
-                            Arial, sans-serif"><br>
-                          </font> </p>
+                            Arial, sans-serif"> </font> </p>
+                        <br>
                       </td>
                       <td style="background: transparent" width="115">
                         <p style="border: none; padding: 0in;
                           page-break-inside: auto; orphans: 0; widows:                          0; background: transparent; page-break-after:                          auto"
                           align="left">&nbsp; <font face="Helvetica,
                             Arial, sans-serif">AMSAT SD<span style="color: navy;">R</span></font><a
-                            href="https://vhf-goonhilly.batc.org.uk/"><br>
-                            <br>
-                          </a>&nbsp;<font face="Helvetica,
+                            href="https://vhf-goonhilly.batc.org.uk/"> </a>&nbsp;<font
+                            face="Helvetica,
                             Arial, sans-serif"><a href="https://vhf-goonhilly.batc.org.uk/"><font
                                 color="#1155cc"><font style="font-size:
-                                  8pt" size="1"><u><b>Goonhilly WebSDR <br>
-                                    </b></u></font></font></a></font></p>
+                                  8pt" size="1"><u><b>Goonhilly WebSDR </b></u></font></font></a></font></p>
                         <p style="border: none; padding: 0in;
                           page-break-inside: auto; orphans: 0; widows:                          0; background: transparent; page-break-after:                          auto"
                           align="left"><font face="Helvetica,
-                            Arial, sans-serif"><a href="https://vhf-goonhilly.batc.org.uk/"></a><br>
-                          </font> </p>
+                            Arial, sans-serif"> </font> </p>
                       </td>
                     </tr>
                     <tr valign="top">
@@ -6245,15 +6247,15 @@
                           page-break-inside: auto; orphans: 0; widows:                          0; background: transparent; page-break-after:                          auto"
                           align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <font
                             face="Helvetica,
-                            Arial, sans-serif"><b><a href="http://kiwisdr.com/public/">KiwiSDR.map</a></b><br>
+                            Arial, sans-serif"><b><a href="http://kiwisdr.com/public/">KiwiSDR.map</a></b>
                           </font> </p>
                       </td>
                       <td style="background: transparent" width="115">
                         <p style="border: none; padding: 0in;
                           page-break-inside: auto; orphans: 0; widows:                          0; background: transparent; page-break-after:                          auto"
                           align="left"> <font face="Helvetica,
-                            Arial, sans-serif"><br>
-                          </font> </p>
+                            Arial, sans-serif"> </font> </p>
+                        <br>
                       </td>
                     </tr>
                     <tr valign="top">
@@ -6261,8 +6263,8 @@
                         <p style="border: none; padding: 0in;
                           page-break-inside: auto; orphans: 0; widows:                          0; background: transparent; page-break-after:                          auto"
                           align="left"> <font face="Helvetica,
-                            Arial, sans-serif"><br>
-                          </font> </p>
+                            Arial, sans-serif"> </font> </p>
+                        <br>
                       </td>
                       <td style="background: transparent" width="116">
                         <p style="border: none; padding: 0in;
@@ -6276,8 +6278,8 @@
                         <p style="border: none; padding: 0in;
                           page-break-inside: auto; orphans: 0; widows:                          0; background: transparent; page-break-after:                          auto"
                           align="left"> <font face="Helvetica,
-                            Arial, sans-serif"><br>
-                          </font> </p>
+                            Arial, sans-serif"> </font> </p>
+                        <br>
                       </td>
                     </tr>
                   </tbody>
@@ -6286,8 +6288,7 @@
               <p style="text-indent: -0.19in; margin-bottom: 0in;
                 border: none; padding: 0in; line-height: 100%;                page-break-inside: auto; orphans: 0; widows: 0;                background: transparent; page-break-after: auto"
                 align="center"> <font face="Helvetica, Arial,
-                  sans-serif"><br>
-                </font> </p>
+                  sans-serif"> </font> </p>
               <p style="text-indent: -0.19in; margin-bottom: 0in;
                 border: none; padding: 0in; line-height: 100%;                page-break-inside: auto; orphans: 0; widows: 0;                background: transparent; page-break-after: auto">
                 <font face="Helvetica, Arial, sans-serif"><br>
@@ -6302,19 +6303,18 @@
 
 
 
+
+
                   <b>Drones &amp; UAVs</b></font></p>
-              <p style="text-indent: -0.19in; margin-bottom: 0in;
-                border: none; padding: 0in; line-height: 100%;                page-break-inside: auto; orphans: 0; widows: 0;                background: transparent; page-break-after: auto">
-              </p>
               <table cellspacing="2" cellpadding="2" border="1" width="100%">
                 <tbody>
                   <tr>
                     <td style="text-align: center;" valign="top">&nbsp; &nbsp;
                       &nbsp; &nbsp; &nbsp;<span style="font-family: monospace;">&nbsp;
                         <b>DJI</b>&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
-                    <td valign="top"><br>
+                    <td><br>
                     </td>
-                    <td valign="top"><br>
+                    <td><br>
                     </td>
                   </tr>
                   <tr>
@@ -6326,15 +6326,14 @@
                           moz-do-not-send="true" href="https://cultofdrone.com/">Cult
                           of Drone</a></b><br>
                     </td>
-                    <td valign="top"><br>
+                    <td><br>
                     </td>
                   </tr>
                 </tbody>
               </table>
               <p style="text-indent: -0.19in; margin-bottom: 0in;
                 border: none; padding: 0in; line-height: 100%;                page-break-inside: auto; orphans: 0; widows: 0;                background: transparent; page-break-after: auto"><font
-                  face="Helvetica, Arial, sans-serif"><br>
-                </font> </p>
+                  face="Helvetica, Arial, sans-serif"> </font> </p>
             </td>
           </tr>
         </tbody>
@@ -6344,14 +6343,12 @@
     <p style="margin-bottom: 0in; border: none; padding: 0in;
       line-height: 100%; page-break-inside: auto; orphans: 0; widows: 0;      background: transparent; page-break-before: auto;      page-break-after: auto"
       align="center"> <font face="Helvetica,
-        Arial, sans-serif"><br>
-      </font> </p>
+        Arial, sans-serif"> </font> </p>
     <font face="Helvetica, Arial, sans-serif"> </font>
     <p style="margin-bottom: 0in; border: none; padding: 0in;
       line-height: 100%; page-break-inside: auto; orphans: 0; widows: 0;      background: transparent; page-break-before: auto;      page-break-after: auto">
       <font face="Helvetica, Arial,
-        sans-serif"><br>
-      </font> </p>
+        sans-serif"> </font> </p>
     <font face="Helvetica, Arial, sans-serif"> </font> <grammarly-desktop-integration
       data-grammarly-shadow-root="true"></grammarly-desktop-integration>
   </body>
