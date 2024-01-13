@@ -1,33 +1,24 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <!-- saved from url=(0044)https://juren53.github.io/JAUs-Startup-Page/ -->
-<html data-lt-installed="true" lang="English">
+<html lang="en">
   <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <title>JAU's Start Page</title>
-    <meta name="generator" content="LibreOffice 6.4.7.2 (Linux)">
-    <meta name="created" content="00:00:00">
-    <meta name="changed" content="00:00:00">
-    <style type="text/css">
-		@page { size: 13in 8.5in; margin-left: 0.25in; margin-right: 0.13in; margin-top: 0.25in; margin-bottom: 0.25in }
-		p { margin-bottom: 0.1in; direction: ltr; line-height: 115%; text-align: left; orphans: 0; widows: 0; background: transparent }
-		h3 { margin-top: 0.19in; margin-bottom: 0.06in; direction: ltr; color: #666666; line-height: 100%; text-align: left; page-break-inside: auto; orphans: 0; widows: 0; background: transparent; page-break-before: auto; page-break-after: auto }
-		h3.western { font-size: 12pt; font-weight: bold }
-		h3.cjk { font-size: 12pt; font-weight: bold }
-		h3.ctl { font-size: 12pt }
-		a:link { color: #000080; so-language: zxx; text-decoration: underline }
-	</style>
-    <meta name="author" content="Jim U'Ren">
-    <meta name="description" content="Organized collection of Webpage links">
-    <meta name="keywords" content="bookmarks">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAU's Startup w/ Dark Mode Toggle</title>
     <base target="_blank">
-    <!--<base href="https://juren53.github.io/JAUs-Startup-Page/">--><!-- base href="https://juren53.github.io/JAUs-Startup-Page/" --><!--<base href=".">--><!-- base href="https://juren53.github.io/JAUs-Startup-Page/" -->
-    <!--<base target="_blank">--><!-- base href="https://juren53.github.io/JAUs-Startup-Page/" -->
-    <link href="data:text/css,%3Ais%28%5Bid*%3D%27google_ads_iframe%27%5D%2C%5Bid*%3D%27taboola-%27%5D%2C.taboolaHeight%2C.taboola-placeholder%2C%23credential_picker_container%2C%23credentials-picker-container%2C%23credential_picker_iframe%2C%5Bid*%3D%27google-one-tap-iframe%27%5D%2C%23google-one-tap-popup-container%2C.google-one-tap-modal-div%2C%23amp_floatingAdDiv%2C%23ez-content-blocker-container%29%20%7Bdisplay%3Anone%21important%3Bmin-height%3A0%21important%3Bheight%3A0%21important%3B%7D"
-      rel="stylesheet" type="text/css">
+    <style>
+        body {
+            transition: background-color 0.5s;
+        }
+
+        .dark-mode {
+            background-color: black;
+            color: white;
+        }
+    </style>
   </head>
-  <body style="                background-color: white; color: black;" dir="ltr"
-    data-new-gr-c-s-check-loaded="14.1143.0" data-gr-ext-installed="" vlink="#000099"
-    link="#000080" lang="en" alink="#EE0000">
+  <body> <label for="darkModeToggle"> Dark Mode:</label><input id="darkModeToggle"
+      onclick="toggleDarkMode()" type="checkbox">
     <table style="width: 1288px; height: 25px;" border="0">
       <tbody>
         <tr>
@@ -43,7 +34,7 @@
                 face="Helvetica, Arial,
         sans-serif"><span style="font-family: serif;"></span>JAU’s Startup</font></b></td>
           <td style="text-align: right;"><font face="Helvetica, Arial, sans-serif">Updated<font
-                size="3"> 2024-01-04 2135 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+                size="3"> 2024-01-13 1315 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
               </font></font></td>
         </tr>
       </tbody>
@@ -88,7 +79,7 @@
                       scroll 0% 0%; width: 116px; text-align: center;" width="116">
                       <p style="border: none; padding: 0in;
                         page-break-inside: auto; orphans: 0; widows: 0;                        background: transparent; page-break-after: auto"
-                        align="center">&nbsp;&nbsp;&nbsp;&nbsp; <font face="Helvetica, Arial, sans-serif"><a
+                        align="center">&nbsp;<font face="Helvetica, Arial, sans-serif"><a
                             href="http://www.yahoo.com/"><font color="#0000ee"><font
                                 style="font-size:
                                 12pt" size="3"><u><b>Yahoo</b></u></font></font></a></font></p>
@@ -96,7 +87,7 @@
                     <td style="background: transparent" width="115">
                       <p style="border: none; padding: 0in;
                         page-break-inside: auto; orphans: 0; widows: 0;                        background: transparent; page-break-after: auto"
-                        align="center">&nbsp;&nbsp;&nbsp;&nbsp; <font face="Helvetica, Arial, sans-serif"><a
+                        align="center"><font face="Helvetica, Arial, sans-serif"><a
                             href="http://youtube.com/"><font color="#0000ee"><font
                                 style="font-size:
                                 12pt" size="3"><u><b>YouTube </b></u></font></font></a></font><font
@@ -117,7 +108,7 @@
                     <td style="background: transparent" width="116">
                       <p style="border: none; padding: 0in;
                         page-break-inside: auto; orphans: 0; widows: 0;                        background: transparent; page-break-after: auto"
-                        align="center">&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.google.com/"><font
+                        align="center">&nbsp;<a href="https://www.google.com/"><font
                             face="Helvetica, Arial, sans-serif"><font color="#551a8b"><font
                                 style="font-size:
                                 12pt" size="3"><u><b>Google</b></u></font></font></font></a></p>
@@ -125,7 +116,7 @@
                     <td style="background: transparent" width="115">
                       <p style="border: none; padding: 0in;
                         page-break-inside: auto; orphans: 0; widows: 0;                        background: transparent; page-break-after: auto"
-                        align="center">&nbsp; <font face="Helvetica, Arial, sans-serif"><a
+                        align="center"><font face="Helvetica, Arial, sans-serif"><a
                             href="http://www.duckduckgo.com/"><font color="#0000ee"><font
                                 style="font-size:
                                 12pt" size="3"><u><b>DuckDuckGo</b></u></font></font></a></font></p>
@@ -201,12 +192,13 @@
               <table width="100%" border="1">
                 <tbody>
                   <tr>
-                    <td style="text-align: center; background-color: white;"><b><font
-                          size="+1" face="Helvetica, Arial, sans-serif"><a href="https://www.tesla.com/teslaaccount/profile?rn=RN115438414">Tesla
+                    <td style="background: transparent none repeat scroll 0% 0%; text-align: center;"
+                      width="116"><b><font size="+1" face="Helvetica, Arial, sans-serif"><a
+                            href="https://www.tesla.com/teslaaccount/profile?rn=RN115438414">Tesla
                             Account</a></font></b></td>
-                    <td style="text-align: center; background-color: white;"><font
-                        face="Helvetica, Arial, sans-serif"><b><a moz-do-not-send="true"
-                            href="https://www.notateslaapp.com/">not a tesla app</a></b></font></td>
+                    <td style="text-align: center;"><font face="Helvetica, Arial, sans-serif"><b><a
+                            moz-do-not-send="true" href="https://www.notateslaapp.com/">not
+                            a tesla app</a></b></font></td>
                   </tr>
                   <tr>
                     <td style="text-align: center;" class="western"><b><font size="+1"
@@ -218,14 +210,14 @@
                             Bluetooth (BLE)</a></font></b></td>
                   </tr>
                   <tr>
-                    <td style="text-align: center; background-color: white;"><font
-                        style="font-size: 12pt" size="3" face="Helvetica,
+                    <td style="background: transparent none repeat scroll 0% 0%; text-align: center;"
+                      width="116"><font style="font-size: 12pt" size="3" face="Helvetica,
                   Arial, sans-serif"><b><font style="font-size: 12pt" size="3" face="Helvetica, Arial, sans-serif"><b><a
                                 href="https://teslamotorsclub.com/tmc/forums/-/list">Tesla
                                 Motor Club Forums </a></b></font></b></font></td>
-                    <td style="text-align: center; background-color: white;"><font
-                        face="Helvetica, Arial, sans-serif" color="#1155cc"><font
-                          style="font-size: 12pt" size="3"><b><a href="https://www.tesla.com/trips#/?v=MY_2020_LongRange&amp;o=Platte%20City,%20MO%2064079,%20USA_Platte%20City%20Carroll%20Township%20Platte%20County@39.3702773,-94.78246089999999&amp;s=&amp;d=La%20Plata,%20MO%2063549,%20USA_La%20Plata%20La%20Plata%20Township%20Macon%20County@40.0233687,-92.4915779">Tesla
+                    <td style="background: transparent" width="116"><font face="Helvetica, Arial, sans-serif"
+                        color="#1155cc"><font style="font-size: 12pt" size="3"><b><a
+                              href="https://www.tesla.com/trips#/?v=MY_2020_LongRange&amp;o=Platte%20City,%20MO%2064079,%20USA_Platte%20City%20Carroll%20Township%20Platte%20County@39.3702773,-94.78246089999999&amp;s=&amp;d=La%20Plata,%20MO%2063549,%20USA_La%20Plata%20La%20Plata%20Township%20Macon%20County@40.0233687,-92.4915779">Tesla
                               Trip Planning </a></b></font></font></td>
                   </tr>
                   <tr>
@@ -237,13 +229,13 @@
                           </a></font></b> </td>
                   </tr>
                   <tr>
-                    <td style="text-align: center; background-color: white;"><font
-                        face="Helvetica, Arial, sans-serif" color="#1155cc"><font
+                    <td style="background: transparent none repeat scroll 0% 0%; text-align: center;"
+                      width="116"><font face="Helvetica, Arial, sans-serif" color="#1155cc"><font
                           style="font-size: 12pt" size="3"><b><a moz-do-not-send="true"
                               href="https://evcompare.io/cars/tesla/tesla-model-y-long-range/charging/">EV
                               Charging Calculator</a></b></font></font></td>
-                    <td style="text-align: center; background-color: white;"><font
-                        style="font-size: 12pt" size="3" face="Helvetica,
+                    <td style="background: transparent" width="116"><font style="font-size: 12pt"
+                        size="3" face="Helvetica,
                   Arial, sans-serif"><b><font style="font-size: 12pt" size="3" face="Helvetica, Arial, sans-serif"><b><a
                                 moz-do-not-send="true" href="https://www.tesla.com/findus?v=2&amp;search=Kansas%20City%2C%20MO%2C%20USA&amp;bounds=39.18360369457401%2C-94.3588401375%2C39.01574939833559%2C-94.7982932625&amp;zoom=12&amp;filters=store%2Cservice%2Csupercharger%2Cdestination%20charger%2Cbodyshop">Tesla
                                 Charging Network</a> </b></font></b></font></td>
@@ -275,8 +267,8 @@
                             style="font-family: Helvetica,Arial,sans-serif;">Tesla
                             Charging Calculator [time]</span></b></a><br>
                     </td>
-                    <td style="text-align: center; background-color: white;"><b><a
-                          href="https://driveelectric.gov/"><span style="font-family: Helvetica,Arial,sans-serif;">Joint
+                    <td style="background: transparent" width="116"><b><a href="https://driveelectric.gov/"><span
+                            style="font-family: Helvetica,Arial,sans-serif;">Joint
                             Office Energy &amp; Transportation</span></a></b></td>
                   </tr>
                   <tr>
@@ -801,7 +793,7 @@
                 </colgroup>
                 <tbody>
                   <tr valign="top">
-                    <td style="background: #ffffff" width="136" bgcolor="#ffffff">
+                    <td style="background: transparent" width="116">
                       <p style="margin-bottom: 0in; border: medium none; padding: 0in; page-break-inside: auto; background: transparent none repeat scroll 0% 0%; page-break-after: auto; text-align: center;"><font
                           face="Helvetica, Arial, sans-serif"><a href="https://www.mlb.com/scores"><font
                               color="#0000ee"><font style="font-size:
@@ -880,7 +872,7 @@
                         align="center"> <font face="Helvetica, Arial,
                           sans-serif"> </font> </p>
                     </td>
-                    <td style="background: #ffffff" width="202" bgcolor="#ffffff">
+                    <td style="background: transparent" width="116">
                       <p style="margin-bottom: 0in; border: none;
                         padding: 0in; page-break-inside: auto; orphans:                        0; widows: 0; background: transparent;                        page-break-after: auto"
                         align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -979,7 +971,7 @@
                             width="68"> </colgroup>
                         <tbody>
                           <tr valign="top">
-                            <td style="background: #ffffff" width="46" bgcolor="#ffffff">
+                            <td style="background: transparent" width="116">
                               <p style="border: none; padding: 0in;
                                 page-break-inside: auto; orphans: 0;                                widows: 0; background: transparent;                                page-break-after: auto"
                                 align="center">&nbsp; <font face="Helvetica, Arial,
@@ -987,7 +979,7 @@
                                       color="#0000ee"><font style="font-size: 12pt"
                                         size="3"><u>Golf Digest</u></font></font></a></font></p>
                             </td>
-                            <td style="background: #ffffff" width="66" bgcolor="#ffffff">
+                            <td style="background: transparent" width="116">
                               <p style="margin-bottom: 0in; border:
                                 none; padding: 0in; page-break-inside:                                auto; orphans: 0; widows: 0; background:                                transparent; page-break-after: auto"
                                 align="center"> <font face="Helvetica,
@@ -999,7 +991,7 @@
                                   sans-serif"><a href="http://www.golfinred.com/"><font
                                       color="#1155cc"><u><b>GolfInRed</b></u></font></a></font></p>
                             </td>
-                            <td style="background: #ffffff" width="68" bgcolor="#ffffff">
+                            <td style="background: transparent" width="116">
                               <p style="border: none; padding: 0in;
                                 page-break-inside: auto; orphans: 0;                                widows: 0; background: transparent;                                page-break-after: auto"
                                 align="center"> <font face="Helvetica, Arial,
@@ -1009,7 +1001,7 @@
                             </td>
                           </tr>
                           <tr valign="top">
-                            <td style="background: #ffffff" width="46" bgcolor="#ffffff">
+                            <td style="background: transparent" width="116">
                               <p style="border: none; padding: 0in;
                                 page-break-inside: auto; orphans: 0;                                widows: 0; background: transparent;                                page-break-after: auto"
                                 align="center"> <font face="Helvetica, Arial,
@@ -1017,14 +1009,14 @@
                                       color="#0000ee"><font style="font-size: 11pt"
                                         size="2"><u><b>USGA</b></u></font></font></a></font></p>
                             </td>
-                            <td style="background: #ffffff" width="66" bgcolor="#ffffff">
+                            <td style="background: transparent" width="116">
                               <p style="border: medium none; padding: 0in; page-break-inside: auto; background: transparent none repeat scroll 0% 0%; page-break-after: auto; text-align: center;">
                                 <font face="Helvetica, Arial,
                                   sans-serif"><a href="http://www.golftipsmag.com/"><font
                                       color="#0000ee"><font style="font-size: 12pt"
                                         size="3"><u><b>Golf Tips</b></u></font></font></a></font></p>
                             </td>
-                            <td style="background: #ffffff" width="68" bgcolor="#ffffff">
+                            <td style="background: transparent" width="116">
                               <p style="border: medium none; padding: 0in; page-break-inside: auto; background: transparent none repeat scroll 0% 0%; page-break-after: auto; text-align: center;"><font
                                   face="Helvetica, Arial,
                                   sans-serif"><a href="http://www.golfcentraldaily.com/"><font
@@ -1902,12 +1894,10 @@
                               12pt" size="3"><u><b>&nbsp;Virtual Telescope
                                     Project</b></u></font></font></a></font></div>
                     </td>
-                    <td style="text-align: center; vertical-align: top; background-color: white;"
-                      valign="top"><b><font size="+1" face="Helvetica, Arial, sans-serif"><a
-                            href="https://www.mountain-forecast.com/peaks/Mauna-Kea/forecasts/4205"><font
-                              color="#1155cc"><u>Planets<br>
-                                <br>
-                                Mauna Kea&nbsp; Weather </u></font></a></font></b></td>
+                    <td style="background: transparent" width="116"> <a href="https://www.mountain-forecast.com/peaks/Mauna-Kea/forecasts/4205"><font
+                          color="#1155cc"><u>Planets<br>
+                            <br>
+                            Mauna Kea&nbsp; Weather </u></font></a></td>
                     <td valign="top">&nbsp; &nbsp; <font face="Helvetica, Arial, sans-serif"><a
                           href="https://www.timeanddate.com/moon/usa/sunrise"><font
                             color="#1155cc"><u>Moon Phase</u></font></a><br>
@@ -1923,14 +1913,14 @@
                                 size="1"><u><b>JPL's Eyes on the</b></u></font></font></font><br>
                           <font face="Helvetica,
                         Arial, sans-serif"><font color="#1155cc"><font style="font-size: 8pt"
-                                size="1"><u><b>Soloar System</b></u></font></font></font></a></div>
+                                size="1"><u><b>Solar System</b></u></font></font></font></a></div>
                     </td>
                   </tr>
                   <tr>
-                    <td style="text-align: center; vertical-align: top; background-color: white;"
-                      valign="top"><b><font size="+1" face="Helvetica, Arial, sans-serif"><a
-                            href="https://theskylive.com/3dsolarsystem"><font color="#1155cc"><u>3D
-                                Solar System Sim</u></font></a></font></b> </td>
+                    <td style="text-align: center; vertical-align: top;" valign="top"><b><font
+                          size="+1" face="Helvetica, Arial, sans-serif"><a href="https://theskylive.com/3dsolarsystem"><font
+                              color="#1155cc"><u>3D Solar System Sim</u></font></a></font></b>
+                    </td>
                     <td style="text-align: center;" valign="top"><b><span style="font-family: Helvetica,Arial,sans-serif;"><a
                             href="https://www.theplanetstoday.com/index.html">The
                             Planets Today</a></span></b><br>
@@ -2607,7 +2597,7 @@
                       </td>
                     </tr>
                     <tr valign="top">
-                      <td style="background: white none repeat scroll 0% 0%; width: 180px; text-align: center;"
+                      <td style="none repeat scroll 0% 0%; width: 180px; text-align: center;"
                         width="180"> <a href="https://schema.org/"><span style="font-family: Helvetica,Arial,sans-serif;">Schema.org</span></a></td>
                       <td style="background: transparent" width="180">
                         <p style="border: medium none; padding: 0in; page-break-inside: auto; background: transparent none repeat scroll 0% 0%; page-break-after: auto; text-align: center;"><font
@@ -2780,9 +2770,8 @@
                           href="https://www.easypolls.net/"><b><span style="color: #1155cc;"><span
                                 style="font-family: Helvetica,Arial,sans-serif;">Easy
                                 Polls</span></span></b></a></td>
-                      <td style="text-align: center; background-color: white;"><span
-                          style="font-family: Helvetica,Arial,sans-serif;"><a href="https://www.pexels.com/"><b><span>Stock
-                                Photos</span></b></a></span></td>
+                      <td style="text-align: center;"><span style="font-family: Helvetica,Arial,sans-serif;"><a
+                            href="https://www.pexels.com/"><b><span>Stock Photos</span></b></a></span></td>
                     </tr>
                     <tr>
                       <td style="text-align: center;"><a href="https://www.robotspiritguide.com/"><span
@@ -4039,12 +4028,14 @@
                     width="146"> </colgroup>
                 <tbody>
                   <tr valign="top">
-                    <td style="background: white none repeat scroll 0% 0%; width: 112px; height: 37px; text-align: center; vertical-align: middle;"
-                      width="112" height="37" bgcolor="#ffffff">
+                    <td style="background: transparent" width="116">
+                      <!--
+                    <td style=" none repeat scroll 0% 0%; width: 112px; height: 37px; text-align: center; vertical-align: middle;"                      width="112" height="37" bgcolor="#ffffff">
+                   -->
                       <p style="margin-bottom: 0in; border: none;
                         padding: 0in; page-break-inside: auto; orphans:                        0; widows: 0; background: transparent;                        page-break-after: auto"
                         align="center">&nbsp;<font face="Helvetica, Arial, sans-serif"><a
-                            href="https://poweroutage.us/"><font color="#1155cc"><u>Poweoutage.us</u></font></a></font><br>
+                            href="https://poweroutage.us/"><font color="#1155cc"><u>Poweroutage.us</u></font></a></font><br>
                         <font face="Helvetica, Arial, sans-serif"><a href="https://outagemap.evergy.com/"><font
                               color="#1155cc"><u><br>
                               </u></font></a></font><font face="Helvetica, Arial, sans-serif"><a
@@ -4104,7 +4095,7 @@
                       <h5><b><span style="font-family: Helvetica,Arial,sans-serif;"></span></b></h5>
                       <h5><a href="https://v2.wttr.in/kmci"></a></h5>
                     </td>
-                    <td style="background: #ffffff" width="146" bgcolor="#ffffff">
+                    <td style="background: transparent" width="116">
                       <p style="margin-bottom: 0in; border: none;
                         padding: 0in; page-break-inside: auto; orphans:                        0; widows: 0; background: transparent;                        page-break-after: auto">&nbsp;&nbsp;
                         <font size="-1" face="Helvetica, Arial, sans-serif"><a href="http://forecast.weather.gov/MapClick.php?CityName=Platte+City&amp;state=MO&amp;site=EAX&amp;textField1=39.3615&amp;textField2=-94.7778"><font
@@ -4330,14 +4321,14 @@
                             Arial, sans-serif">&gt; 9:31A &gt;<br>
                             &lt; 7:37P &lt;</font></p>
                       </td>
-                      <td style="background: white none repeat scroll 0% 0%; width: 90px;"
-                        width="90" bgcolor="#cac8df">
+                      <td style="none repeat scroll 0% 0%; width: 90px;" width="90"
+                        bgcolor="#cac8df">
                         <p align="center"> <font face="Helvetica,
                             Arial, sans-serif">&gt; 10:49A &gt;<br>
                             &lt; 6:25P &lt;</font></p>
                       </td>
-                      <td style="background: white none repeat scroll 0% 0%; width: 89px;"
-                        width="89" bgcolor="#cac8df">
+                      <td style="none repeat scroll 0% 0%; width: 89px;" width="89"
+                        bgcolor="#cac8df">
                         <p align="center"> <font face="Helvetica,
                             Arial, sans-serif">&gt; 11:48A &gt;<br>
                             &lt; 5:23P &lt;</font></p>
@@ -4637,8 +4628,7 @@
               <table width="100%" border="1">
                 <tbody>
                   <tr>
-                    <td style="text-align: center; background-color: white;"><b><font
-                          size="3"><span style="font-family: Helvetica,Arial,sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;
+                    <td style="text-align: center;"><b><font size="3"><span style="font-family: Helvetica,Arial,sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;
                             &nbsp;&nbsp; </span></font></b><a href="https://b4ufly.aloft.ai/?lat=39.35820893129181&amp;long=-94.79119038956597"><b><font
                             size="3"><span style="font-family: Helvetica,Arial,sans-serif;">B4UFly</span></font></b></a></td>
                     <td style="text-align: center;">&nbsp; <a href="https://www.ncsl.org/research/transportation/current-unmanned-aircraft-state-law-landscape.aspx"><span
@@ -4925,7 +4915,7 @@
                     width="121"> </colgroup>
                 <tbody>
                   <tr valign="top">
-                    <td style="background: #ffffff" width="117" bgcolor="#66ffff">
+                    <td style="background: transparent" width="116">
                       <p style="text-align: center;"> <font face="Helvetica, Arial,
                           sans-serif"><a href="http://www.wunderground.com/US/CA/Santa_Monica.html"><font
                               color="#0000ee"><font style="font-size:
@@ -4937,7 +4927,7 @@
                               color="#0000ee"><font style="font-size:
                                 12pt" size="3"><u><b>Van Nuys&nbsp;&nbsp; </b></u></font></font></a></font></p>
                     </td>
-                    <td style="background: #ffffff" width="121" bgcolor="#ffffff">
+                    <td style="background: transparent" width="116">
                       <p style="text-indent: -0.25in" align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 
@@ -4954,20 +4944,20 @@
                     </td>
                   </tr>
                   <tr valign="top">
-                    <td style="background: #ffffff" width="117" bgcolor="#ffffff">
+                    <td style="background: transparent" width="116">
                       <p style="text-align: center;"> <font face="Helvetica, Arial,
                           sans-serif"><a href="http://www.wunderground.com/cgi-bin/findweather/getForecast?query=64079&amp;wuSelect=WEATHER"><font
                               color="#0000ee"><font style="font-size:
                                 12pt" size="3"><u><b>KCMO </b></u></font></font></a></font>
                       </p>
                     </td>
-                    <td style="background: transparent" width="119" bgcolor="#33ffff">
+                    <td style="background: transparent" width="116">
                       <p style="text-align: center;"> <font face="Helvetica, Arial,
                           sans-serif"><a href="http://www.wunderground.com/cgi-bin/findweather/getForecast?query=64079&amp;wuSelect=WEATHER"><font
                               color="#0000ee"><font style="font-size:
                                 12pt" size="3"><u><b>PCMO</b></u></font></font></a></font></p>
                     </td>
-                    <td style="background: #ffffff" width="121" bgcolor="#ffffff">
+                    <td style="background: transparent" width="116">
                       <p style="text-align: center;"> <font face="Helvetica, Arial,
                           sans-serif"><a href="http://www.springfrog.com/weather/wind-chill.htm"><font
                               color="#1155cc"><font style="font-size:
@@ -6058,6 +6048,14 @@
       <font face="Helvetica, Arial,
         sans-serif"> </font> </p>
     <font face="Helvetica, Arial, sans-serif"> </font> <grammarly-desktop-integration
-      data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+      data-grammarly-shadow-root="true"></grammarly-desktop-integration> &amp; <label
+      for="darkModeToggle"> Dark Mode:</label> <input id="darkModeToggle" onclick="toggleDarkMode()"
+      type="checkbox">
+    <script>
+        function toggleDarkMode() {
+            const body = document.body;
+            body.classList.toggle('dark-mode');
+        }
+    </script>
   </body>
 </html>
