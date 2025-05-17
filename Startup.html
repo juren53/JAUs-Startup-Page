@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAU's Startup Page NG</title>
+    <style>
+        :root {
+            /* Light mode variables (default) - subdued version */
+            --background: #e8e8e8;
+            --text: #212529;
+            --links: #0d6efd;
+            --link-hover: #0a58ca;
+            --card-bg: #f5f5f5;
+            --heading-bg: #e5e5e5;
+            --border-color: #d5d5d5;
+            --secondary-bg: #e5e5e5;
+        }
+
+        /* Dark mode variables */
+        .dark-mode {
+            --background: #212529;
+            --text: #e9ecef;
+            --links: #6ea8fe;
+            --link-hover: #8bb9fe;
+            --card-bg: #343a40;
+            --heading-bg: #495057;
+            --border-color: #495057;
+            --secondary-bg: #343a40;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Helvetica', Arial, sans-serif;
+            background-color: var(--background);
+            color: var(--text);
+            line-height: 1.6;
+            transition: background-color 0.3s, color 0.3s;
+            padding: 1rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        a {
+            color: var(--links);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: var(--link-hover);
+            text-decoration: underline;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .header-center {
+            font-size: 1.75rem;
+            font-weight: bold;
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        .header-right {
+            text-align: right;
+            font-size: 0.9rem;
+        }
+
+        .dark-mode-toggle {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            cursor: pointer;
+        }
+
+        .dark-mode-toggle input {
+            cursor: pointer;
+            width: 1.25rem;
+            height: 1.25rem;
+        }
+
+        .main-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 0.25rem;
+            padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            height: fit-content;
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            background-color: var(--heading-bg);
+            border-radius: 0.25rem;
+        }
+
+        .link-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 0.5rem;
+        }
+
+        .link-item {
+            padding: 0.5rem;
+            text-align: center;
+            background-color: var(--secondary-bg);
+            border-radius: 0.25rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .link-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .link-group {
+            margin-bottom: 1rem;
+        }
+
+        .link-group h3 {
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+            text-align: center;
+        }
+
+        .info-text {
+            text-align: center;
+            font-size: 0.9rem;
+            margin: 0.5rem 0;
+        }
+
+        /* Media queries for responsive design */
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .header-left, .header-right {
+                width: 100%;
+                text-align: center;
+            }
+            
+            .main-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        footer {
+            margin-top: 2rem;
+            text-align: center;
+            font-size: 0.9rem;
+            padding: 1rem;
+            border-top: 1px solid var(--border-color);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-left">
+            <div class="dark-mode-toggle">
+                <label for="darkModeToggle">Dark Mode:</label>
+                <input type="checkbox" id="darkModeToggle">
+            </div>
+            <div>
+                <a href="https://github.com/juren53/JAUs-Startup-Page/commits/main">History</a>
+                &nbsp;&nbsp;&nbsp;
+                <a href="about:restartrequired">Refresh Firefox</a>
+            </div>
+        </div>
+        <div class="header-center">JAU's Startup Page</div>
+        <div class="header-right">Updated: 2025-05-17 07:15</div>
+    </header>
+
+    <main class="main-grid">
+        <!-- Search Engines Section -->
+        <section class="card">
+            <h2 class="card-title">Search Engines</h2>
+            <div class="link-grid">
+                <div class="link-item">
+                    <a href="https://www.google.com/">Google</a>
+                </div>
+               
+                <div class="link-item">
+                    <a href="http://www.brave.com/">Brave</a>
+                </div>
+
+                <div class="link-item">
+                    <a href="http://www.yahoo.com/">Yahoo</a>
+                </div>
+                <div class="link-item">
+                    <a href="http://www.bing.com/">Bing</a>
+                </div>
+                <div class="link-item">
+                    <a href="http://www.duckduckgo.com/">DuckDuckGo</a>
+                </div>
+                <div class="link-item">
+                    <a href="http://www.whitepages.com/">White Pages</a>
+                </div>
+                <div class="link-item">
+                    <a href="http://www.yellowpages.com/">Yellow Pages</a>
+                </div>
+                <div class="link-item">
+                    <a href="http://en.wikipedia.org/wiki/Main_Page">Wikipedia</a>
+                </div>
+                <div class="link-item">
+                    <a href="https://www.imdb.com/">IMDB</a>
+                </div>
+                <div class="link-item">
+                    <a href="http://youtube.com/">YouTube</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- News Section -->
+        <section class="card">
+            <h2 class="card-title">News</h2>
+            <div class="link-grid">
+                <div class="link-item">
+                    <a href="https://news.google.com/">Google News</a>
+                </div>
+                <div class="link-item">
+                    <a href="http://news.yahoo.com/">Yahoo News</a>
+                </div>
+                <div class="link-item">
+                    <a href="https://www.bbc.com/">BBC</a>
+                </div>
+                <div class="link-item">
+                    <a href="http://www.bing.com/news">Bing News</a>
+                </div>
+                <div class="link-item">
+                    <a href="http://www.msnbc.com/">MSNBC</a>
+                </div>
+                
+                <div class="link-item">
+                    <a href="https://www.csmonitor.com/">CS Monitor</a>
+                </div>
+                <div class="link-item">
+                    <a href="https://www.npr.org/">NPR</a>
+                </div>
+                <div class="link-item">
+                    <a href="https://text.npr.org/">[NPR text]</a>
+                </div>
+            </div>
+            <div class="link-grid" style="margin-top: 1rem;">
+                <div class="link-item">
+                    <a href="http://www.reuters.com/">Reuters</a>
+                </div>
+                <div class="link-item">
+                    <a href="https://apnews.com">AP News</a>
+                </div>
+                <div class="link-item">
+                    <a href="https://join1440.com/today">1440</a>
+                </div>
+                <div class="link-item">
+                    <a href="https://www.lawfaremedia.org/">Lawfare</a>
+                </div>
+                <div class="link-item">
+                    <a href="http://www.cnn.com/">CNN</a>
+                </div>
+                <div class="link-item">
+                    <a href="http://lite.cnn.com/">[CNN text]</a>
+                </div>
+                <div class="link-item">
+                    <a href="http://time.com/">Time</a>
+                </div>
+                <div class="link-item">
+                    <a href="https://www.vox.com/">Vox</a>
+                </div>
+                <div class="link-item">
+                    <a href="http://www.theguardian.com/us">The Guardian</a>
+                </div>
+                <div class="link-item">
+                    <a href="https://www.morningbrew.com/daily">Morning Brew</a>
+                </div>
+                <div class="link-item">
+                    <a href="https://getpocket.com/explore">Pocket</a>
+                </div>
+                <div class="link-item">
+                    <a href="http://www.huffingtonpost.com/">Huffington Post</a>
+                </div>
+                <div class="link-item">
+                    <a href="http://www.nytimes.com/">New York Times</a>
+                </div>
+                <div class="link-item">
+                    <a href="https://www.washingtonpost.com/">Washington Post</a>
+                </div>
+                <div class="link-item">
+                    <a href="https://www.latimes.com/">LA Times</a>
+                </div>
+                <div class="link-item">
+                    <a href="https://bigthink.com/">Big Think</a>
+                </div>
+                <div class="link-item">
+                    <a href="https://commongroundcommittee.org/">Common Ground</a>
+                </div>
+                <div class="link-item">
+                    <a href="about:support">Refresh</a>
+                </div>
+                <div class="link-item">
+                    <a href="https://newatlas.com/">New Atlas</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Weather Section -->
+        <section class="card">
+            <h2 class="card-title">Weather</h2>
+            <div class="link-grid">
+                <div class="link-item">
+                    <a href="https://poweroutage.us/">Poweroutage.us</a>
+                </div>
+                <div class="link-item">
+                    <a href="https://outagemap.evergy.com/">Evergy Outage Map</a>
+                </div>
+                <div class="link-item">
+                    <a href="https://tempestwx.com/map/99721/39.2752/-94.7757/11">WeatherFlow Map</a>
+                </div>
+                <div class="link-item">
+                    <a href="https://tempestwx.com/station/99721/">Rising Star Park</a>
+                </div>
+                <div class="link-item">
+                    <a href="https://community.weatherflow.com/">WeatherFlow Support</a>
+                </div>
+                <div class="link-item">
+                    <a href="https://community.weatherflow.com/">Weather Flow Forum</a>
+                </div>
+                <div class="link-item">
+                    <a href="https://weather.com/weather/today/l/64079:4:US">Weather.com</a>
+                </div>
+                <div class="link-item">
+                    <a href="https://www.swpc.noaa.gov/products/planetary-k-index">Space Weather</a>
+                </div>
+                <div class="link-item">
+                    <a href="http://www.weathernationtv.com/LocalWeather">WeatherNation</a>
+                </div>
+                <div class="link-item">
+                    <a href="https://wttr.in/kmci">KCI</a>
+                </div>
+                <div class="link-item">
+                    <a href="https://v2.wttr.in/kmci">KCI (alt)</a>
+                </div>
+                <div class="link-item">
+                    <a href="https://ambientweather.net/">AmbientWeather Map</a>
+                </div>
+            </div>
+            
+            <div class="link-grid" style="margin-top: 1rem;">
+                <div class="link-item">
+                    <a href="https://tempestwx.com/map/58886/39.6321/-106.3514/13">Eisenhower Tunnel</a>
+                </div>
+                <div class="link-item">
+                    <a href="https://tempestwx.com/map/66830/34.0107/-118.4501/15">Penmar</a>
+                </div>
+                <div class="link-item">
+                    <a href="http://forecast.weather.gov/MapClick.php?CityName=Platte+City&amp;state=MO&amp;site=EAX&amp;textField1=39.3615&amp;textField2=-94.7778">NOAA Weather</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>JAU's Startup Page &copy; 2025 | Last updated: May 17, 2025</p>
+    </footer>
+
+    <script>
+        // Handle Dark Mode toggle
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+
+        // Check for saved preference
+        if (localStorage.getItem('darkMode') === 'enabled') {
+            body.classList.add('dark-mode');
+            darkModeToggle.checked = true;
+        }
+
+        // Toggle dark mode
+        darkModeToggle.addEventListener('change', function() {
+            if (this.checked) {
+                body.classList.add('dark-mode');
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                body.classList.remove('dark-mode');
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        });
+    </script>
+</body>
+</html>
