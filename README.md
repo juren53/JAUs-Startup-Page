@@ -98,3 +98,25 @@ To verify that the application can start correctly and that all modules are prop
 
 Copyright © 2025
 
+
+## Git Repository
+
+This project is now managed using Git version control. To work with the repository:
+
+- Check out the [GIT_GUIDE.md](GIT_GUIDE.md) for basic Git usage instructions
+- The repository includes:
+  - Source code in the `src` directory
+  - Documentation in Markdown files
+  - Configuration files like `.gitignore` and licensing information
+
+### Contributing
+
+To contribute to the project:
+
+1. Create a new branch for your feature or bug fix
+2. Make your changes and commit them with clear, descriptive messages
+3. Push your branch to the remote repository (if using one)
+4. Create a pull request for review
+
+See the [GIT_GUIDE.md](GIT_GUIDE.md) file for detailed Git commands and best practices.
+
