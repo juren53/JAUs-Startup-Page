@@ -1,4 +1,6 @@
 import os
+import sys
+import subprocess
 from PyQt6.QtWidgets import (
     QMainWindow, QWidget, QVBoxLayout, QHBoxLayout, QLabel, 
     QPushButton, QListWidget, QListWidgetItem, QTabWidget,
@@ -205,6 +207,11 @@ class MainWindow(QMainWindow):
         
         # Help menu
         helpMenu = menubar.addMenu("&Help")
+        
+        viewSummaryAction = QAction("View &Summary", self)
+        viewSummaryAction.setStatusTip("Open the project summary document")
+        viewSummaryAction.triggered.connect(self.viewSummary)
+        helpMenu.addAction(viewSummaryAction)
         
         aboutAction = QAction("&About", self)
         aboutAction.setStatusTip("Show information about the application")
@@ -492,6 +499,41 @@ class MainWindow(QMainWindow):
             self, "About The Startup Dashboard Editor", 
             about_html
         )
+    
+    def viewSummary(self):
+        """Open the SUMMARY.md file with the system's default application."""
+        try:
+            # Check if the file exists in the docs directory
+            summary_path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), 
+                                     "docs", "SUMMARY.md")
+            
+            if os.path.exists(summary_path):
+                # Open the file with the default application
+                if sys.platform == 'win32':
+                    os.startfile(summary_path)
+                elif sys.platform == 'darwin':  # macOS
+                    subprocess.run(['open', summary_path], check=True)
+                else:  # Linux and others
+                    subprocess.run(['xdg-open', summary_path], check=True)
+                
+                self.statusBar().showMessage(f"Opened Summary document: {summary_path}")
+            else:
+                # Check if it's in the root directory instead
+                summary_path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), 
+                                         "FINAL_SUMMARY.md")
+                if os.path.exists(summary_path):
+                    if sys.platform == 'win32':
+                        os.startfile(summary_path)
+                    elif sys.platform == 'darwin':  # macOS
+                        subprocess.run(['open', summary_path], check=True)
+                    else:  # Linux and others
+                        subprocess.run(['xdg-open', summary_path], check=True)
+                    
+                    self.statusBar().showMessage(f"Opened Summary document: {summary_path}")
+                else:
+                    QMessageBox.warning(self, "File Not Found", "Summary document not found.")
+        except Exception as e:
+            QMessageBox.critical(self, "Error", f"Failed to open Summary document: {str(e)}")
     
     def onCardOrderChanged(self, parent, start, end, destination, row):
         """Handle reordering of cards in the list."""
