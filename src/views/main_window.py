@@ -107,18 +107,18 @@ class CardPreviewWidget(QWidget):
                 
                 self.linksLayout.addWidget(subGroup)
                 
-                self.linksLayout.addWidget(subGroup)
 
 
 class MainWindow(QMainWindow):
     """Main window of the Startup Dashboard Editor application."""
     
-    def __init__(self):
+    def __init__(self, last_commit_date=None):
         super().__init__()
         
         self.model = StartupPageModel()
         self.current_file = None
         self.dark_mode = False
+        self.last_commit_date = last_commit_date or ""
         
         # Initialize settings manager
         self.settings_manager = SettingsManager()
@@ -477,12 +477,20 @@ class MainWindow(QMainWindow):
     
     def showAbout(self):
         """Show information about the application."""
-        QMessageBox.about(
-            self, "About The Startup Dashboard Editor", 
-            """<h1>The Startup Dashboard Editor</h1>
+        # Format the last commit info
+        commit_info = f"<p>Last commit: {self.last_commit_date}</p>" if self.last_commit_date else ""
+        
+        # Create the about dialog HTML
+        about_html = f"""<h1>The Startup Dashboard Editor</h1>
             <p>Version 1.0</p>
             <p>A Qt6-based editor for managing your Startup dashboard.</p>
+            {commit_info}
+            <p><a href="https://github.com/juren53/JAUs-Startup-Page/commits/main">View Commit History</a></p>
             <p>Copyright &copy; 2025</p>"""
+        
+        QMessageBox.about(
+            self, "About The Startup Dashboard Editor", 
+            about_html
         )
     
     def onCardOrderChanged(self, parent, start, end, destination, row):
