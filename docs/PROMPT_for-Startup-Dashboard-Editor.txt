@@ -1,0 +1,3 @@
+I would like to develop in Python Qt6 an editor that builds and manages the startup/dashboard pages like Startup.html.
+
+The editor needs to be able to create, modify and delete the 'cards' in this page and create, modify and delete the eleeents that populate the card.
