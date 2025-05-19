@@ -1,8 +1,19 @@
-# The Startup Dashboard Editor
+# JAUs-Startup-Page and Dashboard Editor
 
-A PyQt6-based GUI editor for managing the Startup dashboard page.
+This repository contains two main components:
 
-## Features
+1. **JAU's Startup Page**: An HTML page that collects and organizes bookmarks into an HTML table.
+2. **The Startup Dashboard Editor**: A PyQt6-based GUI editor for managing the Startup dashboard page.
+
+## JAU's Startup Page
+
+The original component - an HTML page that provides an organized collection of bookmarks in a table format.
+
+## The Startup Dashboard Editor
+
+A newer component that provides a GUI for editing the Startup Page without directly editing HTML code.
+
+### Features
 
 - Create, edit, and delete cards (sections) in the dashboard
 - Manage links within each card
@@ -14,7 +25,7 @@ A PyQt6-based GUI editor for managing the Startup dashboard page.
 - Preview cards before saving
 - Full HTML file editing with preservation of CSS and structure
 
-## Installation
+### Installation
 
 1. Create a virtual environment:
    ```bash
@@ -27,14 +38,14 @@ A PyQt6-based GUI editor for managing the Startup dashboard page.
    pip install -r qt_editor_requirements.txt
    ```
 
-## Usage
+### Usage
 
 Run the application:
 ```bash
 ./startup_dashboard_editor.py
 ```
 
-### Basic Operations
+#### Basic Operations
 
 - **Open an existing HTML file**: File → Open
 - **Save changes**: File → Save or Save As
@@ -45,16 +56,16 @@ Run the application:
 - **Reorder cards**: Drag and drop cards in the list to change their order
 - **Reorder links**: When editing a card, drag and drop links to change their order
 
-## Enhanced Features
+### Enhanced Features
 
-### Masonry Layout
+#### Masonry Layout
 
 The editor now generates HTML with a masonry-style layout that:
 - Eliminates gaps between cards of different heights
 - Provides a cleaner, more organized dashboard appearance
 - Adapts responsively to different screen sizes
 
-### Persistent Settings
+#### Persistent Settings
 
 The application remembers:
 - The last file you were editing
@@ -62,7 +73,7 @@ The application remembers:
 
 Settings are stored in `~/.startup-dashboard-editor/settings.json`
 
-## Project Structure
+### Project Structure
 
 ```
 src/
@@ -72,21 +83,21 @@ src/
 └── main.py           # Application entry point
 ```
 
-## Dependencies
+### Dependencies
 
 - PyQt6: Modern Qt6 bindings for Python
 - BeautifulSoup4: HTML parsing library
 - PyYAML: YAML file handling
 - lxml: XML/HTML parser for BeautifulSoup
 
-## Documentation
+### Documentation
 
 - **README.md**: General application documentation
 - **ENHANCEMENTS.md**: Overview of drag-and-drop and other enhancements
 - **MASONRY_LAYOUT_FIX.md**: Details on the improved card layout
 - **REMEMBER_LAST_FILE.md**: Information about persistent settings
 
-## Testing
+### Testing
 
 To verify that the application can start correctly and that all modules are properly imported, run:
 
@@ -94,14 +105,9 @@ To verify that the application can start correctly and that all modules are prop
 ./test_dashboard_editor.py
 ```
 
-## License
-
-Copyright © 2025
-
-
 ## Git Repository
 
-This project is now managed using Git version control. To work with the repository:
+This project is managed using Git version control. To work with the repository:
 
 - Check out the [GIT_GUIDE.md](GIT_GUIDE.md) for basic Git usage instructions
 - The repository includes:
@@ -115,8 +121,11 @@ To contribute to the project:
 
 1. Create a new branch for your feature or bug fix
 2. Make your changes and commit them with clear, descriptive messages
-3. Push your branch to the remote repository (if using one)
+3. Push your branch to the remote repository
 4. Create a pull request for review
 
 See the [GIT_GUIDE.md](GIT_GUIDE.md) file for detailed Git commands and best practices.
 
+## License
+
+Copyright © 2025
