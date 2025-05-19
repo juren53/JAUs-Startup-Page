@@ -146,3 +146,45 @@ cython_debug/
 
 # Project-specific
 *.html.bak
+
+# Project directories
+archive/
+backups/
+dev/
+output/
+tmp/
+
+# Generated files
+links.txt
+parsed-links.txt
+html_ending.txt
+subdued_css.txt
+
+# Keep static/ directory tracked but ignore large binary files
+static/**/*.jpg
+static/**/*.png
+static/**/*.gif
+static/**/*.mp4
+static/**/*.webm
+static/**/*.pdf
+
+# Project directories
+archive/
+backups/
+dev/
+output/
+tmp/
+
+# Generated files
+links.txt
+parsed-links.txt
+html_ending.txt
+subdued_css.txt
+
+# Keep static/ directory tracked but ignore large binary files
+static/**/*.jpg
+static/**/*.png
+static/**/*.gif
+static/**/*.mp4
+static/**/*.webm
+static/**/*.pdf
