@@ -1,8 +1,8 @@
-# JAU's Startup Page Editor - Implementation Summary
+# Startup Dashboard Page Editor - Implementation Summary
 
 ## Project Overview
 
-We have developed a Python Qt6-based GUI editor for managing the JAU's Startup Page dashboard. This application allows users to create, edit, and delete "cards" (sections) in the dashboard page and manage the links within those cards.
+We have developed a Python Qt6-based GUI editor for managing the Startup Dashboard Page dashboard. This application allows users to create, edit, and delete "cards" (sections) in the dashboard page and manage the links within those cards.
 
 ## Implementation Details
 
@@ -105,7 +105,7 @@ The application includes a test script that verifies all modules can be imported
 
 ## Conclusion
 
-The JAU's Startup Page Editor provides a user-friendly interface for managing the dashboard page, eliminating the need to manually edit HTML code. This makes maintenance of the startup page more accessible and less error-prone.
+The Startup Dashboard Page Editor provides a user-friendly interface for managing the dashboard page, eliminating the need to manually edit HTML code. This makes maintenance of the startup page more accessible and less error-prone.
 
 The application is now ready for use, with potential for further enhancements based on user feedback and requirements.
 
