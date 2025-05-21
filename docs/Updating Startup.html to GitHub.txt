@@ -1,0 +1,13 @@
+Updating Startup.html to GitHub
+
+
+git status 
+
+
+git add Startup.html
+
+
+git commit -m "Update Startup.html"
+
+
+git push origin main
