@@ -2,10 +2,11 @@ from PyQt6.QtWidgets import (
     QDialog, QVBoxLayout, QHBoxLayout, QFormLayout, 
     QLabel, QLineEdit, QPushButton, QGroupBox, 
     QTabWidget, QListWidget, QListWidgetItem, QMessageBox,
-    QWidget, QAbstractItemView, QComboBox, QColorDialog, QFrame
+    QWidget, QAbstractItemView, QComboBox, QColorDialog, QFrame,
+    QPlainTextEdit, QInputDialog
 )
 from PyQt6.QtCore import Qt
-from PyQt6.QtGui import QColor
+from PyQt6.QtGui import QColor, QFont
 import re
 
 from src.models.card_model import Card, Link
@@ -31,9 +32,14 @@ class LinkEditorDialog(QDialog):
         self.nameEdit = QLineEdit(self.link.name)
         layout.addRow("Name:", self.nameEdit)
         
-        # URL field
+        # URL field with Parse button
+        urlLayout = QHBoxLayout()
         self.urlEdit = QLineEdit(self.link.url)
-        layout.addRow("URL:", self.urlEdit)
+        self.parseButton = QPushButton("Parse URL,Description")
+        self.parseButton.clicked.connect(self.parseUrlDescription)
+        urlLayout.addWidget(self.urlEdit)
+        urlLayout.addWidget(self.parseButton)
+        layout.addRow("URL:", urlLayout)
         
         # Add a separator
         separator = QFrame()
@@ -162,6 +168,44 @@ class LinkEditorDialog(QDialog):
         if re.match(hex_pattern, color) or re.match(rgb_pattern, color):
             return True
         return False
+        
+    def parseUrlDescription(self):
+        """Parse a URL,Description pair and populate the fields."""
+        text, ok = QInputDialog.getText(
+            self, 
+            "Parse URL,Description", 
+            "Enter in format 'URL,Description':",
+            QLineEdit.EchoMode.Normal
+        )
+        
+        if ok and text:
+            # Split at the first comma
+            parts = text.split(',', 1)
+            if len(parts) != 2:
+                QMessageBox.warning(
+                    self, 
+                    "Invalid Format", 
+                    "Input must be in the format 'URL,Description'"
+                )
+                return
+                
+            url = parts[0].strip()
+            name = parts[1].strip()
+            
+            if not url or not name:
+                QMessageBox.warning(
+                    self, 
+                    "Invalid Format", 
+                    "Both URL and Description must be non-empty"
+                )
+                return
+                
+            # Set the values
+            self.urlEdit.setText(url)
+            self.nameEdit.setText(name)
+            
+            # Update the preview
+            self.updatePreview()
 
 
 class CardEditorDialog(QDialog):
@@ -232,6 +276,10 @@ class CardEditorDialog(QDialog):
         addMainLinkButton.setMaximumHeight(24)  # Smaller buttons
         addMainLinkButton.clicked.connect(self.addMainLink)
         
+        addMultipleMainLinksButton = QPushButton("Add Multiple Links")
+        addMultipleMainLinksButton.setMaximumHeight(24)
+        addMultipleMainLinksButton.clicked.connect(self.addMultipleMainLinks)
+        
         editMainLinkButton = QPushButton("Edit Link")
         editMainLinkButton.setMaximumHeight(24)
         editMainLinkButton.clicked.connect(self.editMainLink)
@@ -241,6 +289,7 @@ class CardEditorDialog(QDialog):
         removeMainLinkButton.clicked.connect(self.removeMainLink)
         
         mainLinksButtonLayout.addWidget(addMainLinkButton)
+        mainLinksButtonLayout.addWidget(addMultipleMainLinksButton)
         mainLinksButtonLayout.addWidget(editMainLinkButton)
         mainLinksButtonLayout.addWidget(removeMainLinkButton)
         
@@ -283,6 +332,10 @@ class CardEditorDialog(QDialog):
         addSubsectionLinkButton.setMaximumHeight(24)  # Smaller buttons
         addSubsectionLinkButton.clicked.connect(self.addSubsectionLink)
         
+        addMultipleSubsectionLinksButton = QPushButton("Add Multiple Links")
+        addMultipleSubsectionLinksButton.setMaximumHeight(24)
+        addMultipleSubsectionLinksButton.clicked.connect(self.addMultipleSubsectionLinks)
+        
         editSubsectionLinkButton = QPushButton("Edit Link")
         editSubsectionLinkButton.setMaximumHeight(24)
         editSubsectionLinkButton.clicked.connect(self.editSubsectionLink)
@@ -292,6 +345,7 @@ class CardEditorDialog(QDialog):
         removeSubsectionLinkButton.clicked.connect(self.removeSubsectionLink)
         
         subsectionButtonLayout.addWidget(addSubsectionLinkButton)
+        subsectionButtonLayout.addWidget(addMultipleSubsectionLinksButton)
         subsectionButtonLayout.addWidget(editSubsectionLinkButton)
         subsectionButtonLayout.addWidget(removeSubsectionLinkButton)
         
@@ -441,6 +495,143 @@ class CardEditorDialog(QDialog):
             subsection_title = "Additional Links"
             self.card.remove_subsection_link(subsection_title, link)
             self.updateSubsectionLinksList()
+    
+    def addMultipleMainLinks(self):
+        """Add multiple links to the main section from URL,Description pairs."""
+        dialog = QDialog(self)
+        dialog.setWindowTitle("Add Multiple Links")
+        dialog.setMinimumSize(400, 300)
+        
+        layout = QVBoxLayout(dialog)
+        
+        # Instructions
+        instructionsLabel = QLabel(
+            "Enter one URL,Description pair per line.\n"
+            "Format: URL,Description"
+        )
+        layout.addWidget(instructionsLabel)
+        
+        # Text input area
+        textEdit = QPlainTextEdit()
+        layout.addWidget(textEdit)
+        
+        # Button box
+        buttonBox = QHBoxLayout()
+        addButton = QPushButton("Add Links")
+        cancelButton = QPushButton("Cancel")
+        
+        buttonBox.addWidget(addButton)
+        buttonBox.addWidget(cancelButton)
+        layout.addLayout(buttonBox)
+        
+        # Connect signals
+        addButton.clicked.connect(dialog.accept)
+        cancelButton.clicked.connect(dialog.reject)
+        
+        # Show dialog
+        if dialog.exec() == QDialog.DialogCode.Accepted:
+            text = textEdit.toPlainText()
+            lines = text.strip().split('\n')
+            
+            added_count = 0
+            skipped_count = 0
+            
+            for line in lines:
+                if not line.strip():
+                    continue
+                    
+                parts = line.split(',', 1)
+                if len(parts) == 2:
+                    url = parts[0].strip()
+                    name = parts[1].strip()
+                    
+                    if url and name:
+                        link = Link(name=name, url=url)
+                        self.card.add_link(link)
+                        added_count += 1
+                    else:
+                        skipped_count += 1
+                else:
+                    skipped_count += 1
+            
+            self.updateMainLinksList()
+            
+            # Show results
+            QMessageBox.information(
+                self,
+                "Links Added",
+                f"Added {added_count} links to main section.\n"
+                f"Skipped {skipped_count} invalid entries."
+            )
+    
+    def addMultipleSubsectionLinks(self):
+        """Add multiple links to the subsection from URL,Description pairs."""
+        dialog = QDialog(self)
+        dialog.setWindowTitle("Add Multiple Links")
+        dialog.setMinimumSize(400, 300)
+        
+        layout = QVBoxLayout(dialog)
+        
+        # Instructions
+        instructionsLabel = QLabel(
+            "Enter one URL,Description pair per line.\n"
+            "Format: URL,Description"
+        )
+        layout.addWidget(instructionsLabel)
+        
+        # Text input area
+        textEdit = QPlainTextEdit()
+        layout.addWidget(textEdit)
+        
+        # Button box
+        buttonBox = QHBoxLayout()
+        addButton = QPushButton("Add Links")
+        cancelButton = QPushButton("Cancel")
+        
+        buttonBox.addWidget(addButton)
+        buttonBox.addWidget(cancelButton)
+        layout.addLayout(buttonBox)
+        
+        # Connect signals
+        addButton.clicked.connect(dialog.accept)
+        cancelButton.clicked.connect(dialog.reject)
+        
+        # Show dialog
+        if dialog.exec() == QDialog.DialogCode.Accepted:
+            text = textEdit.toPlainText()
+            lines = text.strip().split('\n')
+            
+            subsection_title = "Additional Links"
+            added_count = 0
+            skipped_count = 0
+            
+            for line in lines:
+                if not line.strip():
+                    continue
+                    
+                parts = line.split(',', 1)
+                if len(parts) == 2:
+                    url = parts[0].strip()
+                    name = parts[1].strip()
+                    
+                    if url and name:
+                        link = Link(name=name, url=url)
+                        self.card.add_subsection_link(subsection_title, link)
+                        added_count += 1
+                    else:
+                        skipped_count += 1
+                else:
+                    skipped_count += 1
+            
+            self.updateSubsectionLinksList()
+            
+            # Show results
+            QMessageBox.information(
+                self,
+                "Links Added",
+                f"Added {added_count} links to additional section.\n"
+                f"Skipped {skipped_count} invalid entries."
+            )
     
     def accept(self):
         """Called when the user accepts the dialog."""
