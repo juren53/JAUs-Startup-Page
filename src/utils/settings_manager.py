@@ -13,7 +13,8 @@ class SettingsManager:
         self.settings = {
             "last_file": None,  # Path to the last opened file
             "window_size": [1000, 700],  # Default window size
-            "dark_mode": False  # Default theme
+            "dark_mode": False,  # Default theme
+            "zoom_level": 1.0  # Default zoom level (100%)
         }
         
         # Create directory if it doesn't exist

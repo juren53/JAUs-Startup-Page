@@ -7,8 +7,8 @@ from PyQt6.QtWidgets import (
     QMessageBox, QFileDialog, QSplitter, QGroupBox, QScrollArea,
     QStatusBar, QToolBar, QApplication, QDialog, QAbstractItemView
 )
-from PyQt6.QtCore import Qt, QSize
-from PyQt6.QtGui import QAction, QIcon, QColor, QPalette
+from PyQt6.QtCore import Qt, QSize, pyqtSignal
+from PyQt6.QtGui import QAction, QIcon, QColor, QPalette, QTransform, QWheelEvent
 
 from src.utils.html_parser import HtmlParser
 from src.utils.settings_manager import SettingsManager
@@ -19,9 +19,13 @@ from src.models.card_model import Card, StartupPageModel
 class CardPreviewWidget(QWidget):
     """Widget for displaying a preview of a card."""
     
+    # Signal to notify when zoom level changes
+    zoomChanged = pyqtSignal(float)
+    
     def __init__(self, parent=None):
         super().__init__(parent)
         self.card = None
+        self._scale_factor = 1.0
         self.initUI()
     
     def initUI(self):
@@ -50,15 +54,84 @@ class CardPreviewWidget(QWidget):
             QGroupBox::title { subcontrol-origin: margin; subcontrol-position: top center; padding: 0 5px; }
         """)
     
-    def setCard(self, card):
+    @property
+    def scale_factor(self):
+        """Get the current scale factor."""
+        return self._scale_factor
+        
+    @scale_factor.setter
+    def scale_factor(self, value):
+        """Set the scale factor and apply scaling."""
+        # Ensure scale factor is within reasonable limits
+        self._scale_factor = max(0.5, min(3.0, value))
+        self.applyScaling()
+        # Emit signal to notify of zoom change
+        self.zoomChanged.emit(self._scale_factor)
+    
+    def applyScaling(self):
+        """Apply the current scale factor to the widget contents."""
+        # Apply scaling to the linksContainer
+        self.linksContainer.setStyleSheet(f"""
+            font-size: {100 * self._scale_factor}%;
+            QGroupBox {{
+                font-size: {12 * self._scale_factor}px;
+                font-weight: bold;
+                padding: {5 * self._scale_factor}px;
+                margin-top: {10 * self._scale_factor}px;
+            }}
+            QGroupBox::title {{
+                font-size: {12 * self._scale_factor}px;
+            }}
+            QLabel {{
+                padding: {4 * self._scale_factor}px;
+            }}
+        """)
+        
+        # Adjust the title label separately as it's not in the linksContainer
+        self.titleLabel.setStyleSheet(f"font-size: {16 * self._scale_factor}px; font-weight: bold; padding: 10px;")
+        
+        # If a card is loaded, update the links to reflect the new scale factor
+        if self.card:
+            self.setCard(self.card, update_for_zoom=True)
+    
+    def wheelEvent(self, event: QWheelEvent):
+        """Handle mouse wheel events for zooming when Ctrl is pressed."""
+        # Check if Ctrl key is pressed
+        if event.modifiers() & Qt.KeyboardModifier.ControlModifier:
+            # Calculate zoom delta (typical step is 0.1 or 10%)
+            delta = event.angleDelta().y()
+            zoom_delta = 0.1 if delta > 0 else -0.1
+            
+            # Update scale factor
+            self.scale_factor = self._scale_factor + zoom_delta
+            
+            # Accept the event to prevent it from being propagated
+            event.accept()
+        else:
+            # If Ctrl is not pressed, let the default behavior handle the event
+            super().wheelEvent(event)
+    
+    def setCard(self, card, update_for_zoom=False):
         """Update the preview with the specified card."""
         self.card = card
         
-        # Clear the current layout
-        while self.linksLayout.count():
-            child = self.linksLayout.takeAt(0)
-            if child.widget():
-                child.widget().deleteLater()
+        # If we're just updating for zoom changes and already have a card, don't clear
+        # This helps prevent flickering during zoom operations
+        if not update_for_zoom:
+            # Clear the current layout
+            while self.linksLayout.count():
+                child = self.linksLayout.takeAt(0)
+                if child.widget():
+                    child.widget().deleteLater()
+        else:
+            # For zoom updates, remove widgets but keep a reference to rebuild them
+            widgets_to_remove = []
+            for i in range(self.linksLayout.count()):
+                widgets_to_remove.append(self.linksLayout.itemAt(i).widget())
+            
+            for widget in widgets_to_remove:
+                if widget:
+                    widget.deleteLater()
         
         if not card:
             self.titleLabel.setText("No card selected")
@@ -69,20 +142,12 @@ class CardPreviewWidget(QWidget):
         # Main links
         if card.links:
             linksGroup = QGroupBox("Main Links")
+            linksGroup.setStyleSheet(f"font-size: {12 * self._scale_factor}px; font-weight: bold;")
             linksLayout = QVBoxLayout(linksGroup)
+            linksLayout.setSpacing(int(4 * self._scale_factor))
             
             for link in card.links:
-                # Build inline style if needed
-                style = ""
-                if hasattr(link, 'font_size') and link.font_size:
-                    style += f"font-size: {link.font_size}; "
-                if hasattr(link, 'font_color') and link.font_color:
-                    style += f"color: {link.font_color}; "
-                
-                style_attr = f' style="{style}"' if style else ""
-                linkLabel = QLabel(f'<a href="{link.url}"{style_attr}>{link.name}</a>')
-                linkLabel.setTextFormat(Qt.TextFormat.RichText)
-                linkLabel.setOpenExternalLinks(True)
+                linkLabel = self._create_styled_link(link)
                 linksLayout.addWidget(linkLabel)
             
             self.linksLayout.addWidget(linksGroup)
@@ -91,28 +156,80 @@ class CardPreviewWidget(QWidget):
         for title, links in card.subsections.items():
             if links:
                 subGroup = QGroupBox(title)
+                subGroup.setStyleSheet(f"font-size: {12 * self._scale_factor}px; font-weight: bold;")
                 subLayout = QVBoxLayout(subGroup)
+                subLayout.setSpacing(int(4 * self._scale_factor))
                 
                 for link in links:
-                    # Build inline style if needed
-                    style = ""
-                    if hasattr(link, 'font_size') and link.font_size:
-                        style += f"font-size: {link.font_size}; "
-                    if hasattr(link, 'font_color') and link.font_color:
-                        style += f"color: {link.font_color}; "
-                    
-                    style_attr = f' style="{style}"' if style else ""
-                    linkLabel = QLabel(f'<a href="{link.url}"{style_attr}>{link.name}</a>')
-                    linkLabel.setTextFormat(Qt.TextFormat.RichText)
-                    linkLabel.setOpenExternalLinks(True)
+                    linkLabel = self._create_styled_link(link)
                     subLayout.addWidget(linkLabel)
                 
                 self.linksLayout.addWidget(subGroup)
+        
+    def _create_styled_link(self, link):
+        """Create a styled link label with proper scaling applied."""
+        linkLabel = QLabel()
+        
+        # Determine base styling from link properties
+        style = ""
+        if hasattr(link, 'font_size') and link.font_size:
+            # Convert em-based font size to pixel size with scale factor applied
+            if 'em' in link.font_size:
+                base_size = float(link.font_size.replace('em', ''))
+                scaled_size = base_size * self._scale_factor
+                style += f"font-size: {scaled_size}em; "
+            elif 'px' in link.font_size:
+                base_size = float(link.font_size.replace('px', ''))
+                scaled_size = base_size * self._scale_factor
+                style += f"font-size: {scaled_size}px; "
+            elif '%' in link.font_size:
+                base_size = float(link.font_size.replace('%', ''))
+                scaled_size = base_size * self._scale_factor
+                style += f"font-size: {scaled_size}%; "
+            else:
+                # For other units, just use as is
+                style += f"font-size: {link.font_size}; "
+        else:
+            # Default size with scale factor
+            style += f"font-size: {1.0 * self._scale_factor}em; "
+        
+        if hasattr(link, 'font_color') and link.font_color:
+            style += f"color: {link.font_color}; "
+        
+        # Add hover effect
+        style += "text-decoration: none; "
+        
+        # Set the label text with styling
+        if style:
+            linkLabel.setText(f'<a href="{link.url}" style="{style}">{link.name}</a>')
+        else:
+            linkLabel.setText(f'<a href="{link.url}">{link.name}</a>')
+        
+        # Enable link opening
+        linkLabel.setOpenExternalLinks(True)
+        linkLabel.setTextFormat(Qt.TextFormat.RichText)
+        linkLabel.setTextInteractionFlags(Qt.TextInteractionFlag.TextBrowserInteraction)
+        
+        # Add scale transform on hover using stylesheet
+        linkLabel.setStyleSheet(f"""
+            QLabel:hover {{
+                transform: scale(1.05);
+            }}
+        """)
+        
+        return linkLabel
+    
+    def resetZoom(self):
+        """Reset zoom to 100%."""
+        self.scale_factor = 1.0
                 
 
 
 class MainWindow(QMainWindow):
     """Main window of the Startup Dashboard Editor application."""
+    
+    # Signal to notify when application-wide zoom level changes
+    zoomChanged = pyqtSignal(float)
     
     def __init__(self, last_commit_date=None):
         super().__init__()
@@ -121,6 +238,7 @@ class MainWindow(QMainWindow):
         self.current_file = None
         self.dark_mode = False
         self.last_commit_date = last_commit_date or ""
+        self.zoomIndicator = None  # Initialize the zoomIndicator attribute
         
         # Initialize settings manager
         self.settings_manager = SettingsManager()
@@ -129,6 +247,12 @@ class MainWindow(QMainWindow):
         saved_dark_mode = self.settings_manager.get_setting("dark_mode", False)
         if saved_dark_mode:
             self.dark_mode = saved_dark_mode
+            
+        # Initialize zoom level from settings
+        self.zoom_level = self.settings_manager.get_setting("zoom_level", 1.0)
+        
+        # List of UI components that should be scaled with zoom
+        self.scalable_components = []
         
         self.initUI()
         
@@ -152,8 +276,15 @@ class MainWindow(QMainWindow):
         # Create central widget
         self.createCentralWidget()
         
-        # Create status bar
+        # Create status bar with zoom indicator
         self.statusBar().showMessage("Ready")
+        
+        # Add zoom indicator to the status bar
+        self.zoomIndicator = QLabel(f"Zoom: {int(self.zoom_level * 100)}%")
+        self.statusBar().addPermanentWidget(self.zoomIndicator)
+        
+        # Ensure the zoomIndicator is visible and correctly initialized
+        self.zoomIndicator.setVisible(True)
     
     def createMenuBar(self):
         """Create the application menu bar."""
@@ -204,6 +335,27 @@ class MainWindow(QMainWindow):
         toggleThemeAction.setStatusTip("Toggle between light and dark mode")
         toggleThemeAction.triggered.connect(self.toggleTheme)
         viewMenu.addAction(toggleThemeAction)
+        
+        # Zoom actions
+        viewMenu.addSeparator()
+        
+        zoomInAction = QAction("Zoom &In", self)
+        zoomInAction.setShortcut("Ctrl++")
+        zoomInAction.setStatusTip("Increase zoom level")
+        zoomInAction.triggered.connect(self.zoomIn)
+        viewMenu.addAction(zoomInAction)
+        
+        zoomOutAction = QAction("Zoom &Out", self)
+        zoomOutAction.setShortcut("Ctrl+-")
+        zoomOutAction.setStatusTip("Decrease zoom level")
+        zoomOutAction.triggered.connect(self.zoomOut)
+        viewMenu.addAction(zoomOutAction)
+        
+        resetZoomAction = QAction("&Reset Zoom", self)
+        resetZoomAction.setShortcut("Ctrl+0")
+        resetZoomAction.setStatusTip("Reset zoom to 100%")
+        resetZoomAction.triggered.connect(self.resetZoom)
+        viewMenu.addAction(resetZoomAction)
         
         # Help menu
         helpMenu = menubar.addMenu("&Help")
@@ -258,6 +410,23 @@ class MainWindow(QMainWindow):
         toggleThemeAction.triggered.connect(self.toggleTheme)
         toolbar.addAction(toggleThemeAction)
         
+        toolbar.addSeparator()
+        
+        zoomInAction = QAction("Zoom In", self)
+        zoomInAction.setStatusTip("Increase zoom level")
+        zoomInAction.triggered.connect(self.zoomIn)
+        toolbar.addAction(zoomInAction)
+        
+        zoomOutAction = QAction("Zoom Out", self)
+        zoomOutAction.setStatusTip("Decrease zoom level")
+        zoomOutAction.triggered.connect(self.zoomOut)
+        toolbar.addAction(zoomOutAction)
+        
+        resetZoomAction = QAction("Reset Zoom", self)
+        resetZoomAction.setStatusTip("Reset zoom to 100%")
+        resetZoomAction.triggered.connect(self.resetZoom)
+        toolbar.addAction(resetZoomAction)
+        
         self.addToolBar(toolbar)
     
     def createCentralWidget(self):
@@ -272,10 +441,12 @@ class MainWindow(QMainWindow):
         cardListLabel = QLabel("Cards")
         cardListLabel.setAlignment(Qt.AlignmentFlag.AlignCenter)
         cardListLabel.setStyleSheet("font-weight: bold; font-size: 14px;")
+        self.scalable_components.append({"widget": cardListLabel, "base_font_size": 14})
         
         self.cardListWidget = QListWidget()
         self.cardListWidget.setMinimumWidth(250)
         self.cardListWidget.currentItemChanged.connect(self.onCardSelected)
+        self.scalable_components.append({"widget": self.cardListWidget, "base_font_size": 9})
         
         # Enable drag and drop reordering
         self.cardListWidget.setDragEnabled(True)
@@ -287,10 +458,15 @@ class MainWindow(QMainWindow):
         buttonLayout = QHBoxLayout()
         addButton = QPushButton("Add Card")
         addButton.clicked.connect(self.addCard)
+        self.scalable_components.append({"widget": addButton, "base_font_size": 9})
+        
         editButton = QPushButton("Edit Card")
         editButton.clicked.connect(self.editCard)
+        self.scalable_components.append({"widget": editButton, "base_font_size": 9})
+        
         removeButton = QPushButton("Remove Card")
         removeButton.clicked.connect(self.removeCard)
+        self.scalable_components.append({"widget": removeButton, "base_font_size": 9})
         
         buttonLayout.addWidget(addButton)
         buttonLayout.addWidget(editButton)
@@ -307,8 +483,18 @@ class MainWindow(QMainWindow):
         previewLabel = QLabel("Preview")
         previewLabel.setAlignment(Qt.AlignmentFlag.AlignCenter)
         previewLabel.setStyleSheet("font-weight: bold; font-size: 14px;")
+        self.scalable_components.append({"widget": previewLabel, "base_font_size": 14})
         
         self.previewWidget = CardPreviewWidget()
+        
+        # Connect zoom changed signal to update UI
+        self.previewWidget.zoomChanged.connect(self.onZoomChanged)
+        
+        # Set initial zoom level from settings
+        self.previewWidget.scale_factor = self.zoom_level
+        
+        # Apply initial scaling to all scalable components
+        self.applyGlobalScaling(self.zoom_level)
         
         rightLayout.addWidget(previewLabel)
         rightLayout.addWidget(self.previewWidget)
@@ -319,6 +505,9 @@ class MainWindow(QMainWindow):
         
         # Set initial sizes (30% / 70%)
         splitter.setSizes([300, 700])
+        
+        # Install event filter on the main window to capture wheel events anywhere in the application
+        self.installEventFilter(self)
         
         self.setCentralWidget(splitter)
     
@@ -546,6 +735,73 @@ class MainWindow(QMainWindow):
         
         self.model.cards = new_order
         self.statusBar().showMessage("Card order updated")
+    
+    def zoomIn(self):
+        """Increase zoom level."""
+        self.previewWidget.scale_factor = self.previewWidget.scale_factor + 0.1
+    
+    def zoomOut(self):
+        """Decrease zoom level."""
+        self.previewWidget.scale_factor = self.previewWidget.scale_factor - 0.1
+    
+    def resetZoom(self):
+        """Reset zoom to 100%."""
+        self.previewWidget.resetZoom()
+    
+    def onZoomChanged(self, scale_factor):
+        """Handle zoom level changes."""
+        # Update zoom level in settings
+        self.zoom_level = scale_factor
+        self.settings_manager.set_setting("zoom_level", scale_factor)
+        
+        # Apply scaling to all scalable components
+        self.applyGlobalScaling(scale_factor)
+        
+        # Update zoom indicator in status bar
+        if self.zoomIndicator:
+            self.zoomIndicator.setText(f"Zoom: {int(scale_factor * 100)}%")
+        
+        # Emit signal for other components that might need to respond to zoom changes
+        self.zoomChanged.emit(scale_factor)
+    
+    def applyGlobalScaling(self, scale_factor):
+        """Apply scaling to all scalable components in the UI."""
+        # Scale all registered scalable components
+        for component in self.scalable_components:
+            widget = component["widget"]
+            base_size = component["base_font_size"]
+            
+            # Apply font scaling
+            font = widget.font()
+            font.setPointSizeF(base_size * scale_factor)
+            widget.setFont(font)
+            
+            # For list widget, adjust item heights
+            if isinstance(widget, QListWidget):
+                for i in range(widget.count()):
+                    item = widget.item(i)
+                    item.setSizeHint(QSize(item.sizeHint().width(), int(24 * scale_factor)))
+    
+    def eventFilter(self, watched, event):
+        """Event filter to capture wheel events for zooming anywhere in the application."""
+        if event.type() == event.Type.Wheel and event.modifiers() & Qt.KeyboardModifier.ControlModifier:
+            # Get wheel delta and calculate zoom change
+            delta = event.angleDelta().y()
+            zoom_delta = 0.1 if delta > 0 else -0.1
+            
+            # Update zoom level through the preview widget, which will propagate changes
+            new_scale = self.zoom_level + zoom_delta
+            new_scale = max(0.5, min(3.0, new_scale))  # Ensure zoom stays within bounds
+            
+            # Only update if the zoom level actually changed
+            if new_scale != self.zoom_level:
+                self.previewWidget.scale_factor = new_scale
+            
+            # Consume the event
+            return True
+            
+        # Let other events pass through
+        return super().eventFilter(watched, event)
     
     def closeEvent(self, event):
         """Handle window close event."""
