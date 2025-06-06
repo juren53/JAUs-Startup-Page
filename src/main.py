@@ -23,19 +23,23 @@ def get_last_commit_date():
         # If there's any error (e.g., not a git repo), return current date
         return datetime.now().strftime('%Y-%m-%d')
 
-def main():
-    app = QApplication(sys.argv)
-    app.setApplicationName("The Startup Dashboard Editor")
-    
-    # Set application style
-    app.setStyle("Fusion")
-    
-    # Set application icon
-    icon_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 
-                           "ICON_dashboard-editor.jpg")
-    if os.path.exists(icon_path):
-        app_icon = QIcon(icon_path)
-        app.setWindowIcon(app_icon)
+def main(existing_app=None):
+    # Use existing app if provided, otherwise create a new one
+    if existing_app:
+        app = existing_app
+    else:
+        app = QApplication(sys.argv)
+        app.setApplicationName("The Startup Dashboard Editor")
+        
+        # Set application style
+        app.setStyle("Fusion")
+        
+        # Set application icon
+        icon_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 
+                               "ICON_dashboard-editor.jpg")
+        if os.path.exists(icon_path):
+            app_icon = QIcon(icon_path)
+            app.setWindowIcon(app_icon)
     
     # Get the last commit date
     last_commit_date = get_last_commit_date()

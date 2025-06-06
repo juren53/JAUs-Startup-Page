@@ -267,6 +267,12 @@ class MainWindow(QMainWindow):
         self.setWindowTitle("The Startup Dashboard Editor")
         self.setMinimumSize(1000, 700)
         
+        # Set window icon
+        icon_path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), 
+                               "ICON_dashboard-editor.jpg")
+        if os.path.exists(icon_path):
+            self.setWindowIcon(QIcon(icon_path))
+        
         # Create menu bar
         self.createMenuBar()
         
