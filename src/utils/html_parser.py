@@ -383,8 +383,13 @@ footer {
 
         # Add each card section
         for card in model.cards:
+            # Define card style with custom background color if provided
+            card_style = ""
+            if hasattr(card, 'background_color') and card.background_color:
+                card_style = f" style=\"background-color: {card.background_color};\""
+                
             template += f"""        <!-- {card.title} Section -->
-        <section class="card">
+        <section class="card"{card_style}>
             <h2 class="card-title">{card.title}</h2>
             <div class="link-grid">
 """

@@ -14,9 +14,10 @@ class Link:
 class Card:
     """Represents a card section in the startup page."""
     
-    def __init__(self, title="", icon=""):
+    def __init__(self, title="", icon="", background_color=""):
         self.title = title
         self.icon = icon
+        self.background_color = background_color  # Card background color
         self.links = []  # List of Link objects
         self.subsections = {}  # Dictionary of title -> list of Link objects
     

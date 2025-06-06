@@ -8,7 +8,6 @@ from PyQt6.QtWidgets import (
 from PyQt6.QtCore import Qt
 from PyQt6.QtGui import QColor, QFont
 import re
-
 from src.models.card_model import Card, Link
 
 
@@ -236,6 +235,30 @@ class CardEditorDialog(QDialog):
         # Icon (optional)
         self.iconEdit = QLineEdit(self.card.icon)
         formLayout.addRow("Icon (optional):", self.iconEdit)
+        
+        # Background Color
+        colorLayout = QHBoxLayout()
+        self.bgColorEdit = QLineEdit(self.card.background_color if hasattr(self.card, 'background_color') else "")
+        self.bgColorEdit.setPlaceholderText("e.g., #F5F5F5 or rgb(245,245,245)")
+        
+        self.bgColorPickerBtn = QPushButton("Pick Color")
+        self.bgColorPickerBtn.clicked.connect(self.openBackgroundColorPicker)
+        
+        colorLayout.addWidget(self.bgColorEdit)
+        colorLayout.addWidget(self.bgColorPickerBtn)
+        
+        formLayout.addRow("Background Color:", colorLayout)
+        
+        # Preview color indicator
+        self.colorPreview = QFrame()
+        self.colorPreview.setMinimumSize(20, 20)
+        self.colorPreview.setFrameShape(QFrame.Shape.Box)
+        self.updateColorPreview()
+        
+        # Connect signal to update preview
+        self.bgColorEdit.textChanged.connect(self.updateColorPreview)
+        
+        formLayout.addRow("Color Preview:", self.colorPreview)
         
         layout.addLayout(formLayout)
         
@@ -643,6 +666,28 @@ class CardEditorDialog(QDialog):
         
         self.card.title = title
         self.card.icon = self.iconEdit.text().strip()
+        self.card.background_color = self.bgColorEdit.text().strip()
         
         super().accept()
-
+    
+    def openBackgroundColorPicker(self):
+        """Open a color picker dialog for the card background color."""
+        current_color = self.bgColorEdit.text()
+        initial_color = QColor(current_color) if current_color else QColor(245, 245, 245)  # Default light gray
+        
+        color = QColorDialog.getColor(initial_color, self, "Select Background Color")
+        if color.isValid():
+            self.bgColorEdit.setText(color.name())
+    
+    def updateColorPreview(self):
+        """Update the color preview panel."""
+        color_text = self.bgColorEdit.text()
+        if color_text:
+            try:
+                self.colorPreview.setStyleSheet(f"background-color: {color_text};")
+            except:
+                # If invalid color, show red
+                self.colorPreview.setStyleSheet("background-color: red;")
+        else:
+            # Default preview color
+            self.colorPreview.setStyleSheet("background-color: #F5F5F5;")
