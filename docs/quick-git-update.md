@@ -1,5 +1,5 @@
-
 git add .
-git commit -a
-git push origin main
 
+git commit -a
+
+git push origin main
