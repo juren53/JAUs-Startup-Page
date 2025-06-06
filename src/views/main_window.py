@@ -268,8 +268,13 @@ class MainWindow(QMainWindow):
         self.setMinimumSize(1000, 700)
         
         # Set window icon
+        # First try to use PNG icon (preferred for Linux desktop integration)
         icon_path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), 
-                               "ICON_dashboard-editor.jpg")
+                               "startup-dashboard-editor.png")
+        if not os.path.exists(icon_path):
+            # Fall back to JPG if PNG doesn't exist
+            icon_path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), 
+                                   "ICON_dashboard-editor.jpg")
         if os.path.exists(icon_path):
             self.setWindowIcon(QIcon(icon_path))
         

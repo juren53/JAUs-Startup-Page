@@ -15,7 +15,11 @@ from src.main import main
 
 if __name__ == "__main__":
     # Set the application icon explicitly here to ensure it's set before any windows appear
-    icon_path = os.path.join(os.path.dirname(__file__), "ICON_dashboard-editor.jpg")
+    # First try to use the PNG icon (preferred for Linux desktop integration)
+    icon_path = os.path.join(os.path.dirname(__file__), "startup-dashboard-editor.png")
+    if not os.path.exists(icon_path):
+        # Fall back to JPG if PNG doesn't exist
+        icon_path = os.path.join(os.path.dirname(__file__), "ICON_dashboard-editor.jpg")
     if os.path.exists(icon_path):
         # Create QApplication instance with icon
         app = QApplication(sys.argv)

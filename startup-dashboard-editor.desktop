@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Startup Dashboard Editor
+Comment=Edit JAU's Startup Dashboard
+Exec=/home/juren/Projects/JAUs-Startup-Page/startup_dashboard_editor.py
+Icon=startup-dashboard-editor
+Path=/home/juren/Projects/JAUs-Startup-Page
+Terminal=false
+Categories=Utility;Development;
+
