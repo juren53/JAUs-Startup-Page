@@ -375,7 +375,7 @@ footer {
             </div>
         </div>
         <div class="header-center">JAU's Startup Page</div>
-        <div class="header-right">Updated: {datetime.datetime.now().strftime('%Y-%m-%d %H:%M')}</div>
+        <div class="header-right">Updated: {datetime.datetime.now().strftime('%A, %Y-%m-%d %H:%M')}</div>
     </header>
 
     <main class="main-grid">
@@ -445,7 +445,7 @@ footer {
                 </div>
             </div>
             <div class="footer-center">
-                <p>JAU's Startup Page &copy; {datetime.datetime.now().year} | Last updated: {datetime.datetime.now().strftime('%B %d, %Y')}</p>
+                <p>JAU's Startup Page &copy; {datetime.datetime.now().year} | Last updated: {datetime.datetime.now().strftime('%A, %B %d, %Y')}</p>
             </div>
         </div>
     </footer>
