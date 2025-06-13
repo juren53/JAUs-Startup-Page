@@ -12,6 +12,7 @@ from PyQt6.QtGui import QAction, QIcon, QColor, QPalette, QTransform, QWheelEven
 
 from src.utils.html_parser import HtmlParser
 from src.utils.settings_manager import SettingsManager
+from src.utils.theme_manager import ThemeManager, ThemeDialog
 from src.views.card_editor import CardEditorDialog
 from src.models.card_model import Card, StartupPageModel
 
@@ -210,11 +211,12 @@ class CardPreviewWidget(QWidget):
         linkLabel.setTextFormat(Qt.TextFormat.RichText)
         linkLabel.setTextInteractionFlags(Qt.TextInteractionFlag.TextBrowserInteraction)
         
-        # Add scale transform on hover using stylesheet
-        linkLabel.setStyleSheet(f"""
-            QLabel:hover {{
-                transform: scale(1.05);
-            }}
+        # Add hover effect using stylesheet (Qt doesn't support transform)
+        linkLabel.setStyleSheet("""
+            QLabel:hover {
+                color: #0066cc;
+                text-decoration: underline;
+            }
         """)
         
         return linkLabel
@@ -236,17 +238,15 @@ class MainWindow(QMainWindow):
         
         self.model = StartupPageModel()
         self.current_file = None
-        self.dark_mode = False
         self.last_commit_date = last_commit_date or ""
         self.zoomIndicator = None  # Initialize the zoomIndicator attribute
         
         # Initialize settings manager
         self.settings_manager = SettingsManager()
         
-        # Set dark mode from settings if available
-        saved_dark_mode = self.settings_manager.get_setting("dark_mode", False)
-        if saved_dark_mode:
-            self.dark_mode = saved_dark_mode
+        # Initialize theme manager
+        self.theme_manager = ThemeManager()
+        self.current_theme = self.settings_manager.get_setting("theme", "Default")
             
         # Initialize zoom level from settings
         self.zoom_level = self.settings_manager.get_setting("zoom_level", 1.0)
@@ -341,11 +341,11 @@ class MainWindow(QMainWindow):
         # View menu
         viewMenu = menubar.addMenu("&View")
         
-        toggleThemeAction = QAction("Toggle &Dark Mode", self)
-        toggleThemeAction.setShortcut("Ctrl+D")
-        toggleThemeAction.setStatusTip("Toggle between light and dark mode")
-        toggleThemeAction.triggered.connect(self.toggleTheme)
-        viewMenu.addAction(toggleThemeAction)
+        themeAction = QAction("Change &Theme...", self)
+        themeAction.setShortcut("Ctrl+T")
+        themeAction.setStatusTip("Change application theme")
+        themeAction.triggered.connect(self.changeTheme)
+        viewMenu.addAction(themeAction)
         
         # Zoom actions
         viewMenu.addSeparator()
@@ -507,6 +507,9 @@ class MainWindow(QMainWindow):
         # Apply initial scaling to all scalable components
         self.applyGlobalScaling(self.zoom_level)
         
+        # Apply the saved theme
+        self.applyTheme(self.current_theme)
+        
         rightLayout.addWidget(previewLabel)
         rightLayout.addWidget(self.previewWidget)
         
@@ -644,43 +647,49 @@ class MainWindow(QMainWindow):
             item.setData(Qt.ItemDataRole.UserRole, card)
             self.cardListWidget.addItem(item)
     
-    def toggleTheme(self):
-        """Toggle between light and dark mode."""
-        self.dark_mode = not self.dark_mode
+    def changeTheme(self):
+        """Open theme selection dialog."""
+        dialog = ThemeDialog(self.current_theme, self.theme_manager, self)
+        if dialog.exec() == QDialog.DialogCode.Accepted:
+            new_theme = dialog.get_selected_theme()
+            if new_theme != self.current_theme:
+                self.current_theme = new_theme
+                self.applyTheme(new_theme)
+                self.settings_manager.set_setting("theme", new_theme)
+                self.statusBar().showMessage(f"Theme changed to {new_theme}")
+    
+    def applyTheme(self, theme_name):
+        """Apply the specified theme to the application."""
+        stylesheet = self.theme_manager.generate_stylesheet(theme_name)
+        self.setStyleSheet(stylesheet)
         
-        # Save dark mode setting
-        self.settings_manager.set_setting("dark_mode", self.dark_mode)
-        
-        app = QApplication.instance()
-        palette = QPalette()
-        
-        if self.dark_mode:
-            # Dark theme
-            palette.setColor(QPalette.ColorRole.Window, QColor(53, 53, 53))
-            palette.setColor(QPalette.ColorRole.WindowText, Qt.GlobalColor.white)
-            palette.setColor(QPalette.ColorRole.Base, QColor(35, 35, 35))
-            palette.setColor(QPalette.ColorRole.AlternateBase, QColor(53, 53, 53))
-            palette.setColor(QPalette.ColorRole.ToolTipBase, QColor(25, 25, 25))
-            palette.setColor(QPalette.ColorRole.ToolTipText, Qt.GlobalColor.white)
-            palette.setColor(QPalette.ColorRole.Text, Qt.GlobalColor.white)
-            palette.setColor(QPalette.ColorRole.Button, QColor(53, 53, 53))
-            palette.setColor(QPalette.ColorRole.ButtonText, Qt.GlobalColor.white)
-            palette.setColor(QPalette.ColorRole.Link, QColor(42, 130, 218))
-            palette.setColor(QPalette.ColorRole.Highlight, QColor(42, 130, 218))
-            palette.setColor(QPalette.ColorRole.HighlightedText, Qt.GlobalColor.black)
-            
-            app.setStyleSheet("QToolTip { color: #ffffff; background-color: #2a82da; border: 1px solid white; }")
-            
-            self.statusBar().showMessage("Dark theme applied")
+        # Update window title to reflect current theme if different from default
+        if theme_name != 'Default':
+            current_title = self.windowTitle()
+            if ' - Theme: ' not in current_title:
+                self.setWindowTitle(f"{current_title} - Theme: {theme_name}")
+            else:
+                # Replace existing theme name
+                base_title = current_title.split(' - Theme: ')[0]
+                self.setWindowTitle(f"{base_title} - Theme: {theme_name}")
         else:
-            # Light theme (default)
-            palette = app.style().standardPalette()
-            
-            app.setStyleSheet("")
-            
-            self.statusBar().showMessage("Light theme applied")
+            # Remove theme name from title for default theme
+            current_title = self.windowTitle()
+            if ' - Theme: ' in current_title:
+                base_title = current_title.split(' - Theme: ')[0]
+                self.setWindowTitle(base_title)
+    
+    def toggleTheme(self):
+        """Quick toggle between Default and Dark themes for toolbar compatibility."""
+        if self.current_theme == 'Default':
+            new_theme = 'Dark'
+        else:
+            new_theme = 'Default'
         
-        app.setPalette(palette)
+        self.current_theme = new_theme
+        self.applyTheme(new_theme)
+        self.settings_manager.set_setting("theme", new_theme)
+        self.statusBar().showMessage(f"Switched to {new_theme} theme")
     
     def showAbout(self):
         """Show information about the application."""
@@ -692,7 +701,27 @@ class MainWindow(QMainWindow):
             <p>Version 1.0</p>
             <p>A Qt6-based editor for managing your Startup dashboard.</p>
             {commit_info}
-            <p><a href="https://github.com/juren53/JAUs-Startup-Page/commits/main">View Commit History</a></p>
+            <h3>Features:</h3>
+            <ul>
+                <li>Multiple UI themes (Default, Dark, Solarized, High Contrast, etc.)</li>
+                <li>Zoom support with Ctrl+Mouse Wheel</li>
+                <li>Drag-and-drop card reordering</li>
+                <li>Card editing with link management</li>
+            </ul>
+            <h3>Keyboard Shortcuts:</h3>
+            <ul>
+                <li>Ctrl+T: Change Theme</li>
+                <li>Ctrl+O: Open File</li>
+                <li>Ctrl+S: Save File</li>
+                <li>Ctrl++/-: Zoom In/Out</li>
+                <li>Ctrl+0: Reset Zoom</li>
+            </ul>
+            <p><strong>Links:</strong></p>
+            <ul>
+                <li><a href="https://github.com/juren53/JAUs-Startup-Page/blob/main/CHANGELOG.md">View Changelog</a></li>
+                <li><a href="https://github.com/juren53/JAUs-Startup-Page/commits/main">View Commit History</a></li>
+                <li><a href="https://github.com/juren53/JAUs-Startup-Page">Project Repository</a></li>
+            </ul>
             <p>Copyright &copy; 2025</p>"""
         
         QMessageBox.about(

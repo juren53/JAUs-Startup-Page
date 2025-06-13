@@ -1,4 +1,10 @@
 #!/usr/bin/env python3
+"""
+JAU's Startup Page Editor - Main application module
+
+For version history and detailed changelog, see:
+https://github.com/juren53/JAUs-Startup-Page/blob/main/CHANGELOG.md
+"""
 import sys
 import os
 import subprocess

@@ -2,6 +2,9 @@
 """
 Startup Page Editor - A PyQt6 application for editing JAU's Startup Page.
 This is the main entry point for running the application.
+
+For version history and detailed changelog, see:
+https://github.com/juren53/JAUs-Startup-Page/blob/main/CHANGELOG.md
 """
 import sys
 import os
