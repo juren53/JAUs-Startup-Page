@@ -6,7 +6,8 @@ from PyQt6.QtWidgets import (
     QMainWindow, QWidget, QVBoxLayout, QHBoxLayout, QLabel, 
     QPushButton, QListWidget, QListWidgetItem, QTabWidget,
     QMessageBox, QFileDialog, QSplitter, QGroupBox, QScrollArea,
-    QStatusBar, QToolBar, QApplication, QDialog, QAbstractItemView
+    QStatusBar, QToolBar, QApplication, QDialog, QAbstractItemView,
+    QInputDialog, QTextEdit
 )
 from PyQt6.QtCore import Qt, QSize, pyqtSignal
 from PyQt6.QtGui import QAction, QIcon, QColor, QPalette, QTransform, QWheelEvent
@@ -377,6 +378,14 @@ class MainWindow(QMainWindow):
         openInBrowserAction.triggered.connect(self.openInBrowser)
         viewMenu.addAction(openInBrowserAction)
         
+        viewMenu.addSeparator()
+        
+        gitCommitPushAction = QAction("Git &Commit && Push", self)
+        gitCommitPushAction.setShortcut("Ctrl+G")
+        gitCommitPushAction.setStatusTip("Stage, commit, and push changes to Git repository")
+        gitCommitPushAction.triggered.connect(self.gitCommitAndPush)
+        viewMenu.addAction(gitCommitPushAction)
+        
         # Help menu
         helpMenu = menubar.addMenu("&Help")
         
@@ -739,6 +748,7 @@ class MainWindow(QMainWindow):
                 <li>Ctrl++/-: Zoom In/Out</li>
                 <li>Ctrl+0: Reset Zoom</li>
                 <li>Ctrl+B: Open in Browser</li>
+                <li>Ctrl+G: Git Commit & Push</li>
             </ul>
             <p><strong>Links:</strong></p>
             <ul>
@@ -883,6 +893,106 @@ class MainWindow(QMainWindow):
             self.statusBar().showMessage(f"Opened {os.path.basename(self.current_file)} in default browser")
         except Exception as e:
             QMessageBox.critical(self, "Error", f"Failed to open file in browser: {str(e)}")
+    
+    def gitCommitAndPush(self):
+        """Stage, commit, and push changes to Git repository."""
+        try:
+            # Check if we're in a Git repository
+            result = subprocess.run(['git', 'rev-parse', '--git-dir'], 
+                                  capture_output=True, text=True, cwd=os.getcwd())
+            if result.returncode != 0:
+                QMessageBox.warning(self, "Warning", "This directory is not a Git repository.")
+                return
+            
+            # Check if there are any changes to commit
+            result = subprocess.run(['git', 'status', '--porcelain'], 
+                                  capture_output=True, text=True, cwd=os.getcwd())
+            if not result.stdout.strip():
+                QMessageBox.information(self, "Information", "No changes to commit. Working directory is clean.")
+                return
+            
+            # Show current status to user
+            status_result = subprocess.run(['git', 'status', '--short'], 
+                                         capture_output=True, text=True, cwd=os.getcwd())
+            
+            # Ask user for commit message
+            commit_message, ok = QInputDialog.getText(
+                self, "Git Commit Message", 
+                f"Current changes:\n{status_result.stdout}\nEnter commit message:",
+                text="Update files"
+            )
+            
+            if not ok or not commit_message.strip():
+                return
+            
+            # Create a progress dialog
+            progress_dialog = QMessageBox(self)
+            progress_dialog.setWindowTitle("Git Operations")
+            progress_dialog.setText("Performing Git operations...")
+            progress_dialog.setStandardButtons(QMessageBox.StandardButton.NoButton)
+            progress_dialog.show()
+            
+            # Process events to show the dialog
+            QApplication.processEvents()
+            
+            operations_log = []
+            
+            # Step 1: git add .
+            self.statusBar().showMessage("Adding files to staging...")
+            QApplication.processEvents()
+            result = subprocess.run(['git', 'add', '.'], 
+                                  capture_output=True, text=True, cwd=os.getcwd())
+            if result.returncode != 0:
+                progress_dialog.close()
+                QMessageBox.critical(self, "Error", f"Failed to stage files:\n{result.stderr}")
+                return
+            operations_log.append("✓ Files staged successfully")
+            
+            # Step 2: git commit -a
+            self.statusBar().showMessage("Committing changes...")
+            QApplication.processEvents()
+            result = subprocess.run(['git', 'commit', '-m', commit_message], 
+                                  capture_output=True, text=True, cwd=os.getcwd())
+            if result.returncode != 0:
+                progress_dialog.close()
+                QMessageBox.critical(self, "Error", f"Failed to commit changes:\n{result.stderr}")
+                return
+            operations_log.append(f"✓ Changes committed: {commit_message}")
+            
+            # Step 3: git push origin main
+            self.statusBar().showMessage("Pushing to remote repository...")
+            QApplication.processEvents()
+            result = subprocess.run(['git', 'push', 'origin', 'main'], 
+                                  capture_output=True, text=True, cwd=os.getcwd())
+            if result.returncode != 0:
+                progress_dialog.close()
+                # Check if the error is due to different branch name
+                if "main" in result.stderr and "master" in result.stderr:
+                    # Try with master branch
+                    result = subprocess.run(['git', 'push', 'origin', 'master'], 
+                                          capture_output=True, text=True, cwd=os.getcwd())
+                    if result.returncode != 0:
+                        QMessageBox.critical(self, "Error", f"Failed to push to remote repository:\n{result.stderr}")
+                        return
+                    operations_log.append("✓ Changes pushed to origin/master")
+                else:
+                    QMessageBox.critical(self, "Error", f"Failed to push to remote repository:\n{result.stderr}")
+                    return
+            else:
+                operations_log.append("✓ Changes pushed to origin/main")
+            
+            progress_dialog.close()
+            
+            # Show success message with summary
+            success_msg = "Git operations completed successfully!\n\n" + "\n".join(operations_log)
+            QMessageBox.information(self, "Success", success_msg)
+            
+            self.statusBar().showMessage("Git commit and push completed successfully")
+            
+        except FileNotFoundError:
+            QMessageBox.critical(self, "Error", "Git is not installed or not found in PATH.")
+        except Exception as e:
+            QMessageBox.critical(self, "Error", f"An error occurred during Git operations: {str(e)}")
     
     def closeEvent(self, event):
         """Handle window close event."""
