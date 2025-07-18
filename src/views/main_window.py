@@ -925,16 +925,7 @@ class MainWindow(QMainWindow):
             if not ok or not commit_message.strip():
                 return
             
-            # Create a progress dialog
-            progress_dialog = QMessageBox(self)
-            progress_dialog.setWindowTitle("Git Operations")
-            progress_dialog.setText("Performing Git operations...")
-            progress_dialog.setStandardButtons(QMessageBox.StandardButton.NoButton)
-            progress_dialog.show()
-            
-            # Process events to show the dialog
-            QApplication.processEvents()
-            
+            # Use a simpler approach - just update status bar without blocking dialog
             operations_log = []
             
             # Step 1: git add .
@@ -943,18 +934,16 @@ class MainWindow(QMainWindow):
             result = subprocess.run(['git', 'add', '.'], 
                                   capture_output=True, text=True, cwd=os.getcwd())
             if result.returncode != 0:
-                progress_dialog.close()
                 QMessageBox.critical(self, "Error", f"Failed to stage files:\n{result.stderr}")
                 return
             operations_log.append("✓ Files staged successfully")
             
-            # Step 2: git commit -a
+            # Step 2: git commit -m
             self.statusBar().showMessage("Committing changes...")
             QApplication.processEvents()
             result = subprocess.run(['git', 'commit', '-m', commit_message], 
                                   capture_output=True, text=True, cwd=os.getcwd())
             if result.returncode != 0:
-                progress_dialog.close()
                 QMessageBox.critical(self, "Error", f"Failed to commit changes:\n{result.stderr}")
                 return
             operations_log.append(f"✓ Changes committed: {commit_message}")
@@ -965,7 +954,6 @@ class MainWindow(QMainWindow):
             result = subprocess.run(['git', 'push', 'origin', 'main'], 
                                   capture_output=True, text=True, cwd=os.getcwd())
             if result.returncode != 0:
-                progress_dialog.close()
                 # Check if the error is due to different branch name
                 if "main" in result.stderr and "master" in result.stderr:
                     # Try with master branch
@@ -980,8 +968,6 @@ class MainWindow(QMainWindow):
                     return
             else:
                 operations_log.append("✓ Changes pushed to origin/main")
-            
-            progress_dialog.close()
             
             # Show success message with summary
             success_msg = "Git operations completed successfully!\n\n" + "\n".join(operations_log)
