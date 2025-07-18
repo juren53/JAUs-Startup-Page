@@ -1,6 +1,7 @@
 import os
 import sys
 import subprocess
+import webbrowser
 from PyQt6.QtWidgets import (
     QMainWindow, QWidget, QVBoxLayout, QHBoxLayout, QLabel, 
     QPushButton, QListWidget, QListWidgetItem, QTabWidget,
@@ -368,6 +369,14 @@ class MainWindow(QMainWindow):
         resetZoomAction.triggered.connect(self.resetZoom)
         viewMenu.addAction(resetZoomAction)
         
+        viewMenu.addSeparator()
+        
+        openInBrowserAction = QAction("Open in &Browser", self)
+        openInBrowserAction.setShortcut("Ctrl+B")
+        openInBrowserAction.setStatusTip("Open current webpage in default browser")
+        openInBrowserAction.triggered.connect(self.openInBrowser)
+        viewMenu.addAction(openInBrowserAction)
+        
         # Help menu
         helpMenu = menubar.addMenu("&Help")
         
@@ -438,6 +447,13 @@ class MainWindow(QMainWindow):
         resetZoomAction.triggered.connect(self.resetZoom)
         toolbar.addAction(resetZoomAction)
         
+        toolbar.addSeparator()
+        
+        openInBrowserAction = QAction("Open in Browser", self)
+        openInBrowserAction.setStatusTip("Open current webpage in default browser")
+        openInBrowserAction.triggered.connect(self.openInBrowser)
+        toolbar.addAction(openInBrowserAction)
+        
         self.addToolBar(toolbar)
     
     def createCentralWidget(self):
@@ -483,9 +499,16 @@ class MainWindow(QMainWindow):
         buttonLayout.addWidget(editButton)
         buttonLayout.addWidget(removeButton)
         
+        # Add "Open in Browser" button below the card management buttons
+        openInBrowserButton = QPushButton("Open in Browser")
+        openInBrowserButton.clicked.connect(self.openInBrowser)
+        openInBrowserButton.setStyleSheet("QPushButton { background-color: #4CAF50; color: white; font-weight: bold; padding: 8px; border-radius: 4px; } QPushButton:hover { background-color: #45a049; }")
+        self.scalable_components.append({"widget": openInBrowserButton, "base_font_size": 9})
+        
         leftLayout.addWidget(cardListLabel)
         leftLayout.addWidget(self.cardListWidget)
         leftLayout.addLayout(buttonLayout)
+        leftLayout.addWidget(openInBrowserButton)
         
         # Right panel: Card preview
         rightPanel = QWidget()
@@ -715,6 +738,7 @@ class MainWindow(QMainWindow):
                 <li>Ctrl+S: Save File</li>
                 <li>Ctrl++/-: Zoom In/Out</li>
                 <li>Ctrl+0: Reset Zoom</li>
+                <li>Ctrl+B: Open in Browser</li>
             </ul>
             <p><strong>Links:</strong></p>
             <ul>
@@ -842,6 +866,23 @@ class MainWindow(QMainWindow):
             
         # Let other events pass through
         return super().eventFilter(watched, event)
+    
+    def openInBrowser(self):
+        """Open the current webpage in the default browser."""
+        if not self.current_file:
+            QMessageBox.warning(self, "Warning", "No file is currently open. Please open an HTML file first.")
+            return
+        
+        try:
+            # Convert file path to file:// URL format
+            file_url = f"file://{os.path.abspath(self.current_file)}"
+            
+            # Open the file in the default web browser
+            webbrowser.open(file_url)
+            
+            self.statusBar().showMessage(f"Opened {os.path.basename(self.current_file)} in default browser")
+        except Exception as e:
+            QMessageBox.critical(self, "Error", f"Failed to open file in browser: {str(e)}")
     
     def closeEvent(self, event):
         """Handle window close event."""
