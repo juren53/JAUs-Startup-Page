@@ -296,19 +296,19 @@ class CardEditorDialog(QDialog):
         mainLinksButtonLayout.setSpacing(4)  # Reduce spacing between buttons
         
         addMainLinkButton = QPushButton("Add Link")
-        addMainLinkButton.setMaximumHeight(24)  # Smaller buttons
+        addMainLinkButton.setMinimumHeight(32)  # Increased button height for readability
         addMainLinkButton.clicked.connect(self.addMainLink)
         
         addMultipleMainLinksButton = QPushButton("Add Multiple Links")
-        addMultipleMainLinksButton.setMaximumHeight(24)
+        addMultipleMainLinksButton.setMinimumHeight(32)
         addMultipleMainLinksButton.clicked.connect(self.addMultipleMainLinks)
         
         editMainLinkButton = QPushButton("Edit Link")
-        editMainLinkButton.setMaximumHeight(24)
+        editMainLinkButton.setMinimumHeight(32)
         editMainLinkButton.clicked.connect(self.editMainLink)
         
         removeMainLinkButton = QPushButton("Remove Link")
-        removeMainLinkButton.setMaximumHeight(24)
+        removeMainLinkButton.setMinimumHeight(32)
         removeMainLinkButton.clicked.connect(self.removeMainLink)
         
         mainLinksButtonLayout.addWidget(addMainLinkButton)
@@ -352,19 +352,19 @@ class CardEditorDialog(QDialog):
         subsectionButtonLayout.setSpacing(4)  # Reduce spacing between buttons
         
         addSubsectionLinkButton = QPushButton("Add Link")
-        addSubsectionLinkButton.setMaximumHeight(24)  # Smaller buttons
+        addSubsectionLinkButton.setMinimumHeight(32)  # Increased button height for readability
         addSubsectionLinkButton.clicked.connect(self.addSubsectionLink)
         
         addMultipleSubsectionLinksButton = QPushButton("Add Multiple Links")
-        addMultipleSubsectionLinksButton.setMaximumHeight(24)
+        addMultipleSubsectionLinksButton.setMinimumHeight(32)
         addMultipleSubsectionLinksButton.clicked.connect(self.addMultipleSubsectionLinks)
         
         editSubsectionLinkButton = QPushButton("Edit Link")
-        editSubsectionLinkButton.setMaximumHeight(24)
+        editSubsectionLinkButton.setMinimumHeight(32)
         editSubsectionLinkButton.clicked.connect(self.editSubsectionLink)
         
         removeSubsectionLinkButton = QPushButton("Remove Link")
-        removeSubsectionLinkButton.setMaximumHeight(24)
+        removeSubsectionLinkButton.setMinimumHeight(32)
         removeSubsectionLinkButton.clicked.connect(self.removeSubsectionLink)
         
         subsectionButtonLayout.addWidget(addSubsectionLinkButton)
@@ -382,9 +382,11 @@ class CardEditorDialog(QDialog):
         # Dialog buttons
         buttonLayout = QHBoxLayout()
         saveButton = QPushButton("Save")
+        saveButton.setMinimumHeight(32)  # Increased button height for readability
         saveButton.clicked.connect(self.accept)
         
         cancelButton = QPushButton("Cancel")
+        cancelButton.setMinimumHeight(32)  # Increased button height for readability
         cancelButton.clicked.connect(self.reject)
         
         buttonLayout.addWidget(saveButton)
