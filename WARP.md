@@ -61,10 +61,10 @@ python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 # Install PyQt6 dependencies
-pip install -r qt_editor_requirements.txt
+pip install -r requirements.txt
 
 # Alternative dependencies (includes testing/build tools)
-pip install -r requirements-editor.txt
+pip install -r requirements-dev.txt
 ```
 
 ### Running the Application
@@ -87,7 +87,7 @@ python3 src/main.py
 
 ```bash
 # Test module imports and basic functionality
-./test_dashboard_editor.py
+./tools/test_dashboard_editor.py
 
 # Verify PyQt6 installation
 python3 -c "from PyQt6.QtWidgets import QApplication; print('PyQt6 OK')"
@@ -112,10 +112,10 @@ git push
 
 ```bash
 # Convert icon format (utility script included)
-python3 convert_icon.py
+python3 tools/convert_icon.py
 
 # Update desktop integration
-cp startup-dashboard-editor.desktop ~/.local/share/applications/
+cp assets/startup-dashboard-editor.desktop ~/.local/share/applications/
 ```
 
 ## Key Features & Capabilities
@@ -179,13 +179,17 @@ cp startup-dashboard-editor.desktop ~/.local/share/applications/
 - `src/utils/html_parser.py` - HTML file I/O operations
 
 **Dependencies & Requirements**
-- `qt_editor_requirements.txt` - Core runtime dependencies (PyQt6, BeautifulSoup4, lxml, PyYAML)
-- `requirements-editor.txt` - Extended dependencies including testing tools (pytest, pyinstaller)
+- `requirements.txt` - Core runtime dependencies (PyQt6, BeautifulSoup4, lxml, PyYAML)
+- `requirements-dev.txt` - Extended dependencies including testing tools (pytest, pyinstaller)
 
 **Documentation & History**
 - `CHANGELOG.md` - Complete version history and feature documentation
-- `FINAL_SUMMARY.md` - Comprehensive project overview
+- `docs/FINAL_SUMMARY.md` - Comprehensive project overview
 - `README.md` - User-facing documentation and setup instructions
+- `docs/` - Additional documentation (enhancements, guides, etc.)
+- `tools/` - Development utilities and testing scripts
+- `assets/` - Icons, desktop files, and other assets
+- `examples/` - Example HTML files and templates
 
 ## Development Context
 

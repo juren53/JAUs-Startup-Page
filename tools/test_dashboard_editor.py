@@ -8,8 +8,9 @@ from pathlib import Path
 
 print("Testing The Startup Dashboard Editor imports...")
 
-# Add current directory to path
-sys.path.insert(0, os.path.dirname(__file__))
+# Add parent directory to path so we can import src
+parent_dir = os.path.dirname(os.path.dirname(__file__))
+sys.path.insert(0, parent_dir)
 
 try:
     # Import main modules
@@ -21,8 +22,8 @@ try:
     
     print("✅ All modules imported successfully!")
     
-    # Get the path to Startup.html
-    startup_html_path = Path(__file__).parent / 'Startup.html'
+    # Get the path to Startup.html (now in parent directory)
+    startup_html_path = Path(__file__).parent.parent / 'Startup.html'
     
     if startup_html_path.exists():
         print(f"✅ Found Startup.html file at: {startup_html_path}")

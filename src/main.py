@@ -43,11 +43,11 @@ def main(existing_app=None):
         # Set application icon
         # First try to use PNG icon (preferred for Linux desktop integration)
         icon_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 
-                               "startup-dashboard-editor.png")
+                               "assets", "icons", "startup-dashboard-editor.png")
         if not os.path.exists(icon_path):
             # Fall back to JPG if PNG doesn't exist
             icon_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 
-                                   "ICON_dashboard-editor.jpg")
+                                   "assets", "icons", "ICON_dashboard-editor.jpg")
         if os.path.exists(icon_path):
             app_icon = QIcon(icon_path)
             app.setWindowIcon(app_icon)

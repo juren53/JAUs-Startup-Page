@@ -35,7 +35,7 @@ A newer component that provides a GUI for editing the Startup Page without direc
 
 2. Install dependencies:
    ```bash
-   pip install -r qt_editor_requirements.txt
+   pip install -r requirements.txt
    ```
 
 ### Usage
@@ -102,7 +102,7 @@ src/
 To verify that the application can start correctly and that all modules are properly imported, run:
 
 ```bash
-./test_dashboard_editor.py
+./tools/test_dashboard_editor.py
 ```
 
 ## Git Repository
