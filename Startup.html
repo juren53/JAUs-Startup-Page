@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JAU's Startup Page NG</title>
+    
+    <!-- Version Information -->
+    <meta name="version" content="2025.09.10">
+    <meta name="last-modified" content="2025-07-30T04:45:00Z">
+    <meta name="github-repo" content="https://github.com/juren53/JAUs-Startup-Page">
+    <meta name="version-check-url" content="https://raw.githubusercontent.com/juren53/JAUs-Startup-Page/main/Startup.html">
     <style>
 
 
@@ -224,6 +230,64 @@
             font-size: 0.9rem;
             padding: 1rem;
             border-top: 1px solid var(--border-color);
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        
+        .footer-left {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .new-tab-toggle, .version-check {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .version-check button {
+            background-color: var(--links);
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 0.25rem;
+            cursor: pointer;
+            font-size: 0.85rem;
+            transition: background-color 0.2s;
+        }
+        
+        .version-check button:hover {
+            background-color: var(--link-hover);
+        }
+        
+        .version-check button:disabled {
+            background-color: #666;
+            cursor: not-allowed;
+        }
+        
+        #versionStatus {
+            font-size: 0.85rem;
+            font-weight: bold;
+        }
+        
+        #versionStatus.up-to-date {
+            color: #28a745;
+        }
+        
+        #versionStatus.update-available {
+            color: #dc3545;
+        }
+        
+        #versionStatus.checking {
+            color: var(--links);
         }
     
     
@@ -5246,6 +5310,10 @@
                     <label for="newTabToggle">Open links in new tab:</label>
                     <input type="checkbox" id="newTabToggle">
                 </div>
+                <div class="version-check">
+                    <button id="versionCheckBtn" onclick="checkVersion()" title="Check if you have the latest version">Check for Updates</button>
+                    <span id="versionStatus"></span>
+                </div>
             </div>
             <div class="footer-center">
                 <p>JAU's Startup Page &copy; 2025 | Last updated: Wednesday, July 30, 2025</p>
@@ -5311,6 +5379,86 @@
                 localStorage.setItem('newTabMode', 'disabled');
             }
         });
+        
+        // Version Check functionality
+        async function checkVersion() {
+            const versionBtn = document.getElementById('versionCheckBtn');
+            const versionStatus = document.getElementById('versionStatus');
+            
+            // Disable button and show checking status
+            versionBtn.disabled = true;
+            versionStatus.textContent = 'Checking...';
+            versionStatus.className = 'checking';
+            
+            try {
+                // Get local version info
+                const localVersion = document.querySelector('meta[name="version"]').content;
+                const localLastModified = document.querySelector('meta[name="last-modified"]').content;
+                const checkUrl = document.querySelector('meta[name="version-check-url"]').content;
+                
+                // Fetch remote version
+                const response = await fetch(checkUrl, { 
+                    cache: 'no-cache',
+                    headers: {
+                        'Cache-Control': 'no-cache, no-store, must-revalidate',
+                        'Pragma': 'no-cache'
+                    }
+                });
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+                
+                const remoteHtml = await response.text();
+                
+                // Parse remote version info
+                const parser = new DOMParser();
+                const remoteDoc = parser.parseFromString(remoteHtml, 'text/html');
+                const remoteVersion = remoteDoc.querySelector('meta[name="version"]')?.content;
+                const remoteLastModified = remoteDoc.querySelector('meta[name="last-modified"]')?.content;
+                
+                if (!remoteVersion) {
+                    throw new Error('Remote version information not found');
+                }
+                
+                // Compare versions
+                const isUpToDate = (localVersion === remoteVersion && localLastModified === remoteLastModified);
+                
+                if (isUpToDate) {
+                    versionStatus.textContent = '✓ Up to date';
+                    versionStatus.className = 'up-to-date';
+                } else {
+                    const repoUrl = document.querySelector('meta[name="github-repo"]').content;
+                    versionStatus.innerHTML = `⚠️ <a href="${repoUrl}" target="_blank" style="color: #dc3545; text-decoration: underline;">Update available</a>`;
+                    versionStatus.className = 'update-available';
+                }
+                
+                // Auto-clear status after 10 seconds
+                setTimeout(() => {
+                    versionStatus.textContent = '';
+                    versionStatus.className = '';
+                }, 10000);
+                
+            } catch (error) {
+                console.error('Version check failed:', error);
+                versionStatus.textContent = '❌ Check failed';
+                versionStatus.className = 'update-available';
+                
+                // Auto-clear error after 5 seconds
+                setTimeout(() => {
+                    versionStatus.textContent = '';
+                    versionStatus.className = '';
+                }, 5000);
+            } finally {
+                // Re-enable button
+                versionBtn.disabled = false;
+            }
+        }
+        
+        // Auto-check version on page load (optional - can be removed if too intrusive)
+        // window.addEventListener('load', () => {
+        //     setTimeout(checkVersion, 2000);
+        // });
     </script>
 </body>
 </html>

@@ -394,6 +394,16 @@ class MainWindow(QMainWindow):
         viewSummaryAction.triggered.connect(self.viewSummary)
         helpMenu.addAction(viewSummaryAction)
         
+        helpMenu.addSeparator()
+        
+        checkVersionAction = QAction("Check for &Updates", self)
+        checkVersionAction.setShortcut("Ctrl+U")
+        checkVersionAction.setStatusTip("Check if Startup.html is up to date with GitHub repository")
+        checkVersionAction.triggered.connect(self.checkForUpdates)
+        helpMenu.addAction(checkVersionAction)
+        
+        helpMenu.addSeparator()
+        
         aboutAction = QAction("&About", self)
         aboutAction.setStatusTip("Show information about the application")
         aboutAction.triggered.connect(self.showAbout)
@@ -797,6 +807,102 @@ class MainWindow(QMainWindow):
                     QMessageBox.warning(self, "File Not Found", "Summary document not found.")
         except Exception as e:
             QMessageBox.critical(self, "Error", f"Failed to open Summary document: {str(e)}")
+    
+    def checkForUpdates(self):
+        """Check if the current Startup.html file is up to date with GitHub repository."""
+        if not self.current_file:
+            QMessageBox.warning(self, "Warning", "No file is currently open. Please open a file first.")
+            return
+        
+        # Show progress dialog
+        progress_dialog = QMessageBox()
+        progress_dialog.setWindowTitle("Version Check")
+        progress_dialog.setText("Checking for updates...")
+        progress_dialog.setStandardButtons(QMessageBox.StandardButton.NoButton)
+        progress_dialog.show()
+        QApplication.processEvents()
+        
+        try:
+            # Import the version checker
+            import sys
+            import os
+            tools_path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), 'tools')
+            sys.path.insert(0, tools_path)
+            
+            from version_checker import VersionChecker
+            
+            # Perform version check
+            checker = VersionChecker(self.current_file, verbose=False)
+            comparison = checker.check_version()
+            
+            progress_dialog.close()
+            
+            # Show results
+            local_version = comparison['local'].get('version', 'Unknown')
+            remote_version = comparison['remote'].get('version', 'Unknown')
+            
+            if comparison['is_up_to_date']:
+                QMessageBox.information(
+                    self, "Version Check - Up to Date",
+                    f"✅ Your file is up to date!\n\n"
+                    f"Local Version: {local_version}\n"
+                    f"Remote Version: {remote_version}\n\n"
+                    f"No updates are available."
+                )
+                self.statusBar().showMessage("Version check complete - Up to date")
+            else:
+                differences = "\n".join([f"  • {diff}" for diff in comparison['differences']])
+                repo_url = comparison['remote'].get('github_repo', 'https://github.com/juren53/JAUs-Startup-Page')
+                
+                msg_box = QMessageBox()
+                msg_box.setWindowTitle("Version Check - Update Available")
+                msg_box.setIcon(QMessageBox.Icon.Warning)
+                msg_box.setText(
+                    f"⚠️ Update Available\n\n"
+                    f"Local Version: {local_version}\n"
+                    f"Remote Version: {remote_version}\n\n"
+                    f"Differences found:\n{differences}"
+                )
+                msg_box.setInformativeText("Would you like to open the GitHub repository to get the latest version?")
+                msg_box.setStandardButtons(QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No)
+                msg_box.setDefaultButton(QMessageBox.StandardButton.Yes)
+                
+                if msg_box.exec() == QMessageBox.StandardButton.Yes:
+                    # Open GitHub repository in browser
+                    try:
+                        if sys.platform == 'linux':
+                            # Use the same browser opening logic as openInBrowser
+                            import subprocess
+                            chrome_browsers = ['google-chrome', 'google-chrome-stable', 'chromium-browser', 'chromium']
+                            success = False
+                            for browser in chrome_browsers:
+                                try:
+                                    subprocess.run([browser, repo_url], check=True, capture_output=True, text=True)
+                                    success = True
+                                    break
+                                except (subprocess.CalledProcessError, FileNotFoundError):
+                                    continue
+                            
+                            if not success:
+                                import webbrowser
+                                webbrowser.open(repo_url)
+                        else:
+                            import webbrowser
+                            webbrowser.open(repo_url)
+                        
+                        self.statusBar().showMessage("Opened GitHub repository in browser")
+                    except Exception as e:
+                        QMessageBox.warning(self, "Error", f"Failed to open browser: {str(e)}")
+                
+                self.statusBar().showMessage("Version check complete - Update available")
+        except ImportError as e:
+            progress_dialog.close()
+            QMessageBox.critical(self, "Error", 
+                               f"Version checker not available: {str(e)}\n\n"
+                               f"Make sure tools/version_checker.py exists and requests library is installed.")
+        except Exception as e:
+            progress_dialog.close()
+            QMessageBox.critical(self, "Error", f"Version check failed: {str(e)}")
     
     def onCardOrderChanged(self, parent, start, end, destination, row):
         """Handle reordering of cards in the list."""
