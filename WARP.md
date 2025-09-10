@@ -108,14 +108,26 @@ git commit -m "Update dashboard configuration"
 git push
 ```
 
+### Desktop Integration
+
+```bash
+# Install desktop file to system menu
+cp assets/startup-dashboard-editor.desktop ~/.local/share/applications/
+chmod +x ~/.local/share/applications/startup-dashboard-editor.desktop
+update-desktop-database ~/.local/share/applications/
+
+# Launch from system menu or command line
+gtk-launch startup-dashboard-editor.desktop
+
+# Validate desktop file (optional)
+desktop-file-validate ~/.local/share/applications/startup-dashboard-editor.desktop
+```
+
 ### Icon Management
 
 ```bash
 # Convert icon format (utility script included)
 python3 tools/convert_icon.py
-
-# Update desktop integration
-cp assets/startup-dashboard-editor.desktop ~/.local/share/applications/
 ```
 
 ## Key Features & Capabilities

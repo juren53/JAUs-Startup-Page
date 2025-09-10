@@ -1,11 +1,15 @@
 [Desktop Entry]
-Version=1.0
+Version=1.1
 Type=Application
-Name=Startup Dashboard Editor
-Comment=Edit JAU's Startup Dashboard
+Name=JAU's Startup Dashboard Editor
+GenericName=HTML Dashboard Editor
+Comment=PyQt6-based editor for managing HTML startup dashboards with cards and links
 Exec=/home/juren/Projects/JAUs-Startup-Page/startup_dashboard_editor.py
-Icon=startup-dashboard-editor
+Icon=/home/juren/Projects/JAUs-Startup-Page/assets/icons/startup-dashboard-editor.png
 Path=/home/juren/Projects/JAUs-Startup-Page
 Terminal=false
-Categories=Utility;Development;
+StartupNotify=true
+Categories=Development;WebDevelopment;Qt;Utility;
+Keywords=HTML;Dashboard;Editor;PyQt6;Bookmark;Links;Cards;
+MimeType=text/html;
 
