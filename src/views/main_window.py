@@ -887,10 +887,69 @@ class MainWindow(QMainWindow):
             # Convert file path to file:// URL format
             file_url = f"file://{os.path.abspath(self.current_file)}"
             
-            # Open the file in the default web browser
-            webbrowser.open(file_url)
-            
-            self.statusBar().showMessage(f"Opened {os.path.basename(self.current_file)} in default browser")
+            # Use system-specific commands to open in browser with better process handling
+            if sys.platform == 'linux':
+                # Try different approaches for Linux
+                success = False
+                
+                # Method 1: Try xdg-open (most reliable on Linux)
+                try:
+                    result = subprocess.run(['xdg-open', file_url], 
+                                          check=True, capture_output=True, text=True)
+                    success = True
+                    self.statusBar().showMessage(f"Opened {os.path.basename(self.current_file)} in default browser")
+                except subprocess.CalledProcessError:
+                    pass
+                
+                # Method 2: Try firefox with new tab first, then new instance if xdg-open failed
+                if not success:
+                    # Try new tab first (less intrusive)
+                    try:
+                        subprocess.run(['firefox', '--new-tab', file_url], 
+                                     check=True, capture_output=True, text=True)
+                        success = True
+                        self.statusBar().showMessage(f"Opened {os.path.basename(self.current_file)} in Firefox (new tab)")
+                    except (subprocess.CalledProcessError, FileNotFoundError):
+                        # If new tab fails, try new instance
+                        try:
+                            subprocess.run(['firefox', '--new-instance', file_url], 
+                                         check=True, capture_output=True, text=True)
+                            success = True
+                            self.statusBar().showMessage(f"Opened {os.path.basename(self.current_file)} in Firefox (new instance)")
+                        except (subprocess.CalledProcessError, FileNotFoundError):
+                            pass
+                
+                # Method 3: Try other common browsers as fallback
+                if not success:
+                    browsers = ['google-chrome', 'chromium-browser', 'chromium', 'opera']
+                    for browser in browsers:
+                        try:
+                            subprocess.run([browser, file_url], 
+                                         check=True, capture_output=True, text=True)
+                            success = True
+                            self.statusBar().showMessage(f"Opened {os.path.basename(self.current_file)} in {browser}")
+                            break
+                        except (subprocess.CalledProcessError, FileNotFoundError):
+                            continue
+                
+                # Method 4: Final fallback to Python webbrowser
+                if not success:
+                    webbrowser.open(file_url)
+                    self.statusBar().showMessage(f"Opened {os.path.basename(self.current_file)} in default browser (fallback)")
+                    
+            elif sys.platform == 'darwin':  # macOS
+                subprocess.run(['open', file_url], check=True)
+                self.statusBar().showMessage(f"Opened {os.path.basename(self.current_file)} in default browser")
+                
+            elif sys.platform == 'win32':  # Windows
+                subprocess.run(['start', file_url], shell=True, check=True)
+                self.statusBar().showMessage(f"Opened {os.path.basename(self.current_file)} in default browser")
+                
+            else:
+                # Fallback for other platforms
+                webbrowser.open(file_url)
+                self.statusBar().showMessage(f"Opened {os.path.basename(self.current_file)} in default browser")
+                
         except Exception as e:
             QMessageBox.critical(self, "Error", f"Failed to open file in browser: {str(e)}")
     
