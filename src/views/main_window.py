@@ -889,19 +889,32 @@ class MainWindow(QMainWindow):
             
             # Use system-specific commands to open in browser with better process handling
             if sys.platform == 'linux':
-                # Try different approaches for Linux
+                # Try different approaches for Linux - prioritize Chrome to avoid Firefox conflicts
                 success = False
                 
-                # Method 1: Try xdg-open (most reliable on Linux)
-                try:
-                    result = subprocess.run(['xdg-open', file_url], 
-                                          check=True, capture_output=True, text=True)
-                    success = True
-                    self.statusBar().showMessage(f"Opened {os.path.basename(self.current_file)} in default browser")
-                except subprocess.CalledProcessError:
-                    pass
+                # Method 1: Try Chrome first (most reliable, no process conflicts)
+                chrome_browsers = ['google-chrome', 'google-chrome-stable', 'chromium-browser', 'chromium']
+                for browser in chrome_browsers:
+                    try:
+                        subprocess.run([browser, file_url], 
+                                     check=True, capture_output=True, text=True)
+                        success = True
+                        self.statusBar().showMessage(f"Opened {os.path.basename(self.current_file)} in {browser}")
+                        break
+                    except (subprocess.CalledProcessError, FileNotFoundError):
+                        continue
                 
-                # Method 2: Try firefox with new tab first, then new instance if xdg-open failed
+                # Method 2: Try xdg-open only if Chrome not available
+                if not success:
+                    try:
+                        result = subprocess.run(['xdg-open', file_url], 
+                                              check=True, capture_output=True, text=True)
+                        success = True
+                        self.statusBar().showMessage(f"Opened {os.path.basename(self.current_file)} in default browser")
+                    except subprocess.CalledProcessError:
+                        pass
+                
+                # Method 3: Try Firefox with new tab/instance only as last resort
                 if not success:
                     # Try new tab first (less intrusive)
                     try:
@@ -919,10 +932,10 @@ class MainWindow(QMainWindow):
                         except (subprocess.CalledProcessError, FileNotFoundError):
                             pass
                 
-                # Method 3: Try other common browsers as fallback
+                # Method 4: Try other browsers as final fallback
                 if not success:
-                    browsers = ['google-chrome', 'chromium-browser', 'chromium', 'opera']
-                    for browser in browsers:
+                    other_browsers = ['opera', 'brave-browser']
+                    for browser in other_browsers:
                         try:
                             subprocess.run([browser, file_url], 
                                          check=True, capture_output=True, text=True)
