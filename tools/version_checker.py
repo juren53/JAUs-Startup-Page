@@ -28,7 +28,7 @@ class VersionChecker:
     def __init__(self, local_file_path: str = None, verbose: bool = False):
         self.verbose = verbose
         self.local_file_path = local_file_path or os.path.join(parent_dir, 'Startup.html')
-        self.github_raw_url = "https://raw.githubusercontent.com/juren53/JAUs-Startup-Page/main/Startup.html"
+        self.github_pages_url = "https://juren53.github.io/JAUs-Startup-Page/Startup.html"
         
     def log(self, message: str, level: str = "INFO"):
         """Log message if verbose mode is enabled."""
@@ -78,11 +78,11 @@ class VersionChecker:
         return version_info
     
     def get_remote_version_info(self) -> dict:
-        """Get version information from GitHub repository."""
-        self.log(f"Fetching remote file from: {self.github_raw_url}")
+        """Get version information from GitHub Pages."""
+        self.log(f"Fetching remote file from: {self.github_pages_url}")
         
         try:
-            response = requests.get(self.github_raw_url, timeout=30)
+            response = requests.get(self.github_pages_url, timeout=30)
             response.raise_for_status()
             
             version_info = self.extract_version_info(response.text)
