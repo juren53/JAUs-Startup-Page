@@ -38,9 +38,41 @@ A newer component that provides a GUI for editing the Startup Page without direc
    pip install -r requirements.txt
    ```
 
+3. Install CLI command (optional but recommended):
+   ```bash
+   chmod +x bin/startup_dashboard_editor
+   ln -sf "$(pwd)/bin/startup_dashboard_editor" ~/.local/bin/startup_dashboard_editor
+   ```
+   
+   Ensure `~/.local/bin` is in your PATH:
+   ```bash
+   echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
+   source ~/.bashrc
+   ```
+
 ### Usage
 
-Run the application:
+#### CLI Command (Recommended)
+Once installed, you can run the application from anywhere:
+
+```bash
+# Launch with default/last file
+startup_dashboard_editor
+
+# Open a specific file
+startup_dashboard_editor Startup.html
+startup_dashboard_editor --file ~/path/to/my-dashboard.html
+
+# Show help and options
+startup_dashboard_editor --help
+startup_dashboard_editor --version
+
+# Check for updates
+startup_dashboard_editor --check-version
+```
+
+#### Direct Execution
+Alternatively, run directly from the project directory:
 ```bash
 ./startup_dashboard_editor.py
 ```
@@ -99,10 +131,17 @@ src/
 
 ### Testing
 
-To verify that the application can start correctly and that all modules are properly imported, run:
+To verify that the application can start correctly and that all modules are properly imported:
 
 ```bash
+# Test module imports and functionality
 ./tools/test_dashboard_editor.py
+
+# Test CLI command installation
+startup_dashboard_editor --version
+
+# Check for updates
+startup_dashboard_editor --check-version
 ```
 
 ## Git Repository

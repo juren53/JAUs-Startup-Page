@@ -70,17 +70,19 @@ pip install -r requirements-dev.txt
 ### Running the Application
 
 ```bash
-# Primary method - executable script
-./startup_dashboard_editor.py
+# System-wide CLI command (recommended after installation)
+startup_dashboard_editor                    # Launch with default/last file
+startup_dashboard_editor Startup.html      # Open specific file
+startup_dashboard_editor --file ~/my.html  # Open file with explicit flag
+startup_dashboard_editor --help            # Show usage help
+startup_dashboard_editor --version         # Show version info
+startup_dashboard_editor --check-version   # Check for updates
 
-# Alternative - simple run script
-./run
-
-# Direct Python execution
-python3 startup_dashboard_editor.py
-
-# From source directory
-python3 src/main.py
+# Direct methods (within project directory)
+./startup_dashboard_editor.py              # Primary executable script
+./run                                       # Alternative run script
+python3 startup_dashboard_editor.py        # Direct Python execution
+python3 src/main.py                        # From source directory
 ```
 
 ### Development Testing
@@ -88,6 +90,10 @@ python3 src/main.py
 ```bash
 # Test module imports and basic functionality
 ./tools/test_dashboard_editor.py
+
+# Check version against GitHub Pages
+python3 tools/version_checker.py --file Startup.html
+startup_dashboard_editor --check-version
 
 # Verify PyQt6 installation
 python3 -c "from PyQt6.QtWidgets import QApplication; print('PyQt6 OK')"
@@ -106,6 +112,22 @@ python3 -c "from bs4 import BeautifulSoup; print('HTML parsing OK')"
 git add .
 git commit -m "Update dashboard configuration"
 git push
+```
+
+### CLI Installation
+
+```bash
+# Install system-wide CLI command
+chmod +x bin/startup_dashboard_editor
+ln -sf "$(pwd)/bin/startup_dashboard_editor" ~/.local/bin/startup_dashboard_editor
+
+# Verify installation (ensure ~/.local/bin is in PATH)
+which startup_dashboard_editor
+startup_dashboard_editor --version
+
+# Add to PATH if needed (add to ~/.bashrc or ~/.profile)
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
+source ~/.bashrc
 ```
 
 ### Desktop Integration
@@ -180,6 +202,7 @@ python3 tools/convert_icon.py
 
 **Main Application Files**
 - `startup_dashboard_editor.py` - Primary executable entry point
+- `bin/startup_dashboard_editor` - System-wide CLI wrapper script
 - `src/main.py` - Core application logic and window management
 - `src/views/main_window.py` - Main GUI implementation (800+ lines)
 - `src/views/card_editor.py` - Card editing dialog implementation
@@ -200,6 +223,8 @@ python3 tools/convert_icon.py
 - `README.md` - User-facing documentation and setup instructions
 - `docs/` - Additional documentation (enhancements, guides, etc.)
 - `tools/` - Development utilities and testing scripts
+  - `tools/version_checker.py` - Command-line version checker for GitHub Pages comparison
+  - `tools/test_dashboard_editor.py` - Module import and functionality testing
 - `assets/` - Icons, desktop files, and other assets
 - `examples/` - Example HTML files and templates
 
