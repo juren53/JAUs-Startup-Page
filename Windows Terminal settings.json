@@ -1,0 +1,52 @@
+# PowerShell script to update Windows Terminal settings
+
+# Expand the environment variable to get the actual path
+$settingsPath = [System.Environment]::ExpandEnvironmentVariables("$env:LOCALAPPDATA\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json")
+
+# Check if the settings file exists
+if (Test-Path $settingsPath) {
+    # Read the current settings
+    $settings = Get-Content -Path $settingsPath -Raw | ConvertFrom-Json
+    
+    # Create the new PowerShell 7 profile
+    $pwsh7Profile = [PSCustomObject]@{
+        guid = "{5be830b9-3ca0-42e8-bfbc-2498fb98acf6}"
+        name = "PowerShell 7"
+        commandline = "C:\Program Files\PowerShell\7\pwsh.exe"
+        icon = "ms-appx:///ProfileIcons/pwsh.png"
+        hidden = $false
+    }
+    
+    # Check if profile already exists
+    $existingProfile = $settings.profiles.list | Where-Object { $_.commandline -like "*\pwsh.exe" }
+    
+    if ($existingProfile) {
+        Write-Host "PowerShell 7 profile already exists with GUID: $($existingProfile.guid)"
+        # Update the default profile to the existing PowerShell 7 profile
+        $settings.defaultProfile = $existingProfile.guid
+    } else {
+        # Add the new profile to the list
+        $settings.profiles.list += $pwsh7Profile
+        # Set the new profile as default
+        $settings.defaultProfile = "{5be830b9-3ca0-42e8-bfbc-2498fb98acf6}"
+    }
+    
+    # Save the updated settings
+    $settings | ConvertTo-Json -Depth 10 | Set-Content -Path $settingsPath
+    
+    Write-Host "Windows Terminal settings updated. PowerShell 7 is now the default profile."
+} else {
+    Write-Host "Windows Terminal settings file not found at: $settingsPath"
+}
+
+# Output information to verify PowerShell 7 is in PATH
+Write-Host "`nVerifying PowerShell 7 in PATH:"
+$env:PATH -split ";" | Where-Object { $_ -like "*PowerShell*" }
+
+# Provide instructions for changing default shell system-wide
+Write-Host "`nTo use PowerShell 7 as your default shell in other applications:"
+Write-Host "1. In Windows, search for 'Default Apps'"
+Write-Host "2. Select 'Choose default applications by file type'"
+Write-Host "3. Find '.ps1' in the list and set it to 'pwsh.exe'"
+Write-Host "`nYou can also create a shortcut to PowerShell 7 and pin it to your taskbar or start menu."
+
