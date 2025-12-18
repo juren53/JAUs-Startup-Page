@@ -15,40 +15,86 @@ A newer component that provides a GUI for editing the Startup Page without direc
 
 ### Features
 
-- Create, edit, and delete cards (sections) in the dashboard
-- Manage links within each card
-- Support for both main links and additional link sections
-- Drag-and-drop reordering of cards and links
-- Light and dark theme support with persistent settings
-- Automatic loading of the last edited file on startup
-- Masonry-style layout for efficient card arrangement without gaps
-- Preview cards before saving
-- Full HTML file editing with preservation of CSS and structure
+#### Core Dashboard Management
+- **Card Management**: Create, edit, and delete cards (sections) in the dashboard
+- **Link Organization**: Manage links within each card with main and additional sections
+- **Drag-and-Drop**: Intuitive reordering of cards and links
+- **Live Preview**: Real-time preview of cards before saving changes
+- **File Operations**: Full HTML file editing with CSS and structure preservation
+
+#### Advanced UI Features
+- **8 Professional Themes**: 
+  - Default (clean light theme)
+  - Dark (modern dark theme)
+  - Solarized Light/Dark (eye-friendly color schemes)
+  - High Contrast (accessibility focused)
+  - Monokai (popular editor theme)
+  - Purple Night (modern purple dark mode)
+  - Terminal Green (retro terminal style)
+- **Theme Persistence**: Selected theme automatically saved and restored
+- **Masonry Layout**: Efficient card arrangement without gaps
+- **Zoom System**: Application-wide zoom with Ctrl+Mouse Wheel
+- **Responsive Design**: Adapts to different screen sizes
+
+#### User Experience
+- **Persistent Settings**: Remembers last file and preferences
+- **Keyboard Shortcuts**: Power-user shortcuts for common operations
+- **Status Bar**: Helpful messages and zoom indicators
+- **Professional Interface**: Modern, polished UI with intuitive controls
 
 ### Installation
 
-1. Create a virtual environment:
+#### Prerequisites
+- **Python 3.10 or higher** (recommended: 3.12+)
+- **Git** (for cloning the repository)
+
+#### Quick Setup
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/juren53/JAUs-Startup-Page.git
+   cd JAUs-Startup-Page
+   ```
+
+2. **Create and activate virtual environment:**
    ```bash
    python -m venv venv
    source venv/bin/activate  # On Windows: venv\Scripts\activate
    ```
 
-2. Install dependencies:
+3. **Install dependencies:**
    ```bash
    pip install -r requirements.txt
    ```
+   Or using the new pyproject.toml:
+   ```bash
+   pip install -e .
+   ```
 
-3. Install CLI command (optional but recommended):
+4. **Install CLI command (optional but recommended):**
    ```bash
    chmod +x bin/startup_dashboard_editor
    ln -sf "$(pwd)/bin/startup_dashboard_editor" ~/.local/bin/startup_dashboard_editor
    ```
-   
-   Ensure `~/.local/bin` is in your PATH:
-   ```bash
-   echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
-   source ~/.bashrc
+    
+    Ensure `~/.local/bin` is in your PATH:
+    ```bash
+    echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
+    source ~/.bashrc
    ```
+
+#### Development Setup
+
+For development with additional tools:
+```bash
+pip install -e ".[dev]"
+```
+
+This includes:
+- **pytest** for testing
+- **black** for code formatting
+- **isort** for import sorting
+- **mypy** for type checking
 
 ### Usage
 
@@ -79,14 +125,19 @@ Alternatively, run directly from the project directory:
 
 #### Basic Operations
 
-- **Open an existing HTML file**: File → Open
-- **Save changes**: File → Save or Save As
+- **Open an existing HTML file**: File → Open or `Ctrl+O`
+- **Save changes**: File → Save or `Ctrl+S`
+- **Save As**: File → Save As or `Ctrl+Shift+S`
 - **Add a new card**: Click "Add Card" or Edit → Add Card
 - **Edit a card**: Select card, then click "Edit Card"
 - **Remove a card**: Select card, then click "Remove Card"
-- **Toggle dark mode**: View → Toggle Dark Mode or use Ctrl+D
+- **Change theme**: View → Change Theme... or `Ctrl+T`
+- **Quick theme toggle**: Toolbar button for Default/Dark switching
+- **Zoom controls**: View → Zoom In/Out/Reset or `Ctrl++/-/0`
+- **Application zoom**: `Ctrl+Mouse Wheel`
 - **Reorder cards**: Drag and drop cards in the list to change their order
 - **Reorder links**: When editing a card, drag and drop links to change their order
+- **Exit application**: File → Exit or `Ctrl+Q`
 
 ### Enhanced Features
 
@@ -164,6 +215,40 @@ To contribute to the project:
 4. Create a pull request for review
 
 See the [GIT_GUIDE.md](GIT_GUIDE.md) file for detailed Git commands and best practices.
+
+## Troubleshooting
+
+### Common Issues
+
+#### Application Won't Start
+- **Python Version**: Ensure you're using Python 3.10 or higher
+- **Dependencies**: Run `pip install -r requirements.txt` to ensure all dependencies are installed
+- **Virtual Environment**: Make sure your virtual environment is activated
+
+#### Theme Not Applied
+- **Settings File**: Check `~/.startup-dashboard-editor/settings.json` exists and is writable
+- **Permissions**: Ensure the application has permission to write to your home directory
+
+#### File Not Found Errors
+- **Path**: Verify the HTML file path is correct
+- **Permissions**: Ensure the file is readable and writable
+- **Format**: Make sure the file is a valid HTML file generated by the editor
+
+#### CLI Command Not Found
+- **Installation**: Verify the CLI script was installed correctly
+- **PATH**: Check that `~/.local/bin` is in your PATH
+- **Permissions**: Ensure the script is executable: `chmod +x bin/startup_dashboard_editor`
+
+#### Performance Issues
+- **Large Files**: For very large HTML files, the editor may slow down
+- **Memory**: Ensure sufficient system memory is available
+- **Restart**: Try restarting the application
+
+### Getting Help
+
+- **GitHub Issues**: Report bugs at https://github.com/juren53/JAUs-Startup-Page/issues
+- **Documentation**: Check the `docs/` directory for detailed guides
+- **Testing**: Run `./tools/test_dashboard_editor.py` to verify installation
 
 ## License
 
