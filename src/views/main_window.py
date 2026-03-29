@@ -2,6 +2,9 @@ import os
 import sys
 import subprocess
 import webbrowser
+
+APP_VERSION = "1.2.0"
+
 from PyQt6.QtWidgets import (
     QMainWindow, QWidget, QVBoxLayout, QHBoxLayout, QLabel, 
     QPushButton, QListWidget, QListWidgetItem, QTabWidget,
@@ -266,19 +269,8 @@ class MainWindow(QMainWindow):
     def initUI(self):
         """Initialize the user interface."""
         # Set window properties
-        self.setWindowTitle("The Startup Dashboard Editor")
+        self.setWindowTitle(f"The Startup Dashboard Editor v{APP_VERSION}")
         self.setMinimumSize(1000, 700)
-        
-        # Set window icon
-        # First try to use PNG icon (preferred for Linux desktop integration)
-        icon_path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), 
-                               "assets", "icons", "startup-dashboard-editor.png")
-        if not os.path.exists(icon_path):
-            # Fall back to JPG if PNG doesn't exist
-            icon_path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), 
-                                   "assets", "icons", "ICON_dashboard-editor.jpg")
-        if os.path.exists(icon_path):
-            self.setWindowIcon(QIcon(icon_path))
         
         # Create menu bar
         self.createMenuBar()
@@ -740,7 +732,7 @@ class MainWindow(QMainWindow):
         
         # Create the about dialog HTML
         about_html = f"""<h1>The Startup Dashboard Editor</h1>
-            <p>Version 1.0</p>
+            <p>Version {APP_VERSION}</p>
             <p>A Qt6-based editor for managing your Startup dashboard.</p>
             {commit_info}
             <h3>Features:</h3>
