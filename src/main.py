@@ -10,8 +10,8 @@ import os
 import subprocess
 from datetime import datetime
 from PyQt6.QtWidgets import QApplication
-from PyQt6.QtGui import QIcon
 from src.views.main_window import MainWindow
+from icon_loader import icons
 
 def get_last_commit_date():
     """Get the date of the last commit from Git."""
@@ -41,16 +41,8 @@ def main(existing_app=None):
         app.setStyle("Fusion")
         
         # Set application icon
-        # First try to use PNG icon (preferred for Linux desktop integration)
-        icon_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 
-                               "assets", "icons", "startup-dashboard-editor.png")
-        if not os.path.exists(icon_path):
-            # Fall back to JPG if PNG doesn't exist
-            icon_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 
-                                   "assets", "icons", "ICON_dashboard-editor.jpg")
-        if os.path.exists(icon_path):
-            app_icon = QIcon(icon_path)
-            app.setWindowIcon(app_icon)
+        app.setDesktopFileName("startup-dashboard-editor")
+        app.setWindowIcon(icons.app_icon())
     
     # Get the last commit date
     last_commit_date = get_last_commit_date()
@@ -58,7 +50,8 @@ def main(existing_app=None):
     # Create and show the main window
     window = MainWindow(last_commit_date=last_commit_date)
     window.show()
-    
+    icons.set_taskbar_icon(window, app_id="com.juren.startup-dashboard-editor")
+
     # Start the event loop
     sys.exit(app.exec())
 

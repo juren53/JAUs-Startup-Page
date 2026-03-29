@@ -13,6 +13,32 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Enhanced card templates and presets
 - Bulk card operations (import/export)
 
+## [1.2.0] - 2026-03-29
+
+### Added
+- **Icon_Manager_Module integration** — replaced ad-hoc icon loading with the
+  centralized `icon_loader.py` module (v0.3.3)
+- **Multi-resolution icon set** generated from source PNG into `resources/icons/`:
+  - `app.ico` — Windows multi-resolution taskbar/window icon
+  - `app.icns` — macOS dock icon
+  - `app.png` and `app_16x16.png` … `app_256x256.png` — Linux multi-resolution PNGs
+- **Windows taskbar icon fix** via `set_taskbar_icon()` (AppUserModelID +
+  WM_SETICON) — eliminates the generic Python icon on the Windows taskbar
+- **Linux desktop association** via `app.setDesktopFileName()` — enables correct
+  icon display in taskbar, Alt+Tab switcher, and app launcher
+
+### Changed
+- `src/main.py` — icon loading now delegates to `icons.app_icon()` and
+  `icons.set_taskbar_icon()`; removed manual PNG→JPG fallback path logic
+- `assets/startup-dashboard-editor.desktop` — `Icon=` field changed from an
+  absolute path to the XDG theme name `startup-dashboard-editor` (portable,
+  works after project directory moves)
+
+### Technical
+- Added `icon_loader.py` to project root (cross-platform PyQt6 icon loader)
+- Added `resources/icons/` directory with platform-native icon assets
+- Windows taskbar AppUserModelID set to `com.juren.startup-dashboard-editor`
+
 ## [1.1.0] - 2025-06-13
 
 ### Added
@@ -138,6 +164,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Version History Summary
 
+- **v1.2.0**: Integrated Icon_Manager_Module for cross-platform icon handling, Windows taskbar fix, and Linux desktop association
 - **v1.1.0**: Added comprehensive UI theme system with 8 themes, theme persistence, and enhanced user experience
 - **v1.0.0**: Full-featured startup page editor with card management, zoom system, and professional UI
 - **v0.1.0**: Initial development version with basic framework
